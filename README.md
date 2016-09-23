@@ -2,8 +2,12 @@
 
 ## Getting started
 
-Dependencies are 
+Dependencies are: 
 * NodeJS
+
+Other stuff used are:
+* SASS (SCSS)
+* Pug (Jade)
 
 ### Working with this project
 
