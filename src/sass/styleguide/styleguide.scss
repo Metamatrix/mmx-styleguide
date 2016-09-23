@@ -5,18 +5,14 @@
 @import "../../../node_modules/mmx-bootstrap-extensions/src/styles/bootstrap-extensions/mixins";
 
 body {
-	background:white !important;
 	position: relative;
 }
 
 .mmx-componentlibrary {
-	overflow:hidden;
-	
+	overflow:hidden;	
 }
 
 .mmx-docs-container {
-	
-	
 	@media (min-width: 1200px) {
 		max-width:800px;
 	}
@@ -27,7 +23,6 @@ body {
 	background: $gray-dark;
 	overflow:hidden;
 
-	
 	>.mmx-docs-container {
 		padding-bottom:100px;
 		position: relative;
@@ -36,11 +31,11 @@ body {
 	
 	h1 {
 		font-family: $headings-font-family, sans-serif !important;
-		height:220px;
-		display:table-cell;
+		height: 220px;
+		display: table-cell;
 		vertical-align: middle;
-		font-size:54px;
-		color:white;
+		font-size: 54px;
+		color: white;
 	}
 
 }
@@ -106,7 +101,6 @@ h4.mmx-docs-heading {
 }
 
 #mmx-document-nav {
-	font-family: 'Lato', sans-serif !important;
 	position: fixed;
 	left:0;
 	top:0;

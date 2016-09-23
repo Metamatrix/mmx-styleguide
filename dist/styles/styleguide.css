@@ -1,5 +1,4 @@
 body {
-  background: white !important;
   position: relative; }
 
 .mmx-componentlibrary {
@@ -47,7 +46,7 @@ h3.mmx-docs-heading {
     right: 0;
     padding: 0; }
     h3.mmx-docs-heading button:hover {
-      color: #0f0; }
+      color: #77a240; }
 
 h4.mmx-docs-heading {
   font-family: 'Lato', sans-serif !important;
@@ -67,10 +66,9 @@ h4.mmx-docs-heading {
     color: #2A2726 !important;
     display: block;
     padding: 10px 0;
-    color: #0f0 !important; }
+    color: #77a240 !important; }
 
 #mmx-document-nav {
-  font-family: 'Lato', sans-serif !important;
   position: fixed;
   left: 0;
   top: 0;

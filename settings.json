@@ -6,7 +6,7 @@
     {
       "name": "green",
       "displayName": "Green",
-      "color": "#0f0"
+      "color": "#77a240"
     },
     {
       "name": "red",
@@ -59,9 +59,9 @@
       }
     ]
   },
-  "logoImage": {
-    "default": "images/logo.svg",
-    "retina": ""
+  "logotypes": {
+    "default": "/images/logo.svg",
+    "inverted": "/images/logo-inverted.svg"
   },
   "margins": [
     {
