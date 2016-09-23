@@ -1,0 +1,29 @@
+﻿include ../includes/mixins
+
+.form-group
+	.input-group
+		span#basic-addon1.input-group-addon @
+		input.form-control(type='text', placeholder='Username', aria-describedby='basic-addon1')
+
+.form-group
+	.input-group
+		input.form-control(type='text', placeholder="Recipient's username", aria-describedby='basic-addon2')
+		span#basic-addon2.input-group-addon @example.com
+
+.form-group
+	.input-group
+		span.input-group-addon $
+		input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+		span.input-group-addon .00
+
+.form-group
+	.input-group
+		span.input-group-btn
+			button.btn.btn-primary(type='button') Go!
+		input.form-control(type='text', placeholder='Search for...')
+
+.form-group
+	.input-group
+		input.form-control(type='text', placeholder='Search for...')
+		span.input-group-btn
+			button.btn.btn-primary(type='button') Go!

@@ -1,0 +1,43 @@
+.row.row-blocks
+
+	.col-sm-4
+
+		a(href="").card.card-default
+			.logo-image-container
+				.logo-image-container-inner
+					img(src="prototypecontent/images/akademiskahus.jpg", alt="")
+			.card-block
+				h4.card-title.text-center 
+					+lipsum-words(3)
+
+	.col-sm-4
+		a(href="").card.card-default
+			.logo-image-container
+				.logo-image-container-inner
+					img(src="prototypecontent/images/jm.png", alt="")
+			.card-block
+				h4.card-title.text-center 
+					+lipsum-words(3)
+
+	.col-sm-4
+		.card.card-default
+			.logo-image-container
+				.logo-image-container-inner
+					img(src="prototypecontent/images/stockholm.png", alt="")
+			.card-block
+				h4.card-title.text-center 
+					+lipsum-words(3)
+
+	+repeat(100)
+		- var height= Math.floor(Math.random() * (150 - 50) + 50)
+		- var width= Math.floor(Math.random() * (200 - 100) + 100)
+
+		.col-sm-4
+
+			a(href="").card.card-default
+				.logo-image-container
+					.logo-image-container-inner
+						+img-ph(width, height)(alt="Card top image")
+				.card-block
+					h4.card-title.text-center 
+						+lipsum-words(3)

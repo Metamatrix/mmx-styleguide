@@ -1,0 +1,129 @@
+﻿extends layouts/styleguide
+
+block content
+
+	section.mmx-docs-chapter
+		
+		+docs-heading("Profile")
+		
+		+doc-section("Fonts")
+			include components/fonts
+		+doc-section("Colors")
+			include components/colors
+		+doc-section("Margins")
+			include components/margins
+		+doc-section("Icons")
+			include components/icons
+
+			
+	section.mmx-docs-chapter
+
+		+docs-heading("Components")
+		
+				
+		+doc-section("Headings")
+			include components/headings
+				
+					
+		+doc-section("Body text")
+			include components/body-text
+			
+					
+		+doc-section("Lead text")
+			include components/lead-text
+			
+					
+		+doc-section("Small text")
+			include components/small-text
+			
+					
+		+doc-section("Text alignment")
+			include components/text-alignment
+			
+					
+		+doc-section("Blockquote")
+			include components/blockquote
+			
+					
+		+doc-section("Lists")
+			include components/lists
+			
+					
+		+doc-section("Tables")
+			include components/tables
+			
+					
+		+doc-section("Forms")
+			include components/forms
+			
+					
+		+doc-section("Buttons")
+			include components/buttons
+			
+		+doc-section("Video")
+			include components/video
+
+		+doc-section("Breadcrumbs")
+			include components/breadcrumb-main
+			
+		+doc-section("Pagination")
+			include components/pagination
+
+		+doc-section("Alert")
+			include components/alert-dismissable
+					
+		+doc-section("Cards")
+			include components/cards
+
+		
+	section.mmx-docs-chapter
+		+docs-heading("Compositions")
+		+doc-section("Form panel")
+			include compositions/form-panel
+			
+		+doc-section("Navigation list")
+			include compositions/navigation-list
+
+		+doc-section("Link list")
+			include compositions/link-list
+			
+		+doc-section("Page list")
+			include compositions/pagelist
+				
+		+doc-section("News list")
+			include compositions/newslist
+			
+		+doc-section-no-container("News list - cards")
+			include compositions/news-list-cards	
+			
+		+doc-section("Logo list")
+			include compositions/logolist
+			
+		+doc-section("Article footer")
+			include compositions/article-footer
+			
+		+doc-section("Contact")
+			include compositions/contact
+			
+		+doc-section-no-container("Jumbotron")
+			include compositions/jumbotron
+			
+		+doc-section-no-container("Site header")
+			include compositions/header
+			
+		+doc-section-no-container("Site footer")
+			include compositions/footer
+			
+					
+		+doc-section-no-container("Site search")
+			include compositions/site-search
+	
+	section.mmx-docs-chapter
+
+		+docs-heading("Templates")
+
+		+doc-section("Pages")
+			ul.list-unstyled.mmx-docs-link-list
+				- for name, fileName in settings.templates
+					li
+						a(href="#{fileName}.html")= name

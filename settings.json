@@ -1,0 +1,96 @@
+{
+  "title": "Metamatrix",
+  "scriptsPath": "scripts/",
+  "stylesPath": "styles/",
+  "colors": [
+    {
+      "name": "green",
+      "displayName": "Green",
+      "color": "#0f0"
+    },
+    {
+      "name": "red",
+      "displayName": "Red",
+      "color": "#e43300"
+    },
+    {
+      "name": "gray",
+      "displayName": "Gray",
+      "color": "#78786e"
+    },
+    {
+      "name": "gray-light",
+      "displayName": "Gray light",
+      "color": "#C8C8BE"
+    },
+    {
+      "name": "gray-lighter",
+      "displayName": "Gray lighter",
+      "color": "#f2f2f2"
+    },
+    {
+      "name": "gray-dark",
+      "displayName": "Gray Dark",
+      "color": "#2A2726"
+    }
+  ],
+  "icons": {
+    "className": "icon",
+    "prefix": "icon-"
+  },
+  "images": {
+    "phBgColor": "CCC",
+    "phFrontColor": "333",
+    "sizes": [
+      { 
+        "name": "16:9",
+        "width": "16",
+        "height": "9"
+      },
+      { 
+        "name": "4:3",
+        "width": "4",
+        "height": "3"
+      },
+      { 
+        "name": "3:2",
+        "width": "3",
+        "height": "2"
+      }
+    ]
+  },
+  "logoImage": {
+    "default": "images/logo.svg",
+    "retina": ""
+  },
+  "margins": [
+    {
+      "name": "xs",
+      "displayName": "Extra small",
+      "margin": "5px"
+    },
+    {
+      "name": "small",
+      "displayName": "Small",
+      "margin": "10px"
+    },
+    {
+      "name": "base",
+      "displayName": "Base",
+      "margin": "15px"
+    },
+    {
+      "name": "large",
+      "displayName": "large",
+      "margin": "20px"
+    },
+    {
+      "name": "xl",
+      "displayName": "Extra large",
+      "margin": "30px"
+    }
+  ],
+  "templates": {
+    "start": "Start Page"
+  }
+}

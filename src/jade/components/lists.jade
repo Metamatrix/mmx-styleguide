@@ -1,0 +1,54 @@
+﻿include ../includes/mixins
+
+h3 Bullet list
+
+ul
+	li
+		+lipsum-words(5)
+		ul
+			li
+				+lipsum-words(5)
+			li
+				+lipsum-words(5)
+	+repeat(3)
+		li
+			+lipsum-words(5)
+
+ul
+	+repeat(5)
+		li
+			+lipsum-words(25)
+
+h3 Number list
+
+ol
+	li
+		+lipsum-words(5)
+		ol
+			li
+				+lipsum-words(5)
+			li
+				+lipsum-words(5)
+	+repeat(3)
+		li
+			+lipsum-words(5)
+
+ol
+	+repeat(5)
+		li
+			+lipsum-words(25)
+
+h3 Unstyled list
+
+ul.list-unstyled
+	+repeat(5)
+		li
+			+lipsum-words(5)
+
+h3 Inline list
+
+ul.list-inline
+	+repeat(5)
+		li
+			+lipsum-words(3)
+			

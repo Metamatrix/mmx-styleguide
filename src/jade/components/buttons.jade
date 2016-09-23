@@ -1,0 +1,26 @@
+include ../includes/mixins
+
+.btn-list
+	+btn('Primary button', 'primary')
+	+btn('Primary inverted button', 'primary-inverted')
+	+btn('Default button', 'default')
+	+btn('Link button', 'link')
+
+h3 Button sizes
+
+p
+	+btn('Large button', 'primary')(class="btn-lg")
+p
+	+btn('Default button', 'primary')
+p
+	+btn('Small button', 'primary')(class="btn-sm")
+p
+	+btn('Block button', 'primary')(class="btn-block")
+
+h3 Disabled buttons
+
+.btn-list
+	+btn('Primary button', 'primary')(disabled=true)
+	+btn('Primary inverted button', 'primary-inverted')(disabled=true)
+	+btn('Default button', 'default')(disabled=true)
+	
