@@ -9,14 +9,19 @@
       "color": "#77a240"
     },
     {
-      "name": "red",
-      "displayName": "Red",
-      "color": "#e43300"
+      "name": "bright-green",
+      "displayName": "Bright Green",
+      "color": "#8dc63f"
+    },
+    {
+      "name": "key-lime-pie",
+      "displayName": "Key Lime Pie",
+      "color": "#c1d630"
     },
     {
       "name": "gray",
       "displayName": "Gray",
-      "color": "#78786e"
+      "color": "#646565"
     },
     {
       "name": "gray-light",
@@ -35,8 +40,8 @@
     }
   ],
   "icons": {
-    "className": "icon",
-    "prefix": "icon-"
+    "className": "fa",
+    "prefix": "fa-"
   },
   "images": {
     "phBgColor": "CCC",

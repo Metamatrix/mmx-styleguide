@@ -51,4 +51,31 @@ ul.list-inline
 	+repeat(5)
 		li
 			+lipsum-words(3)
-			
+
+
+h3 Description list
+
+dl
+	+repeat(4)
+		dt 
+			+lipsum-words(2)
+		dd
+			+lipsum-words(10)
+
+h3 Horizontal description list
+
+dl.dl-horizontal
+	+repeat(4)
+		dt 
+			+lipsum-words(2)
+		dd
+			+lipsum-words(10)
+
+h3 Link list with icons
+
+ul.link-list
+	+repeat(5)
+		li
+			a.icon-link
+				+icon("chevron-right")
+				+lipsum-words(3)
