@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         options: {
           replace: false
         },
-        src: 'dist/css/main.css',
-        dest: 'dist/css/main.css'
+        src: 'dist/styles/main.css',
+        dest: 'dist/styles/main.css'
       }
     },
 
