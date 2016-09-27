@@ -57,8 +57,9 @@ module.exports = function(grunt) {
         files: {
           'dist/scripts/script.min.js': [
             // Include:
-            'src/scripts/vendor/*.js',
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions/inputfile.js',
+            'src/scripts/vendor/*.js',
             'src/scripts/enhancers/*.js',
             'src/scripts/handlers/*.js',
             'src/scripts/*.js'

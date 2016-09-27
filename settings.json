@@ -45,7 +45,7 @@
   },
   "images": {
     "phBgColor": "CCC",
-    "phFrontColor": "333",
+    "phFgColor": "333",
     "sizes": [
       { 
         "name": "16:9",

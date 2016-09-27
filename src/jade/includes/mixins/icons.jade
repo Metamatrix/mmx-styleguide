@@ -6,3 +6,15 @@ mixin icon(name)
 		-cssClass += " " + attributes.class;
 
 	span(class=cssClass,aria-hidden="true")
+
+mixin icon-circle(name)
+	-var cssClass = settings.icons.className + " " + settings.icons.prefix + name;
+
+	-if(attributes.class) 
+		-cssClass += " " + attributes.class;
+
+	-cssClass += " fa-stack-1x fa-inverse";
+
+	span.fa-stack
+		span.fa.fa-circle.fa-stack-2x
+		span(class=cssClass,aria-hidden="true")

@@ -108,7 +108,7 @@ var mmxappname = $(".mmx-componentlibrary").data("appname");
 var rssfoundmatches = false;
 
 $("#rss-feeds").rss(
-    "https://github.com/Metamatrix/MmxComponentLib/commits/master.atom?token=AF6z2jWhqZt8O44ww1eMs0Gw8yrF_Dp3ks61QacrwA%3D%3D",
+    "https://github.com/Metamatrix/mmx-styleguide/commits/master.atom?token=AF6z2jWhqZt8O44ww1eMs0Gw8yrF_Dp3ks61QacrwA%3D%3D",
   {
     // how many entries do you want?
     // default: 4
