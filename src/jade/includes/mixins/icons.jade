@@ -1,27 +1,8 @@
 //- Icons
 mixin icon(name)
-	-var cssClass = attributes.class ? "fa #{settings.icons.prefix}" + name + " " + attributes.class : "fa #{settings.icons.prefix}" + name;
+	-var cssClass = settings.icons.className + " " + settings.icons.prefix + name;
+
+	-if(attributes.class) 
+		-cssClass += " " + attributes.class;
+
 	span(class=cssClass,aria-hidden="true")
-	
-mixin icon-primary(name)
-	span.text-primary(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-
-mixin icon-secondary(name)
-	span.text-secondary(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-
-mixin icon-info(name)
-	span.text-info(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-	
-mixin icon-warning(name)
-	span.text-warning(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-	
-mixin icon-danger(name)
-	span.text-danger(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-	
-mixin icon-success(name)
-	span.text-success(class="#{settings.icons.className} #{settings.icons.prefix}#{name}",aria-hidden="true")
-	
-mixin icon-circle(name)
-	span(class="#{settings.icons.prefix}stack" + attributes.class, aria-hidden="true")
-		span(class="fa #{settings.icons.prefix}circle #{settings.icons.prefix}stack-2x")
-		span(class="fa #{settings.icons.prefix}#{name} #{settings.icons.prefix}stack-1x fa-inverse")
