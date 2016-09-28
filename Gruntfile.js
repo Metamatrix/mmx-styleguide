@@ -139,7 +139,10 @@ module.exports = function(grunt) {
     // Watch options: what tasks to run when changes to files are saved
     watch: {
       grunt: { files: ['Gruntfile.js'] },
-      settings: { files: ['settings.json'] },
+      settings: { 
+        files: ['settings.json'],
+        task: ['dev'] 
+      },
       // options: {},
       css: {
         files: ['src/sass/**/*.scss'],
@@ -151,7 +154,7 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/jade/**/*.jade'], // Watch for changes in JS files
-        tasks: ['jade'],
+        tasks: ['jade']
       },
       // html: {
       //   options: {
