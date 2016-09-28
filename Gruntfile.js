@@ -93,12 +93,12 @@ module.exports = function(grunt) {
             debug: true,
             // these are global project settings passed to the views
             settings: globalSettings
-          }          
+          }
         },
         files: [{
           expand: true, // setting to true enables the following options
           cwd: 'src/jade', // src matches are relative to this path
-          //src: [',*.jade'], 
+          //src: [',*.jade'],
           src: ['*.jade'], // matches *.jade in cwd and 1 level down
           dest: 'dist', // destination prefix
           ext: '.html' // replace existing extensions with this value
@@ -139,9 +139,9 @@ module.exports = function(grunt) {
     // Watch options: what tasks to run when changes to files are saved
     watch: {
       grunt: { files: ['Gruntfile.js'] },
-      settings: { 
+      settings: {
         files: ['settings.json'],
-        task: ['dev'] 
+        task: ['dev']
       },
       // options: {},
       css: {
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/jade/**/*.jade'], // Watch for changes in JS files
-        tasks: ['jade']
+        tasks: ['jade', 'validation']
       },
       // html: {
       //   options: {
@@ -176,6 +176,20 @@ module.exports = function(grunt) {
         files: ['dist/**/*'],
         port: 1337
       },
+    },
+    validation: {
+      options: {
+        reset: grunt.option('reset') || false,
+        stoponerror: false,
+        generateReport: true,
+        errorHTMLRootDir: 'reports',
+        reportpath: 'reports/validation-report.json',
+        path: 'reports/validation-status.json'
+      },
+      files: {
+          src: ['dist/*.html'],
+          tasks: ['validation']
+      }
     }
   });
 
@@ -186,6 +200,13 @@ module.exports = function(grunt) {
     'sass',
     'autoprefixer:dev',
     'pixrem'
+  ]);
+
+  /**
+   * HTML tasks
+   */
+  grunt.registerTask('html', [
+    'jade'
   ]);
 
   /**
@@ -207,6 +228,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('dev', [
     'css',
+    'html',
     'javascript',
     'images',
     'copy',
@@ -221,13 +243,13 @@ module.exports = function(grunt) {
   grunt.event.on('watch', function(action, filepath, target) {
     if(filepath === 'settings.json') {
       globalSettings = grunt.file.readJSON('settings.json');
-      
+
       // Generate colors
 
       var content = '// Colors\n\r// Auto generated at ' + (new Date()).toLocaleString() + '\n\n';
 
       content += globalSettings.colors.map(function(clr) {
-        return '$' + clr.name + ':\t\t\t' + clr.color + '; // ' + clr.displayName + '\n'; 
+        return '$' + clr.name + ':\t\t\t' + clr.color + '; // ' + clr.displayName + '\n';
       }).join('');
 
       grunt.file.write('src/sass/_application-colors.scss', content);
@@ -238,7 +260,7 @@ module.exports = function(grunt) {
       content = '// Margins\n\r// Auto generated at ' + (new Date()).toLocaleString() + '\n\n';
 
       content += globalSettings.margins.map(function(mrgn) {
-        return '$margin-' + mrgn.name + ':\t\t\t' + mrgn.margin + '; // ' + mrgn.displayName + '\n'; 
+        return '$margin-' + mrgn.name + ':\t\t\t' + mrgn.margin + '; // ' + mrgn.displayName + '\n';
       }).join('');
 
       grunt.file.write('src/sass/_application-margins.scss', content);

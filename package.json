@@ -19,6 +19,7 @@
     "grunt-pixrem": "^0.1.2",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
+    "grunt-w3c-html-validation": "^0.1.8",
     "matchdep": "*",
     "mmx-bootstrap-extensions": "^1.0.0",
     "node-sass": "^2.1.1"
