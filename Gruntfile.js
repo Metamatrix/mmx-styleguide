@@ -151,7 +151,7 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/jade/**/*.jade'], // Watch for changes in JS files
-        tasks: ['jade']
+        tasks: ['jade'],
       },
       // html: {
       //   options: {
@@ -165,6 +165,13 @@ module.exports = function(grunt) {
       copy: {
         files: ['src/**/<%= copyFiles %>'],
         tasks: ['copy']
+      },
+      livereload: {
+        // Here we watch the files the sass task will compile to
+        // These files are sent to the live reload server after sass compiles to them
+        options: { livereload: true },
+        files: ['dist/**/*'],
+        port: 1337
       },
     }
   });
