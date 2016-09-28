@@ -4,39 +4,34 @@
   "stylesPath": "styles/",
   "colors": [
     {
-      "name": "green",
-      "displayName": "Green",
-      "color": "#77a240"
+      "name": "apple",
+      "displayName": "Apple",
+      "color": "#9ed355"
     },
     {
-      "name": "bright-green",
-      "displayName": "Bright Green",
-      "color": "#8dc63f"
+      "name": "tomato",
+      "displayName": "Tomato",
+      "color": "#e74c3c"
     },
     {
-      "name": "key-lime-pie",
-      "displayName": "Key Lime Pie",
-      "color": "#c1d630"
+      "name": "lemon",
+      "displayName": "Lemon",
+      "color": "#e2e55d"
     },
     {
       "name": "gray",
       "displayName": "Gray",
-      "color": "#646565"
+      "color": "#8a8a8a"
     },
     {
       "name": "gray-light",
       "displayName": "Gray light",
-      "color": "#C8C8BE"
-    },
-    {
-      "name": "gray-lighter",
-      "displayName": "Gray lighter",
-      "color": "#f2f2f2"
+      "color": "#f6f6f6"
     },
     {
       "name": "gray-dark",
       "displayName": "Gray Dark",
-      "color": "#2A2726"
+      "color": "#3d3d3d"
     }
   ],
   "icons": {
