@@ -177,6 +177,8 @@ module.exports = function(grunt) {
         port: 1337
       },
     },
+
+    //HTML validation
     validation: {
       options: {
         reset: grunt.option('reset') || false,
