@@ -120,12 +120,12 @@ h4.mmx-docs-heading {
     transition: transform 500ms ease;
 
 	a {
-		color:$gray-dark;
-		display:block;
+		color: $gray-dark;
+		display: block;
 		padding: 10px 15px;
 		
 		&:hover {
-			background: $brand-primary;
+			background: $apple;
 		}
 		
 		&:hover, &:focus {
@@ -153,7 +153,7 @@ h4.mmx-docs-heading {
 		background: rgba(240,240,240,0.8);
 		
 		> a {
-			border-right:3px solid $brand-primary;
+			border-right:3px solid $apple;
 		}
 	}
 	
@@ -231,7 +231,7 @@ h4.mmx-docs-heading {
 	
 	&.active {
 		opacity:0.8;
-		color:$brand-primary;
+		color:$apple;
 	}
 	
 	
@@ -281,7 +281,7 @@ h4.mmx-docs-heading {
 	bottom:0;
 	
 	.fa {
-		color: $brand-primary;
+		color: $apple;
 		margin-right:3px;
 	}
 	
