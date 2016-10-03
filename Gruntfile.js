@@ -210,7 +210,7 @@ module.exports = function(grunt) {
           //Here we can specify which errors or warnings to ignore. e.g "'-W015': true"
         }
       },
-      target: ['src/scripts/*.js', 'src/scripts/styleguide/*.js']
+      target: ['src/scripts/*.js']
     }
   });
 
