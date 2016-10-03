@@ -192,6 +192,25 @@ module.exports = function(grunt) {
           src: ['dist/*.html'],
           tasks: ['validation']
       }
+    },
+
+    //JavaScript validation
+    jshint: {
+      options: {
+        reporter: require('jshint-html-reporter'),
+        reporterOutput: 'reports/js/jshint-report.html',
+        force: false, //If set to true it will report errors but not fail the task
+        ignores: ['src/scripts/vendor/*.js', 'src/scripts/styleguide/*.min.js'],
+        globals: {
+          jQuery: true
+        }
+      },
+      ignore_warning: {
+        options: {
+          //Here we can specify which errors or warnings to ignore. e.g "'-W015': true"
+        }
+      },
+      target: ['src/scripts/*.js', 'src/scripts/styleguide/*.js']
     }
   });
 
@@ -215,6 +234,7 @@ module.exports = function(grunt) {
    * JavaScript tasks
    */
   grunt.registerTask('javascript', [
+    'jshint',
     'uglify:dev'
   ]);
 

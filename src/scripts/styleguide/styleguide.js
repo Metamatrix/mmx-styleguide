@@ -4,45 +4,45 @@
 
 //create nav list
 $(".mmx-docs-chapter").each(function(){
-    
+
     //remove spaces from id
-    
+
     var chapter_heading = $(this).find("h2.mmx-docs-heading");
-    
+
     var newid = chapter_heading.attr("id").replace(/ /g,'');
-    
+
     chapter_heading.attr("id", newid);
-    
+
     //create links for nav
     var nav_name = chapter_heading.text();
     var link_text = nav_name.replace(/ /g,'');
-    
-    
+
+
     $("#mmx-document-nav > ul").append(
-      "<li><a href='#"+link_text+"'>"+ nav_name +"</a><ul class='subnav'></ul></li>"   
+      "<li><a href='#"+link_text+"'>"+ nav_name +"</a><ul class='subnav'></ul></li>"
     );
-    
+
     //create subnav
-    
+
     $(this).find("h3.mmx-docs-heading").each(function(index){
-        
+
         var newid = $(this).attr("id").replace(/ /g,'');
-    
+
         $(this).attr("id", newid);
-    
+
         //create links for nav
         var nav_name = $(this).text();
         var link_text = nav_name.replace(/ /g,'');
-        
-        
+
+
         $(".subnav").last().append(
-            
-        "<li><a href='#"+link_text+"'>"+ nav_name +"</a></li>"  
+
+        "<li><a href='#"+link_text+"'>"+ nav_name +"</a></li>"
         );
-        
-        
+
+
     });
-    
+
 });
 
 //smooth scroll
@@ -57,14 +57,14 @@ $('a').click(function(){
 //copy url to clipboard
 
 $("h3.mmx-docs-heading button").each(function(){
-    
+
    var url = [location.protocol, '//', location.host, location.pathname].join('');
    var datavalue = url+$(this).data("clipboard-text").replace(/ /g,'');
-   
+
    $(this).attr("data-clipboard-text", datavalue);
 
-  
-    
+
+
 });
 
 new Clipboard('.btn');
@@ -82,18 +82,18 @@ else {
 }
 
 $("#mmx-docs-toggle-button").click(function(){
-    
+
         $(this).toggleClass("active");
- 
+
         if (!Cookies.get('nav-pinned') || Cookies.get('nav-pinned') == "false") {
- 
+
             Cookies.set('nav-pinned', 'true');
-        } 
-        
+        }
+
         else {
             Cookies.set('nav-pinned', 'false');
         }
-           
+
         $("#mmx-document-nav").toggleClass("mmx-document-nav-slide-left");
     }
 );
@@ -114,15 +114,15 @@ $("#rss-feeds").rss(
     // default: 4
     // valid values: any integer
     limit: 100,
-    
+
     filterLimit: 1,
     filter: function(entry, tokens) {
-        
+
 
         if(tokens.title.indexOf(mmxappname) > -1) {
             rssfoundmatches = true;
         }
-        
+
         return tokens.title.indexOf(mmxappname) > -1
     },
 
@@ -141,9 +141,9 @@ $("#rss-feeds").rss(
     // default: 'show'
     // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
     effect: 'slideFastSynced',
-    
+
     onData: function(){
-        
+
 
     }
   },
@@ -151,10 +151,10 @@ $("#rss-feeds").rss(
   // callback function
   // called after feeds are successfully loaded and after animations are done
   function callback() {
-        
+
         if (!rssfoundmatches) {
             $(".mmx-docs-feed-container").hide();
-        }    
-      
+        }
+
   }
 )

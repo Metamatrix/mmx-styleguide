@@ -6,13 +6,13 @@
 			btn = $(element);
 
 		function setLoadingState() {
-		
+
 			if(!settings.condition()) {
 				return;
 			}
 
 			console.log(settings)
-			
+
 			if(settings.loadingClass) {
 				btn.addClass(settings.loadingClass);
 			}
@@ -42,11 +42,11 @@
 			if(settings.loadingClass) {
 				btn.removeClass(settings.loadingClass);
 			}
-			
+
 			if(settings.disable) {
 				btn.prop("disabled", false);
 			}
-			
+
 			var isInput = btn.is("input"),
 				defaultText = btn.data("default-text");
 
@@ -56,7 +56,7 @@
 				} else {
 					btn.text(defaultText);
 				}
-				
+
 			}
 		}
 
@@ -77,7 +77,7 @@
 	$.fn.loadingButton = function(options) {
 
 		return $(this).each(function() {
-			
+
 			new $.loadingButton(this, options);
 
 		});
