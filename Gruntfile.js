@@ -154,7 +154,7 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/jade/**/*.jade'], // Watch for changes in JS files
-        tasks: ['jade', 'validation']
+        tasks: ['jade']
       },
       // html: {
       //   options: {
