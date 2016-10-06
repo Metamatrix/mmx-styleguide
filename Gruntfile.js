@@ -185,8 +185,8 @@ module.exports = function(grunt) {
         stoponerror: false,
         generateReport: true,
         errorHTMLRootDir: 'reports',
-        reportpath: 'reports/validation-report.json',
-        path: 'reports/validation-status.json'
+        reportpath: 'reports/html/validation-report.json',
+        path: 'reports/html/validation-status.json'
       },
       files: {
           src: ['dist/*.html'],
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
         bitwise: true, //prohibits the use of bitwise operators such as "|", as they are often mistyped.
         curly: true, //requires you to always put curly braces around blocks in loops & conditionals
         eqeqeq: true, //prohibits the use of == and != instead of === and !==
-        //esversion: 3, //specifies ES version to which the code must adhere. 3 = program needs to be executable in older browsers.
+        esversion: 5, //specifies ES version to which the code must adhere. 3 = program needs to be executable in older browsers.
         latedef: true, //prohibits the use of a variable before it was defined.
         futurehostile: true, //enables warnings about the use of identifiers which are defined in future versions of JS.
         freeze: true, //prohibits overwriting prototypes of native objects such as Array, Date and so on.
@@ -224,7 +224,22 @@ module.exports = function(grunt) {
         }
       },
       target: ['src/scripts/*.js']
+    },
+
+    //Accessibility test - output to terminal
+ /* a11y: {
+      dev: {
+        options: {
+          urls: ['dist/*.html']
+        }
+      }
+    },*/
+
+    //Accessibility test - execute command for generating report. (for this to work: npm install --global a11y)
+    exec: {
+        command: 'a11y dist/*.html > reports/html/accessibility-audit.txt'
     }
+
   });
 
   /**
@@ -246,6 +261,11 @@ module.exports = function(grunt) {
   grunt.registerTask('html-validation', [
     'jade',
     'validation'
+  ]);
+
+  grunt.registerTask('accessibility-audit', [
+    //'a11y:dev',
+    'exec'
   ]);
 
   /**
@@ -284,6 +304,7 @@ module.exports = function(grunt) {
     'javascript-validation',
     'images',
     'copy',
+    'accessibility-audit'
   ]);
 
   /**
