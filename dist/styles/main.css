@@ -5979,7 +5979,6 @@ a.bg-secondary:focus {
 
 .card-inverse .card-header,
 .card-inverse .card-footer {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 0.075rem solid rgba(255, 255, 255, 0.2); }
 
 .card-inverse .card-header,
@@ -6011,13 +6010,11 @@ a.bg-secondary:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
   padding: 1.25rem; }
 
 .card-deck {
   display: table;
   table-layout: fixed;
-  border-spacing: 20px 0;
   border-spacing: 1.25rem 0; }
   .card-deck .card {
     display: table-cell;
@@ -6025,9 +6022,7 @@ a.bg-secondary:focus {
     vertical-align: top; }
 
 .card-deck-wrapper {
-  margin-right: -20px;
   margin-right: -1.25rem;
-  margin-left: -20px;
   margin-left: -1.25rem; }
 
 .card-group {
@@ -6045,11 +6040,8 @@ a.bg-secondary:focus {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3;
-  -webkit-column-gap: 20px;
   -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 20px;
      -moz-column-gap: 1.25rem;
-          column-gap: 20px;
           column-gap: 1.25rem; }
   .card-columns .card {
     display: inline-block;
@@ -6425,7 +6417,6 @@ a.bg-secondary:focus {
       border-left: none; } }
 
 .icon-link span:first-child {
-  margin-right: 4px;
   margin-right: 0.25rem; }
 
 .label-secondary {
@@ -7144,4 +7135,3 @@ a.link-block .link-block-item:hover {
   display: table;
   margin-left: auto;
   margin-right: auto; }
-

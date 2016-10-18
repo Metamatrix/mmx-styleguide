@@ -20,6 +20,10 @@ module.exports = function(grunt) {
       }
     },
 
+    dirs: {
+      output: 'dev'
+    },
+
     sass: {
       options: {
         outputStyle: 'nested',
@@ -33,6 +37,15 @@ module.exports = function(grunt) {
         files: {
           'dist/styles/main.css': 'src/sass/main.scss',
           'dist/styles/styleguide.css': 'src/sass/styleguide/styleguide.scss'
+        }
+      },
+      dist: {
+        files: {
+          'dist/styles/main.css': 'src/sass/main.scss',
+          'dist/styles/styleguide.css': 'src/sass/styleguide/styleguide.scss'
+        },
+        options: {
+          outputStyle: 'compressed'
         }
       }
     },
@@ -48,6 +61,26 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      dist: {
+        files: {
+          'dist/scripts/script.min.js': [
+            // Include:
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions/inputfile.js',
+            'src/scripts/vendor/*.js',
+            'src/scripts/enhancers/*.js',
+            'src/scripts/handlers/*.js',
+            'src/scripts/*.js'
+          ],
+            'dist/scripts/modernizr.min.js': 'src/scripts/vendor/modernizr.min.js',
+            'dist/scripts/styleguide.min.js': [
+            'src/scripts/styleguide/clipboard.min.js',
+            'src/scripts/styleguide/moment.js',
+            'src/scripts/styleguide/js.cookie.js',
+            'src/scripts/styleguide/styleguide.js'
+          ]
+        }
+      },
       dev: {
         options: {
           beautify: true,
@@ -87,13 +120,26 @@ module.exports = function(grunt) {
     },
 
     jade: {
-      compile: {
+      options: {
+        data: {
+        debug: true,
+        // these are global project settings passed to the views
+        settings: globalSettings
+        }
+      },
+      dist: {
+        files: [{
+          expand: true, // setting to true enables the following options
+          cwd: 'src/jade', // src matches are relative to this path
+          //src: [',*.jade'],
+          src: ['*.jade'], // matches *.jade in cwd and 1 level down
+          dest: 'dist', // destination prefix
+          ext: '.html' // replace existing extensions with this value
+        }]
+      },
+      dev: {
         options: {
-          data: {
-            debug: true,
-            // these are global project settings passed to the views
-            settings: globalSettings
-          }
+          pretty: true
         },
         files: [{
           expand: true, // setting to true enables the following options
@@ -128,7 +174,7 @@ module.exports = function(grunt) {
       options: {
         browsers: ['last 2 version', 'ie 9']
       },
-      prod: {
+      dist: {
         src: 'dist/**/*.css'
       },
       dev: {
@@ -146,15 +192,15 @@ module.exports = function(grunt) {
       // options: {},
       css: {
         files: ['src/sass/**/*.scss'],
-        tasks: ['css'] // Compile with Compass when Sass changes are saved
+        tasks: ['css-<%= dirs.output %>'] // Compile with Compass when Sass changes are saved
       },
       js: {
         files: ['src/scripts/**/*.js'], // Watch for changes in JS files
-        tasks: ['javascript']
+        tasks: ['javascript-<%= dirs.output %>']
       },
       jade: {
         files: ['src/jade/**/*.jade'], // Watch for changes in JS files
-        tasks: ['jade']
+        tasks: ['html-<%= dirs.output %>']
       },
       // html: {
       //   options: {
@@ -245,39 +291,60 @@ module.exports = function(grunt) {
   /**
    * CSS tasks
    */
-  grunt.registerTask('css', [
-    'sass',
+  grunt.registerTask('css-dev', [
+    'sass:dev',
     'autoprefixer:dev',
+  ]);
+
+  grunt.registerTask('css-dist', [
+    'sass:dist',
+    'autoprefixer:dist',
     'pixrem'
   ]);
 
   /**
    * HTML tasks
    */
-  grunt.registerTask('html', [
-    'jade'
+  grunt.registerTask('html-dev', [
+    'jade:dev'
   ]);
 
-  grunt.registerTask('html-validation', [
-    'jade',
-    'validation'
+  grunt.registerTask('html-dist', [
+    'jade:dist'
   ]);
 
-  grunt.registerTask('accessibility-audit', [
-    //'a11y:dev',
+
+  grunt.registerTask('html-dev-validate', [
+    'jade:dev',
+    'validation',
+    'exec'
+  ]);
+
+  grunt.registerTask('html-dist-validate', [
+    'jade:dist',
+    'validation',
     'exec'
   ]);
 
   /**
    * JavaScript tasks
    */
-  grunt.registerTask('javascript', [
+  grunt.registerTask('javascript-dev', [
     'uglify:dev'
   ]);
 
-  grunt.registerTask('javascript-validation', [
-    'jshint',
-    'uglify:dev'
+  grunt.registerTask('javascript-dist', [
+    'uglify:dist'
+  ]);
+
+  grunt.registerTask('javascript-dev-validate', [
+    'uglify:dev',
+    'jshint'
+  ]);
+
+  grunt.registerTask('javascript-dist-validate', [
+    'uglify:dist',
+    'jshint'
   ]);
 
   /**
@@ -291,26 +358,50 @@ module.exports = function(grunt) {
    * Dev task
    */
   grunt.registerTask('dev', [
-    'css',
-    'html',
-    'javascript',
+    'css-dev',
+    'html-dev',
+    'javascript-dev',
+    'copy',
+  ]);
+
+  /**
+ * Dist task
+ */
+  grunt.registerTask('dist', [
+    'css-dist',
+    'html-dist',
+    'javascript-dist',
     'images',
     'copy',
   ]);
 
-  grunt.registerTask('dev-validation', [
-    'css',
-    'html-validation',
-    'javascript-validation',
-    'images',
-    'copy',
-    'accessibility-audit'
+  /**
+ * Validation task
+ */
+  grunt.registerTask('validate', [
+    'validation',
+    'exec',
+    'jshint'
   ]);
 
   /**
    * Default Tasks
    */
-  grunt.registerTask('serve', ['connect', 'dev', 'watch']);
+  //grunt.registerTask('serve', ['connect', 'dev', 'watch']);
+
+  grunt.registerTask('serve', 'Run tasks', function(task1, task2) {
+    if (arguments.length === 0) {
+        grunt.task.run('connect', 'dev', 'watch');
+    }
+    else if (task2 == undefined){
+        grunt.config.set('dirs.output', task1);
+        grunt.task.run('connect', task1, 'watch');
+    }
+    else {
+        grunt.config.set('dirs.output', task1 + '-' + task2)
+        grunt.task.run('connect', task1, task2, 'watch');
+    }
+  });
 
   // Generate variable files when settings is changed
   grunt.event.on('watch', function(action, filepath, target) {

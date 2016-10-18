@@ -26,7 +26,8 @@
     "jshint-html-reporter": "^0.2.4",
     "matchdep": "*",
     "mmx-bootstrap-extensions": "^1.0.0",
-    "node-sass": "^2.1.1"
+    "node-sass": "^2.1.1",
+    "pug": "^2.0.0-beta6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
