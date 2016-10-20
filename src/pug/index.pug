@@ -1,0 +1,123 @@
+﻿extends layouts/styleguide
+
+block content
+
+	section.mmx-docs-chapter
+
+		+docs-heading("Profile")
+
+		+doc-section("Fonts")
+			include components/fonts
+
+		+doc-section("Colors")
+			include components/colors
+
+		+doc-section("Logotypes")
+			include components/logotype
+
+		+doc-section("Margins")
+			include components/margins
+
+		+doc-section("Icons")
+			include components/icons
+
+		+doc-section("Images")
+			include components/images
+
+
+	section.mmx-docs-chapter
+
+		+docs-heading("Components")
+
+		+doc-section("Headings")
+			include components/headings
+
+		+doc-section("Body text")
+			include components/body-text
+
+		+doc-section("Lead text")
+			include components/lead-text
+
+		+doc-section("Small text")
+			include components/small-text
+
+		+doc-section("Link text")
+			include components/links
+
+		+doc-section("Text alignment")
+			include components/text-alignment
+
+		+doc-section("Text helpers")
+			include components/text-helpers
+
+		+doc-section("Blockquote")
+			include components/blockquote
+
+		+doc-section("Lists")
+			include components/lists
+
+		+doc-section("Tables")
+			include components/tables
+
+		+doc-section("Forms")
+			include components/forms
+
+		+doc-section("Buttons")
+			include components/buttons
+
+		+doc-section("Video")
+			include components/video
+
+		+doc-section("Breadcrumbs")
+			include components/breadcrumb
+
+		+doc-section("Pagination")
+			include components/pagination
+
+		+doc-section("Alert")
+			include components/alerts
+
+		+doc-section("Lables")
+			include components/labels
+
+		+doc-section("Cards")
+			include components/cards
+
+		+doc-section("Dropdowns")
+			include components/dropdowns
+
+		+doc-section("Tabs")
+			include components/nav-tabs
+
+		+doc-section("Navbar")
+			include components/navbar
+
+		+doc-section("Navtree")
+			include components/navtree
+
+		+doc-section("Media object")
+			include components/media-object
+
+
+
+	section.mmx-docs-chapter
+		+docs-heading("Compositions")
+
+		+doc-section-no-container("Site header")
+			include compositions/header
+
+		+doc-section-no-container("Site footer")
+			include compositions/footer
+
+		+doc-section-no-container("Site search")
+			include compositions/site-search
+
+	section.mmx-docs-chapter
+
+		+docs-heading("Templates")
+
+		+doc-section("Pages")
+			ul.list-unstyled.mmx-docs-link-list
+				for name, fileName in settings.templates
+					li
+						a(href=fileName + ".html")= name

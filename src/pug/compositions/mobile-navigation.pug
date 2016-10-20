@@ -1,0 +1,37 @@
+﻿mixin list-item(listItemClass, text)
+	li
+		a(href="") 
+			if text
+				= text
+			else
+				+lipsum-words(2)
+
+nav#mobile-nav.mobile-nav(data-off-canvas-menu="true", class="off-canvas-menu off-canvas-left", aria-hidden="true", role="navigation")
+	button.close.sr-only
+		+icon("close")
+		span.sr-only Stäng
+	.off-canvas-content
+		form(class="site-search",role="search")
+			.input-group.input-group-xs
+				label(for="sitesearchmobile").sr-only Sök på IQS.se
+				input(type="text",class="form-control",placeholder="Sök på IQS.se")#sitesearchmobile
+				span.input-group-btn
+					button(type="submit",class="btn-search btn btn-default")
+						+icon("search")
+						span.sr-only Sök
+		ul.list-unstyled.mobile-navigation-list
+			+repeat(4)
+				li
+					a(href="")
+						+lipsum-words(3)
+						
+			li.active
+				a(href="")
+					+lipsum-words(3)
+						+repeat(4)
+			li
+				a(href="")
+					+lipsum-words(3)
+					
+						
+	

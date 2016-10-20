@@ -1,0 +1,109 @@
+include ../includes/mixins
+
+div(style="max-width:300px")
+
+	.card.card-default
+		+img-ph(300, 200)(class="card-img-top",alt="Card top image")
+		.card-block
+			h4.card-title Card title
+			p.card-text
+				| Some quick example text to build on the card title and make up the bulk of the card's content.
+			a.btn.btn-primary(href='#') Button
+
+	h3 Simple card
+
+	.card.card-default
+		+img-ph(300, 200)(class="card-img-top",alt="Card top image")
+		.card-block
+			p.card-text
+			| Some quick example text to build on the card title and make up the bulk of the card's content.
+
+	h3 Card with title and text
+
+	.card.card-block.card-default
+		h4.card-title Card title
+		p.card-text
+			| Some quick example text to build on the card title and make up the bulk of the card's content.
+		a.card-link(href='#') Card link
+		a.card-link(href='#') Another link
+
+	h3 Card with header and footer
+
+	.card.text-center.card-default
+		.card-header
+			| Featured
+		.card-block
+			h4.card-title Special title treatment
+			p.card-text With supporting text below as a natural lead-in to additional content.
+			a.btn.btn-primary(href='#') Go somewhere
+		.card-footer.text-muted
+			| 2 days ago
+
+	h3 Card with background image
+
+	.card.card-inverse
+		+img-ph(300, 300, "333", "666")(alt='Card image')
+		.card-img-overlay
+			h4.card-title Card title
+			p.card-text
+				| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+			p.card-text
+				small.text-muted Last updated 3 mins ago
+
+	h3 Card with inversed text
+
+	.card.card-inverse(style='background-color: #333; border-color: #333;')
+		.card-block
+			h3.card-title Special title treatment
+			p.card-text With supporting text below as a natural lead-in to additional content.
+			a.btn.btn-primary(href='#') Button
+
+	h3 Card background colors
+
+	.card.card-inverse.card-primary.text-center
+		.card-block
+			.card-title
+				| Primary 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-secondary.text-center
+		.card-block
+			.card-title
+				| Secondary 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-success.text-center
+		.card-block
+			.card-title
+				| Success 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-info.text-center
+		.card-block
+			.card-title
+				| Info 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-warning.text-center
+		.card-block
+			.card-title
+				| Warning 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-danger.text-center
+		.card-block
+			.card-title
+				| Danger 
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)

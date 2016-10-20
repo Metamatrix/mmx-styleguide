@@ -1,0 +1,17 @@
+﻿mixin img-ph(width, height, bgColor, frontColor)
+
+    unless bgColor
+        - var bgColor = settings.images.phBgColor
+    unless frontColor
+        - var frontColor = settings.images.phFgColor
+
+    img(src="http://placehold.it/"+ width + "x" + height+ "/" + bgColor+ "/" + frontColor)&attributes(attributes)
+
+mixin img-ph-circle(width, height, bgColor, frontColor)
+
+    unless bgColor
+        - var bgColor = settings.images.phBgColor
+    unless frontColor
+        - var frontColor = settings.images.phFgColor
+
+    img.img-circle(src="http://placehold.it/"+ width + "x" + height+ "/" + bgColor+ "/" + frontColor)&attributes(attributes)
