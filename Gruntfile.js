@@ -72,7 +72,6 @@ module.exports = function(grunt) {
             'src/scripts/handlers/*.js',
             'src/scripts/*.js'
           ],
-            'dist/scripts/modernizr.min.js': 'src/scripts/vendor/modernizr.min.js',
             'dist/scripts/styleguide.min.js': [
             'src/scripts/styleguide/clipboard.min.js',
             'src/scripts/styleguide/moment.js',
@@ -97,7 +96,6 @@ module.exports = function(grunt) {
             'src/scripts/handlers/*.js',
             'src/scripts/*.js'
           ],
-          'dist/scripts/modernizr.min.js': 'src/scripts/vendor/modernizr.min.js',
           'dist/scripts/styleguide.min.js': [
             'src/scripts/styleguide/clipboard.min.js',
             'src/scripts/styleguide/moment.js',
