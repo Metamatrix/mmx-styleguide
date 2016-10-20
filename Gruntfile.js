@@ -284,6 +284,33 @@ module.exports = function(grunt) {
     //Accessibility test - execute command for generating report. (for this to work: npm install --global a11y)
     exec: {
         command: 'a11y dist/*.html > reports/html/accessibility-audit.txt'
+    },
+
+    //Modernizr configuration
+    modernizr: {
+      dist: {
+        crawl: false,
+        customTests: [],
+        dest: 'dist/scripts/modernizr.min.js',
+        tests:[
+          "touchevents",
+          "backgroundsize",
+          "boxshadow",
+          "csscolumns",
+          "flexbox",
+          "cssgradients",
+          "csspointerevents",
+          "cssremunit",
+          "rgba",
+          "textshadow",
+          "csstransforms",
+          "csstransitions",
+          "localstorage",
+          "inlinesvg"
+        ],
+        options: ["mq", "setClasses"],
+        uglify: true
+      }
     }
 
   });
@@ -373,6 +400,7 @@ module.exports = function(grunt) {
     'javascript-dist',
     'images',
     'copy',
+    'modernizr'
   ]);
 
   /**

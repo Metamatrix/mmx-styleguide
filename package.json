@@ -20,6 +20,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^1.0.1",
     "grunt-htmlhint": "0.9.12-fix",
+    "grunt-modernizr": "^1.0.2",
     "grunt-pixrem": "^0.1.2",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
