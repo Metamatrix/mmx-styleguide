@@ -1,5 +1,0 @@
-﻿include ../includes/mixins
-
-each image in settings.images.sizes
-	h3= image.name
-	+img-ph(image.width,image.height)(class=image.class, srcset="http://placehold.it/" + (image.width * 2) + "x" + (image.height * 2) + " 2x")

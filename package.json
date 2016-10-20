@@ -15,6 +15,7 @@
     "grunt-contrib-imagemin": "~0.4.0",
     "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^1.0.1",

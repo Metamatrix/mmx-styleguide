@@ -119,7 +119,7 @@ module.exports = function(grunt) {
       }
     },
 
-    jade: {
+    pug: {
       options: {
         data: {
         debug: true,
@@ -130,9 +130,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true, // setting to true enables the following options
-          cwd: 'src/jade', // src matches are relative to this path
-          //src: [',*.jade'],
-          src: ['*.jade'], // matches *.jade in cwd and 1 level down
+          cwd: 'src/pug', // src matches are relative to this path
+          //src: [',*.pug'],
+          src: ['*.pug'], // matches *.pug in cwd and 1 level down
           dest: 'dist', // destination prefix
           ext: '.html' // replace existing extensions with this value
         }]
@@ -143,9 +143,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true, // setting to true enables the following options
-          cwd: 'src/jade', // src matches are relative to this path
-          //src: [',*.jade'],
-          src: ['*.jade'], // matches *.jade in cwd and 1 level down
+          cwd: 'src/pug', // src matches are relative to this path
+          //src: [',*.pug'],
+          src: ['*.pug'], // matches *.pug in cwd and 1 level down
           dest: 'dist', // destination prefix
           ext: '.html' // replace existing extensions with this value
         }]
@@ -198,8 +198,8 @@ module.exports = function(grunt) {
         files: ['src/scripts/**/*.js'], // Watch for changes in JS files
         tasks: ['javascript-<%= dirs.output %>']
       },
-      jade: {
-        files: ['src/jade/**/*.jade'], // Watch for changes in JS files
+      pug: {
+        files: ['src/pug/**/*.pug'], // Watch for changes in JS files
         tasks: ['html-<%= dirs.output %>']
       },
       // html: {
@@ -306,22 +306,22 @@ module.exports = function(grunt) {
    * HTML tasks
    */
   grunt.registerTask('html-dev', [
-    'jade:dev'
+    'pug:dev'
   ]);
 
   grunt.registerTask('html-dist', [
-    'jade:dist'
+    'pug:dist'
   ]);
 
 
   grunt.registerTask('html-dev-validate', [
-    'jade:dev',
+    'pug:dev',
     'validation',
     'exec'
   ]);
 
   grunt.registerTask('html-dist-validate', [
-    'jade:dist',
+    'pug:dist',
     'validation',
     'exec'
   ]);
