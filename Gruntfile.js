@@ -387,6 +387,7 @@ module.exports = function(grunt) {
     'html-dev',
     'javascript-dev',
     'copy',
+    'modernizr:dist'
   ]);
 
   /**
@@ -398,7 +399,7 @@ module.exports = function(grunt) {
     'javascript-dist',
     'images',
     'copy',
-    'modernizr'
+    'modernizr:dist'
   ]);
 
   /**
