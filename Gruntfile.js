@@ -149,7 +149,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-
+    exportDest: 'export',
     copyFiles: '**/*.{eot,svg,ttf,woff,pdf}',
     copy: {
       target: {
@@ -163,6 +163,49 @@ module.exports = function(grunt) {
             filter: 'isFile'
           }
         ]
+      },
+      export:{
+        files:[
+        {
+          expand: true,
+          src: ['src/sass/**/*.scss'],
+          dest: '<%= exportDest %>/static/styles'
+        },
+        {
+          expand: true,
+          src: ['src/scripts/**/*.js'],
+          dest: '<%= exportDest %>/static/scripts'
+        },
+        {
+          expand: true,
+          src: ['src/images/**/*.{eot,svg,ttf,woff,pdf}'],
+          dest: '<%= exportDest %>/static/images'
+        },
+        {
+          expand: true,
+          src: ['src/fonts'],
+          dest: '<%= exportDest %>/static/fonts'
+        },
+        {
+          expand: true,
+          src: ['node_modules/bootstrap-sass/assets/stylesheets/**/*.scss'],
+          dest: '<%= exportDest %>/static/styles/bootstrap'
+        },
+        {
+          expand: true,
+          src: ['node_modules/bootstrap-sass/assets/javascripts/**/*.js'],
+          dest: '<%= exportDest %>/static/scripts/bootstrap'
+        },
+        {
+          expand: true,
+          src: ['node_modules/mmx-bootstrap-extensions/src/styles/**/*.scss'],
+          dest: '<%= exportDest %>/static/styles/bootstrap-extensions'
+        },
+        {
+          expand: true,
+          src: ['node_modules/mmx-bootstrap-extensions/src/scripts/**/*.js'],
+          dest: '<%= exportDest %>/static/scripts/bootstrap-extensions'
+        }]
       }
 
     },
@@ -211,7 +254,7 @@ module.exports = function(grunt) {
       },
       copy: {
         files: ['src/**/<%= copyFiles %>'],
-        tasks: ['copy']
+        tasks: ['copy:target']
       },
       livereload: {
         // Here we watch the files the sass task will compile to
@@ -309,7 +352,7 @@ module.exports = function(grunt) {
         options: ["mq", "setClasses"],
         uglify: true
       }
-    }
+    },
 
   });
 
@@ -380,13 +423,20 @@ module.exports = function(grunt) {
   ]);
 
   /**
+   * Export files task
+   */
+  grunt.registerTask('exportfiles', [
+    'copy:export'
+  ]);
+
+  /**
    * Dev task
    */
   grunt.registerTask('dev', [
     'css-dev',
     'html-dev',
     'javascript-dev',
-    'copy',
+    'copy:target',
     'modernizr'
   ]);
 
@@ -398,7 +448,7 @@ module.exports = function(grunt) {
     'html-dist',
     'javascript-dist',
     'images',
-    'copy',
+    'copy:target',
     'modernizr'
   ]);
 
@@ -425,8 +475,18 @@ module.exports = function(grunt) {
         grunt.task.run('connect', task1, 'watch');
     }
     else {
-        grunt.config.set('dirs.output', task1 + '-' + task2)
+        grunt.config.set('dirs.output', task1 + '-' + task2);
         grunt.task.run('connect', task1, task2, 'watch');
+    }
+  });
+
+  grunt.registerTask('export', 'export files', function(exportdir){
+    if(arguments.length === 0){
+      grunt.task.run('exportfiles');
+    }
+    else {
+      grunt.config.set('exportDest', exportdir);
+      grunt.task.run('exportfiles');
     }
   });
 
