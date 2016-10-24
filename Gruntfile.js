@@ -488,6 +488,9 @@ module.exports = function(grunt) {
     }
   });
 
+  /**
+   * Export task
+   */
   grunt.registerTask('export', 'export files', function(exportdir){
     if(arguments.length === 0){
       grunt.task.run('exportfiles');
