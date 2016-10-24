@@ -164,46 +164,55 @@ module.exports = function(grunt) {
           }
         ]
       },
+      //file export
       export:{
         files:[
         {
           expand: true,
-          src: ['src/sass/**/*.scss'],
+          cwd: 'src/sass',
+          src: '**/*.scss',
           dest: '<%= exportDest %>/static/styles'
         },
         {
           expand: true,
-          src: ['src/scripts/**/*.js'],
+          cwd: 'src/scripts',
+          src: '**/*.js',
           dest: '<%= exportDest %>/static/scripts'
         },
         {
           expand: true,
-          src: ['src/images/**/*.{eot,svg,ttf,woff,pdf}'],
+          cwd: 'src/images',
+          src: '**/*',
           dest: '<%= exportDest %>/static/images'
         },
         {
           expand: true,
-          src: ['src/fonts'],
+          cwd: 'src/fonts',
+          src: '**/*',
           dest: '<%= exportDest %>/static/fonts'
         },
         {
           expand: true,
-          src: ['node_modules/bootstrap-sass/assets/stylesheets/**/*.scss'],
+          cwd: 'node_modules/bootstrap-sass/assets/stylesheets',
+          src: '**/*.scss',
           dest: '<%= exportDest %>/static/styles/bootstrap'
         },
         {
           expand: true,
-          src: ['node_modules/bootstrap-sass/assets/javascripts/**/*.js'],
+          cwd: 'node_modules/bootstrap-sass/assets/javascripts',
+          src: '**/*.js',
           dest: '<%= exportDest %>/static/scripts/bootstrap'
         },
         {
           expand: true,
-          src: ['node_modules/mmx-bootstrap-extensions/src/styles/**/*.scss'],
+          cwd: 'node_modules/mmx-bootstrap-extensions/src/styles',
+          src: '**/*.scss',
           dest: '<%= exportDest %>/static/styles/bootstrap-extensions'
         },
         {
           expand: true,
-          src: ['node_modules/mmx-bootstrap-extensions/src/scripts/**/*.js'],
+          cwd: 'node_modules/mmx-bootstrap-extensions/src/scripts',
+          src: '**/*.js',
           dest: '<%= exportDest %>/static/scripts/bootstrap-extensions'
         }]
       }
@@ -380,7 +389,6 @@ module.exports = function(grunt) {
   grunt.registerTask('html-dist', [
     'pug:dist'
   ]);
-
 
   grunt.registerTask('html-dev-validate', [
     'pug:dev',
