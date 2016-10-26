@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
   require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
@@ -65,6 +66,10 @@ module.exports = function(grunt) {
         files: {
           'dist/scripts/script.min.js': [
             // Include:
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/jquery-validation/dist/jquery.validate.js',
+            'node_modules/jquery-ajax-unobrusive/jquery.unobtrusive-ajax.js',
+            'node_modules/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js',
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
             'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions/inputfile.js',
             'src/scripts/vendor/*.js',
@@ -216,7 +221,6 @@ module.exports = function(grunt) {
           dest: '<%= exportDest %>/static/scripts/bootstrap-extensions'
         }]
       }
-
     },
 
     // Will Automatically insert the correct prefixes for CSS properties. Just write plain CSS.
