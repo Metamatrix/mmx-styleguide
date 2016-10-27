@@ -9,7 +9,7 @@ body {
 }
 
 .mmx-componentlibrary {
-	overflow:hidden;	
+	overflow:hidden;
 }
 
 .mmx-docs-container {
@@ -19,16 +19,16 @@ body {
 }
 
 .mmx-docs-header {
-	
+
 	background: $gray-dark;
 	overflow:hidden;
 
 	>.mmx-docs-container {
 		padding-bottom:100px;
 		position: relative;
-		
+
 	}
-	
+
 	h1 {
 		font-family: $headings-font-family, sans-serif !important;
 		height: 220px;
@@ -60,14 +60,14 @@ h3.mmx-docs-heading {
 	padding-bottom:10px;
 	position: relative;
 	margin-bottom:30px;
-	
+
 	button {
 		background:transparent;
 		position:absolute;
 		top:2px;
 		right:0;
 		padding:0;
-		
+
 		&:hover {
 			color:$apple;
 		}
@@ -91,7 +91,7 @@ h4.mmx-docs-heading {
 
 .mmx-docs-link-list {
 	font-family: $headings-font-family, sans-serif !important;
-	
+
 	a {
 		color: $gray-dark !important;
 		display:block;
@@ -123,43 +123,43 @@ h4.mmx-docs-heading {
 		color: $gray-dark;
 		display: block;
 		padding: 10px 15px;
-		
+
 		&:hover {
 			background: $apple;
 		}
-		
+
 		&:hover, &:focus {
 			text-decoration:none;
 			outline:none;
 		}
-		
+
 
 	}
-	
+
 	ul ul {
 		display:none;
 		list-style-type:none;
 		padding-left:0;
 		font-size:16px;
-		
+
 		a {
 			padding-left:30px;
 		}
 	}
-	
-	
-	
+
+
+
 	li.active {
 		background: rgba(240,240,240,0.8);
-		
+
 		> a {
 			border-right:3px solid $apple;
 		}
 	}
-	
+
 	.active > ul {
 		display:block;
-		
+
 	}
 
 }
@@ -175,7 +175,7 @@ h4.mmx-docs-heading {
 		width:100px;
 		height:100px;
 		border-radius:100%;
-		margin: 0 auto;	
+		margin: 0 auto;
 	}
 }
 
@@ -193,7 +193,7 @@ h4.mmx-docs-heading {
 		object-position: center;
 		width: 220px;
 		padding:40px;
-	
+
 	}
 
 }
@@ -201,7 +201,7 @@ h4.mmx-docs-heading {
 .mmx-docs-footer {
 	background:$gray-light;
 	padding:60px;
-	
+
 	img {
 		max-width:220px;
 		height:auto;
@@ -213,7 +213,7 @@ h4.mmx-docs-heading {
 	top:10px;
 	left:10px;
 	background:transparent;
-	
+
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
@@ -226,24 +226,24 @@ h4.mmx-docs-heading {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	
+
 	opacity:0.5;
-	
+
 	&.active {
 		opacity:0.8;
 		color:$apple;
 	}
-	
-	
+
+
 }
 #mmx-document-nav.mmx-document-nav-slide-left {
-	
+
 	-webkit-transform: translate3d(-200px, 0, 0);
     -moz-transform: translate3d(-200px, 0, 0);
     -ms-transform: translate3d(-200px, 0, 0);
     -o-transform: translate3d(-200px, 0, 0);
     transform: translate3d(-200px, 0, 0);
-	
+
 	&:hover {
 		-webkit-transform: translate3d(0, 0, 0);
 		-moz-transform: translate3d(0, 0, 0);
@@ -254,7 +254,7 @@ h4.mmx-docs-heading {
 }
 
 .mmx-docs-icon-list {
-	
+
 	.mmx-docs-icon-container {
 		width:50px;
 		height:50px;
@@ -263,9 +263,9 @@ h4.mmx-docs-heading {
 		line-height: 50px;
 		border-radius:100%;
 		margin-bottom:6px;
-		
+
 	}
-	
+
 	.mmx-docs-icon-name {
 		display:block;
 		font-size:16px;
@@ -273,27 +273,27 @@ h4.mmx-docs-heading {
 }
 
 .mmx-docs-feed-container {
-	
+
 	font-family: $headings-font-family, sans-serif !important;
 	color:#D6D6D6;
 	position: absolute;
 	left:15px;
 	bottom:0;
-	
+
 	.fa {
 		color: $apple;
 		margin-right:3px;
 	}
-	
+
 	h4 {
 		color: #848484;
 		font-size:16px;
 	}
-	
+
 	h5 {
 		margin:0;
 	}
-	
+
 	.mmx-docs-feed-details {
 		font-size:14px;
 	}

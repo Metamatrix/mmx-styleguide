@@ -1,0 +1,138 @@
+{
+  "id": "prod_test",
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "name": "tablet_v",
+      "width": 568,
+      "height": 1024
+    },
+    {
+      "name": "tablet_h",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Page Headings",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-header",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-heading-container",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-heading-container",
+        ".mmx-docs-chapter:nth-of-type(3) .mmx-docs-heading-container",
+        ".mmx-docs-chapter:nth-of-type(4) .mmx-docs-heading-container"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Profile",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(1)",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(2)",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(3)",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(4)",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(5)",
+        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-section:nth-of-type(6)"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Components",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(1)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(2)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(3)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(4)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(5)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(6)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(7)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(8)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(9)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(10)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(11)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(12)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(13)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(14)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(15)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(16)",
+        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-section:nth-of-type(17)"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Compositions",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-chapter:nth-of-type(3) .mmx-docs-section:nth-of-type(1)",
+        ".mmx-docs-chapter:nth-of-type(3) .mmx-docs-section:nth-of-type(2)",
+        ".mmx-docs-chapter:nth-of-type(3) .mmx-docs-section:nth-of-type(3)"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Templates",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-chapter:nth-of-type(4) .mmx-docs-section:nth-of-type(1)"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Footer",
+      "url": "dist/index.html",
+      "selectorExpansion": false,
+      "selectors": [
+        ".mmx-docs-footer"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "onReady.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "reports/backstop_data/bitmaps_reference",
+    "bitmaps_test": "reports/backstop_data/bitmaps_test",
+    "casper_scripts": "reports/backstop_data/casper_scripts",
+    "html_report": "reports/backstop_data/html_report",
+    "ci_report": "reports/backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

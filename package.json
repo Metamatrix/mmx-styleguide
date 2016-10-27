@@ -5,11 +5,13 @@
   "author": "Metamatrix",
   "description": "Metamatrix Styleguide Template",
   "devDependencies": {
+    "backstopjs": "^2.0.6",
     "bootstrap-sass": "^3.3.7",
     "csswring": "^4.0.0",
     "grunt": "~0.4.5",
     "grunt-a11y": "^0.1.4",
     "grunt-autoprefixer": "^0.8.1",
+    "grunt-backstopjs": "^0.1.14",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "~0.6.0",
     "grunt-contrib-imagemin": "~0.4.0",

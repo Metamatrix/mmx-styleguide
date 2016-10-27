@@ -2,7 +2,7 @@
 
 ## Getting started
 
-Dependencies are: 
+Dependencies are:
 * NodeJS
 
 Other stuff used are:
@@ -27,3 +27,12 @@ In order to copy files to a new repository you will need to use the terminal. To
 6. Edit settings.json for your project
 7. Run command nmp install to install all modules
 8. Run command grunt serve to start a server on localhost:9001
+
+#### Visual regression test
+
+In this project you can run BackstopJS to output a visual regression test report. All css selectors and other properties are specified in the config file named backstop.json.
+
+* Run command grunt backstop to run the test and see the test report in the browser
+* Run command grunt backstop:reference to create a set of reference screenshots based on the selectors specified in the config file. Every time you make changes (intentionally) to a page element you should run this command to update the screenshot references.
+
+Screenshot references, tests and the html report can be found in reports/backstop_data.
