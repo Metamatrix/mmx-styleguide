@@ -368,7 +368,7 @@ module.exports = function(grunt) {
       }
     },
 
-    //Visual regression tests
+    //Visual regression test
     backstopjs: {
       reference: {
         options: {
@@ -540,7 +540,7 @@ module.exports = function(grunt) {
     else {
       grunt.task.run('backstopjs:' + task);
     }
-   })
+   });
 
   // Generate variable files when settings is changed
   grunt.event.on('watch', function(action, filepath, target) {

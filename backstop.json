@@ -19,23 +19,6 @@
   ],
   "scenarios": [
     {
-      "label": "Page Headings",
-      "url": "dist/index.html",
-      "selectorExpansion": false,
-      "selectors": [
-        ".mmx-docs-header",
-        ".mmx-docs-chapter:nth-of-type(1) .mmx-docs-heading-container",
-        ".mmx-docs-chapter:nth-of-type(2) .mmx-docs-heading-container",
-        ".mmx-docs-chapter:nth-of-type(3) .mmx-docs-heading-container",
-        ".mmx-docs-chapter:nth-of-type(4) .mmx-docs-heading-container"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.1,
-      "onBeforeScript": "onBefore.js",
-      "onReadyScript": "onReady.js"
-    },
-    {
       "label": "Profile",
       "url": "dist/index.html",
       "selectorExpansion": false,
@@ -127,7 +110,7 @@
   "paths": {
     "bitmaps_reference": "reports/backstop_data/bitmaps_reference",
     "bitmaps_test": "reports/backstop_data/bitmaps_test",
-    "casper_scripts": "reports/backstop_data/casper_scripts",
+    "casper_scripts": "node_modules/backstopjs/backstop_data/casper_scripts",
     "html_report": "reports/backstop_data/html_report",
     "ci_report": "reports/backstop_data/ci_report"
   },
