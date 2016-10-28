@@ -373,7 +373,7 @@ module.exports = function(grunt) {
       reference: {
         options: {
           backstop_path: 'node_modules/backstopjs',
-          test_path: 'tests',
+          test_path: 'reports/backstop_data/bitmaps_test',
           setup: false, //if true it will copy files in test_path to backstop_path
           configure: false, //if true it will trigger npm install inside backstop_path
           create_references: true, //set to true if you want to create new references
@@ -383,7 +383,7 @@ module.exports = function(grunt) {
       test: {
         options: {
           backstop_path: 'node_modules/backstopjs',
-          test_path: 'tests',
+          test_path: 'reports/backstop_data/bitmaps_test',
           setup: false, //if true it will copy files in test_path to backstop_path
           configure: false, //if true it will trigger npm install inside backstop_path
           create_references: false, //set to true if you want to create new references
