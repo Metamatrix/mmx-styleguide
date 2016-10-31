@@ -156,7 +156,7 @@ module.exports = function(grunt) {
       }
     },
     exportDest: 'export',
-    copyFiles: '**/*.{eot,svg,ttf,woff,pdf}',
+    copyFiles: '**/*.{eot,ttf,woff,pdf}',
     copy: {
       target: {
         files: [
@@ -399,10 +399,11 @@ module.exports = function(grunt) {
     color_svg_icons: {
       svg_options: {
         options: {
-          colors: globalSettings.icons.colors
+          colors: globalSettings.icons.colors,
+          prepend: false
         },
         files: {
-          'dev/images/icons':'src/images/icons/*.svg'
+          'dist/images/icons':'src/images/icons/*.svg'
         }
       }
     }
