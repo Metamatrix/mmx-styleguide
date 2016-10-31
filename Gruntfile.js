@@ -277,6 +277,10 @@ module.exports = function(grunt) {
         files: ['dist/**/*'],
         port: 1337
       },
+      icons: {
+        files: ['src/images/icons/*.svg'],
+        tasks: ['icons']
+      }
     },
 
     //HTML validation
@@ -390,6 +394,17 @@ module.exports = function(grunt) {
           run_tests: true
         }
       }
+    },
+    //Generate coloured svg icons
+    color_svg_icons: {
+      svg_options: {
+        options: {
+          colors: globalSettings.icons.colors
+        },
+        files: {
+          'dev/images/icons':'src/images/icons/*.svg'
+        }
+      }
     }
 
   });
@@ -459,6 +474,11 @@ module.exports = function(grunt) {
     'imagemin'
   ]);
 
+  grunt.registerTask('icons',[
+    'color_svg_icons:svg_options'
+  ]);
+
+
   /**
    * Export files task
    */
@@ -474,7 +494,8 @@ module.exports = function(grunt) {
     'html-dev',
     'javascript-dev',
     'copy:target',
-    'modernizr'
+    'modernizr',
+    'icons'
   ]);
 
   /**

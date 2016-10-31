@@ -95,5 +95,14 @@
   ],
   "templates": {
     "start": "Start Page"
+  },
+  "icons": {
+    "className": "icon",
+    "prefix": "icon-",
+    "colors": {
+      "white":"#fff",
+      "gray": "#444"
+    },
+    "files": ["print", "plus", "minus", "facebook"]
   }
 }

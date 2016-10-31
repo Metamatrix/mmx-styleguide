@@ -12,6 +12,7 @@
     "grunt-a11y": "^0.1.4",
     "grunt-autoprefixer": "^0.8.1",
     "grunt-backstopjs": "^0.1.14",
+    "grunt-color-svg-icons-hiulit": "^1.1.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "~0.6.0",
     "grunt-contrib-imagemin": "~0.4.0",
