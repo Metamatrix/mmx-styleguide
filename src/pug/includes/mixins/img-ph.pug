@@ -1,17 +1,45 @@
-﻿mixin img-ph(width, height, displayName, bgColor, frontColor)
+﻿mixin img-ph(displayName, text, bgColor, frontColor)
 
     unless bgColor
         - var bgColor = settings.images.phBgColor
     unless frontColor
         - var frontColor = settings.images.phFgColor
+    unless text
+        - var text = displayName
 
-    img(data-src="holder.js/"+ width + "x" + height+ "?bg=" + bgColor+ "&fg=" + frontColor + "&text="+displayName)&attributes(attributes)
+    - var attributes = {}
 
-mixin img-ph-circle(width, height, bgColor, frontColor)
+    - var array = settings.images.sizes
+    - var key = "displayName"
+    - var value = displayName
+
+    - for (var i = 0; i < array.length; i++)
+        if(array[i][key] === value)
+            - var width = settings.images.sizes[i].width
+            - var height = settings.images.sizes[i].height
+            - attributes.class = settings.images.sizes[i].class
+
+    img(data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text)&attributes(attributes)
+
+mixin img-ph-circle(displayName, text, bgColor, frontColor)
 
     unless bgColor
         - var bgColor = settings.images.phBgColor
     unless frontColor
         - var frontColor = settings.images.phFgColor
+    unless text
+        - var text = displayName
 
-    img.img-circle(data-src="holder.js"+ width + "x" + height+ "?bg=" + bgColor+ "&fg=" + frontColor)&attributes(attributes)
+    - var attributes = {}
+
+    - var array = settings.images.sizes
+    - var key = "displayName"
+    - var value = displayName
+
+    - for (var i = 0; i < array.length; i++)
+        if(array[i][key] === value)
+            - var width = settings.images.sizes[i].width
+            - var height = settings.images.sizes[i].height
+            - attributes.class = settings.images.sizes[i].class
+
+    img.img-circle(data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text)&attributes(attributes)

@@ -73,6 +73,7 @@ module.exports = function(grunt) {
             'node_modules/fastclick/lib/fastclick.js',
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
             'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions/inputfile.js',
+            'node_modules/holderjs/holder.js',
             'src/scripts/vendor/*.js',
             'src/scripts/enhancers/*.js',
             'src/scripts/handlers/*.js',
@@ -95,14 +96,20 @@ module.exports = function(grunt) {
         files: {
           'dist/scripts/script.min.js': [
             // Include:
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/jquery-validation/dist/jquery.validate.js',
+            'node_modules/jquery-ajax-unobrusive/jquery.unobtrusive-ajax.js',
+            'node_modules/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js',
+            'node_modules/fastclick/lib/fastclick.js',
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
             'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions/inputfile.js',
+            'node_modules/holderjs/holder.js',
             'src/scripts/vendor/*.js',
             'src/scripts/enhancers/*.js',
             'src/scripts/handlers/*.js',
             'src/scripts/*.js'
           ],
-          'dist/scripts/styleguide.min.js': [
+            'dist/scripts/styleguide.min.js': [
             'src/scripts/styleguide/clipboard.min.js',
             'src/scripts/styleguide/moment.js',
             'src/scripts/styleguide/js.cookie.js',

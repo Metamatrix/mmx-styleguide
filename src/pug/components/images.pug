@@ -1,5 +1,8 @@
 ﻿include ../includes/mixins
 
-each image in settings.images.sizes
-	h3= image.name
-	+img-ph(image.width,image.height, image.displayName)(class=image.class, data-srcset="holder.js/" + (image.width * 2) + "x" + (image.height * 2) + " 2x")
+h3 16x9
++img-ph('16x9')(data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x")
+h3 4x3
++img-ph('4x3')(data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x")
+h3 3x2
++img-ph('3x2')(data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x")

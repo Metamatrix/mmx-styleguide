@@ -3,7 +3,7 @@ include ../includes/mixins
 div(style="max-width:300px")
 
 	.card.card-default
-		+img-ph(300, 200)(class="card-img-top",alt="Card top image")
+		+img-ph("3x2")(class="card-img-top",alt="Card top image")
 		.card-block
 			h4.card-title Card title
 			p.card-text
@@ -13,7 +13,7 @@ div(style="max-width:300px")
 	h3 Simple card
 
 	.card.card-default
-		+img-ph(300, 200)(class="card-img-top",alt="Card top image")
+		+img-ph("3x2")(class="card-img-top",alt="Card top image")
 		.card-block
 			p.card-text
 			| Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -42,7 +42,7 @@ div(style="max-width:300px")
 	h3 Card with background image
 
 	.card.card-inverse
-		+img-ph(300, 300,"333", "666")(alt='Card image')
+		+img-ph("3x2","3x2" ,"333", "666")(alt='Card image')
 		.card-img-overlay
 			h4.card-title Card title
 			p.card-text

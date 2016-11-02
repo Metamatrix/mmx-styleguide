@@ -52,27 +52,21 @@
         "displayName": "16x9",
         "width": "640",
         "height": "360",
-        "class": "img-responsive",
-        "phBgColor": "f00",
-        "phFgColor": "0ff"
+        "class": "img-responsive"
       },
       {
         "name": "4:3",
         "displayName": "4x3",
         "width": "400",
         "height": "300",
-        "class": "img-responsive",
-        "phBgColor": "f00",
-        "phFgColor": "0ff"
+        "class": "img-responsive"
       },
       {
         "name": "3:2",
         "displayName": "3x2",
         "width": "300",
         "height": "200",
-        "class": "img-responsive",
-        "phBgColor": "f00",
-        "phFgColor": "0ff"
+        "class": "img-responsive"
       }
     ]
   },
