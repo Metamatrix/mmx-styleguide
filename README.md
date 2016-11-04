@@ -28,7 +28,7 @@ In order to copy files to a new repository you will need to use the terminal. To
 7. Run command nmp install to install all modules
 8. Run command grunt serve to start a server on localhost:9001
 
-#### Use grunt task runner for this project
+### Use grunt task runner for this project
 
 This project uses Grunt as task runner. How to use in the terminal:
 
