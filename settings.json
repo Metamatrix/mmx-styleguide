@@ -35,8 +35,13 @@
     }
   ],
   "icons": {
-    "className": "fa",
-    "prefix": "fa-"
+    "className": "icon",
+    "prefix": "icon-",
+    "colors": {
+      "white":"#fff",
+      "gray": "#444"
+    },
+    "files": ["print", "plus", "minus", "facebook"]
   },
   "images": {
     "phBgColor": "CCC",
@@ -44,18 +49,21 @@
     "sizes": [
       {
         "name": "16:9",
-        "width": "1600",
-        "height": "900",
+        "displayName": "16x9",
+        "width": "770",
+        "height": "433",
         "class": "img-responsive"
       },
       {
         "name": "4:3",
+        "displayName": "4x3",
         "width": "400",
         "height": "300",
         "class": "img-responsive"
       },
       {
         "name": "3:2",
+        "displayName": "3x2",
         "width": "300",
         "height": "200",
         "class": "img-responsive"
@@ -95,14 +103,5 @@
   ],
   "templates": {
     "start": "Start Page"
-  },
-  "icons": {
-    "className": "icon",
-    "prefix": "icon-",
-    "colors": {
-      "white":"#fff",
-      "gray": "#444"
-    },
-    "files": ["print", "plus", "minus", "facebook"]
   }
 }
