@@ -105,6 +105,7 @@ module.exports = function(grunt) {
    * Dev task
    */
   grunt.registerTask('dev', [
+    'autoGenerateFiles',
     'css-dev',
     'html-dev',
     'javascript-dev',
@@ -117,6 +118,7 @@ module.exports = function(grunt) {
  * Dist task
  */
   grunt.registerTask('dist', [
+    'autoGenerateFiles',
     'css-dist',
     'html-dist',
     'javascript-dist',
@@ -178,34 +180,46 @@ module.exports = function(grunt) {
     }
    });
 
-  // Generate variable files when settings is changed
-  grunt.event.on('watch', function(action, filepath, target) {
-    if(filepath === 'settings.json') {
-      globalSettings = grunt.file.readJSON('settings.json');
+  /**
+   * Generate files from settings
+   */
+  grunt.task.registerTask('autoGenerateFiles', 'Auto generates files from settings.json', function(arg1, arg2) {
+    
+    grunt.log.writeln('Auto generating files...');
 
-      // Generate colors
+    globalSettings = grunt.file.readJSON('settings.json');
 
-      var content = '// Colors\n\r// Auto generated at ' + (new Date()).toLocaleString() + '\n\n';
+    // Generate colors
 
-      content += globalSettings.colors.map(function(clr) {
-        return '$' + clr.name + ':\t\t\t' + clr.color + '; // ' + clr.displayName + '\n';
-      }).join('');
+    var content = '// Colors\n\r// Auto generated from settings.json at ' + (new Date()).toLocaleString() + '\n\n';
 
-      grunt.file.write('src/sass/_application-colors.scss', content);
-      grunt.log.writeln('_application-colors.scss generated');
+    content += globalSettings.colors.map(function(clr) {
+      return '$' + clr.name + ':\t\t\t' + clr.color + '; // ' + clr.displayName + '\n';
+    }).join('');
 
-      // Generate margins
+    grunt.file.write('src/sass/_application-colors.scss', content);
+    grunt.log.writeln('_application-colors.scss generated');
 
-      content = '// Margins\n\r// Auto generated at ' + (new Date()).toLocaleString() + '\n\n';
+    // Generate margins
 
-      content += globalSettings.margins.map(function(mrgn) {
-        return '$margin-' + mrgn.name + ':\t\t\t' + mrgn.margin + '; // ' + mrgn.displayName + '\n';
-      }).join('');
+    content = '// Margins\n\r// Auto generated from settings.json at ' + (new Date()).toLocaleString() + '\n\n';
 
-      grunt.file.write('src/sass/_application-margins.scss', content);
-      grunt.log.writeln('_application-margins.scss generated');
-    }
+    content += globalSettings.margins.map(function(mrgn) {
+      return '$margin-' + mrgn.name + ':\t\t\t' + mrgn.margin + '; // ' + mrgn.displayName + '\n';
+    }).join('');
 
+    grunt.file.write('src/sass/_application-margins.scss', content);
+
+    // Generate paths
+
+    content = '// Paths\n\r// Auto generated from settings.json at ' + (new Date()).toLocaleString() + '\n\n';
+
+    content += '$scripts-path: \'' + globalSettings.scriptsPath + '\';\n';
+    content += '$styles-path: \'' + globalSettings.stylesPath + '\';\n';
+    content += '$img-path: \'' + globalSettings.imgPath + '\';\n';
+
+    grunt.file.write('src/sass/_application-paths.scss', content);
+  
   });
 
 };

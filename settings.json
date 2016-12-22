@@ -2,6 +2,7 @@
   "title": "Metamatrix",
   "scriptsPath": "scripts/",
   "stylesPath": "styles/",
+  "imgPath": "images/",
   "colors": [
     {
       "name": "apple",
