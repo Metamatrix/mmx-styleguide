@@ -4,6 +4,7 @@
 
 Dependencies are:
 * NodeJS
+* Grunt
 
 Other stuff used are:
 * SASS (SCSS)
@@ -11,6 +12,8 @@ Other stuff used are:
 
 ### Working with this project
 
+* (Install node js if you haven't done that)
+* (Install Grunt command line interface globally if you haven't done that: npm install -g grunt-cli)
 * Clone the repository to your computer
 * Run command nmp install to install all modules
 * Run command grunt serve to start a server on localhost:9001
