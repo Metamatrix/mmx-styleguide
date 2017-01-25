@@ -5,7 +5,8 @@ mixin icon(name)
 	-if(attributes.class) 
 		-cssClass += " " + attributes.class;
 
-	span(class=cssClass,aria-hidden="true")
+	svg(class=cssClass, aria-hidden="true")
+		use(xlink:href="images/icons/icons.svg#icon-"+name)
 
 mixin icon-circle(name)
 	-var cssClass = settings.icons.className + " " + settings.icons.prefix + name;

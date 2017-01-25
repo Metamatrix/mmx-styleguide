@@ -42,7 +42,26 @@
       "white":"#fff",
       "gray": "#444"
     },
-    "files": ["print", "plus", "minus", "facebook"]
+    "files": [
+      "chevron-right", 
+      "times", 
+      "search", 
+      "file", 
+      "down-open",
+      "menu",
+      "facebook",
+      "twitter",
+      "linkedin",
+      "instagram",
+      "user",
+      "plus",
+      "arrow-right",
+      "bubble",
+      "movie-play-file-2",
+      "music-file-1",
+      "upload-file-2", 
+      "zip-file",
+      "search-plus" ]
   },
   "images": {
     "phBgColor": "CCC",
