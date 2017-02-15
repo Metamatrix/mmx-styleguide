@@ -171,13 +171,20 @@ h4.mmx-docs-heading {
   height: 50px;
   background: #ECECE8;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   border-radius: 100%;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  margin-left: 25px; }
 
 .mmx-docs-icon-list .mmx-docs-icon-name {
   display: block;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-bottom: 15px; }
+
+[class^="icon-"], [class*=" icon-"] {
+  height: 16px;
+  width: 16px;
+  display: inline-block; }
 
 .mmx-docs-feed-container {
   font-family: inherit, sans-serif !important;

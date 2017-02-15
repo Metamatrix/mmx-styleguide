@@ -15,7 +15,7 @@
     "grunt-color-svg-icons-hiulit": "^1.1.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "~0.6.0",
-    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-pug": "^1.0.0",
@@ -46,9 +46,12 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "holderjs": "^2.9.4",
+    "install": "^0.8.4",
     "jquery": "^3.1.1",
     "jquery-ajax-unobtrusive": "^3.2.4",
     "jquery-validation": "^1.15.1",
-    "jquery-validation-unobtrusive": "^3.2.6"
+    "jquery-validation-unobtrusive": "^3.2.6",
+    "npm": "^4.1.1",
+    "svg4everybody": "^2.1.4"
   }
 }
