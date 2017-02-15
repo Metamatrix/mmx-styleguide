@@ -62,7 +62,45 @@ module.exports = function(grunt, options){
         cwd: 'node_modules/mmx-bootstrap-extensions/src/scripts',
         src: '**/*.js',
         dest: '<%= exportDest %>/static/scripts/bootstrap-extensions'
-      }]
+      }],
+      options: {
+        process: function(content, srcpath) {
+          // Replace paths with paths for project
+          if(srcpath.endsWith('_application-paths.scss')) {
+            var theContent = content.split('\n').map(function(line) {
+              var match = line.match(/\$.+:\s*'(.+)';/);
+              if(match) {
+                return match[0].replace(match[1], options.globalSettings.projectAssetsPath + match[1]);
+              }
+              else {
+                return line;
+              }
+            })
+            .join('\n');
+
+            return theContent;
+          }
+          else if(srcpath.endsWith('_bootstrap.scss') || srcpath.endsWith('_bootstrap-extensions.scss')) {
+            var theContent = content.split('\n').map(function(line) {
+              var match = line.match(/@import\s+"(.+)";/);
+              if(match) {
+                var pathParts = match[1].split('/'),
+                  newPath = pathParts.slice(pathParts.length - 2).join('/');
+                return match[0].replace(match[1], newPath);
+              }
+              else {
+                return line;
+              }
+            })
+            .join('\n');
+
+            return theContent;
+          }
+          else {
+            return content;
+          }
+        }
+      }
     }
   }
 };

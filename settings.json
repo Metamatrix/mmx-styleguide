@@ -3,6 +3,8 @@
   "scriptsPath": "scripts/",
   "stylesPath": "styles/",
   "imgPath": "images/",
+  "projectPath": "",
+  "projectAssetsPath": "static/",
   "colors": [
     {
       "name": "apple",
@@ -68,6 +70,13 @@
         "width": "300",
         "height": "200",
         "class": "img-responsive"
+      },
+      {
+        "name": "portrait",
+        "displayName": "1x1",
+        "width": "180",
+        "height": "180",
+        "class": "img-responsive img-circle"
       }
     ]
   },

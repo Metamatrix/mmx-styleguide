@@ -6382,11 +6382,11 @@ a.bg-secondary:focus {
 
 .row-blocks .col-middle,
 .col-middle {
-  vertical-align: middle; }
+  vertical-align: middle !important; }
 
 .row-blocks .col-bottom,
 .col-bottom {
-  vertical-align: bottom; }
+  vertical-align: bottom !important; }
 
 .row-col-rulers > [class*='col-'] {
   border-left: solid 1px #8a8a8a; }
@@ -6432,8 +6432,12 @@ a.link-block * {
 a.link-block .link-block-item:hover {
   text-decoration: underline; }
 
-.article-list > li {
+.article-list > li,
+.article-list .article-list-item {
   margin: 30px 0; }
+
+.article-list p {
+  color: #3d3d3d; }
 
 .link-list li {
   position: relative;
@@ -6693,6 +6697,39 @@ a.link-block .link-block-item:hover {
 .flag-body {
   width: 100%; }
 
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: transparent; }
+
+.img-wrapper:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  width: 100%; }
+
+.img-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%; }
+
+.img-wrapper-3x2:before {
+  padding-top: 66.66667%; }
+
+.img-wrapper-4x3:before {
+  padding-top: 75%; }
+
+.img-wrapper-16x9:before {
+  padding-top: 56.25%; }
+
 .m-xs-a-0 {
   margin: 0 !important; }
 
@@ -6739,26 +6776,26 @@ a.link-block .link-block-item:hover {
   margin-top: 5px !important;
   margin-bottom: 5px !important; }
 
-.m-xs-asmall {
+.m-xs-a-small {
   margin: 10px !important; }
 
-.m-xs-tsmall {
+.m-xs-t-small {
   margin-top: 10px !important; }
 
-.m-xs-rsmall {
+.m-xs-r-small {
   margin-right: 10px !important; }
 
-.m-xs-bsmall {
+.m-xs-b-small {
   margin-bottom: 10px !important; }
 
-.m-xs-lsmall {
+.m-xs-l-small {
   margin-left: 10px !important; }
 
-.m-xs-xsmall {
+.m-xs-x-small {
   margin-left: 10px !important;
   margin-right: 10px !important; }
 
-.m-xs-ysmall {
+.m-xs-y-small {
   margin-top: 10px !important;
   margin-bottom: 10px !important; }
 
@@ -6864,20 +6901,20 @@ a.link-block .link-block-item:hover {
   .m-sm-y-xsmall {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-  .m-sm-asmall {
+  .m-sm-a-small {
     margin: 10px !important; }
-  .m-sm-tsmall {
+  .m-sm-t-small {
     margin-top: 10px !important; }
-  .m-sm-rsmall {
+  .m-sm-r-small {
     margin-right: 10px !important; }
-  .m-sm-bsmall {
+  .m-sm-b-small {
     margin-bottom: 10px !important; }
-  .m-sm-lsmall {
+  .m-sm-l-small {
     margin-left: 10px !important; }
-  .m-sm-xsmall {
+  .m-sm-x-small {
     margin-left: 10px !important;
     margin-right: 10px !important; }
-  .m-sm-ysmall {
+  .m-sm-y-small {
     margin-top: 10px !important;
     margin-bottom: 10px !important; }
   .m-sm-a-base {
@@ -6962,20 +6999,20 @@ a.link-block .link-block-item:hover {
   .m-md-y-xsmall {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-  .m-md-asmall {
+  .m-md-a-small {
     margin: 10px !important; }
-  .m-md-tsmall {
+  .m-md-t-small {
     margin-top: 10px !important; }
-  .m-md-rsmall {
+  .m-md-r-small {
     margin-right: 10px !important; }
-  .m-md-bsmall {
+  .m-md-b-small {
     margin-bottom: 10px !important; }
-  .m-md-lsmall {
+  .m-md-l-small {
     margin-left: 10px !important; }
-  .m-md-xsmall {
+  .m-md-x-small {
     margin-left: 10px !important;
     margin-right: 10px !important; }
-  .m-md-ysmall {
+  .m-md-y-small {
     margin-top: 10px !important;
     margin-bottom: 10px !important; }
   .m-md-a-base {
@@ -7060,20 +7097,20 @@ a.link-block .link-block-item:hover {
   .m-lg-y-xsmall {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-  .m-lg-asmall {
+  .m-lg-a-small {
     margin: 10px !important; }
-  .m-lg-tsmall {
+  .m-lg-t-small {
     margin-top: 10px !important; }
-  .m-lg-rsmall {
+  .m-lg-r-small {
     margin-right: 10px !important; }
-  .m-lg-bsmall {
+  .m-lg-b-small {
     margin-bottom: 10px !important; }
-  .m-lg-lsmall {
+  .m-lg-l-small {
     margin-left: 10px !important; }
-  .m-lg-xsmall {
+  .m-lg-x-small {
     margin-left: 10px !important;
     margin-right: 10px !important; }
-  .m-lg-ysmall {
+  .m-lg-y-small {
     margin-top: 10px !important;
     margin-bottom: 10px !important; }
   .m-lg-a-base {

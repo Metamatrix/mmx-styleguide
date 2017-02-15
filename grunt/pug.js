@@ -7,6 +7,18 @@ module.exports = function(grunt, options){
         settings: '<%= globalSettings %>'
       }
     },
+    // Use this to compile single files (faster)
+    // dev: {
+    //   files: {
+    //     'dist/index.html': ['src/pug/index.pug']
+    //   },
+    // },
+    // dist: {
+    //   files: {
+    //     'dist/index.html': ['src/pug/index.pug']
+    //   },
+    // }
+
     dist: {
       files: [{
         expand: true, // setting to true enables the following options
