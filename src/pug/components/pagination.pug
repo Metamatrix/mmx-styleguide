@@ -1,18 +1,29 @@
-﻿nav
+﻿nav(aria-labelledby="paging-label")
+	span#paging-label.sr-only Pagination navigation
 	ul.pagination
 		li
-			a(href='#', aria-label='Previous')
+			a(href="", aria-label='Previous page')
 				span(aria-hidden='true') «
-		li.active
-			a(href='#') 1
+		li.active(aria-current="True")
+			a(href="") 
+				span.sr-only Go to page
+				1
 		li
-			a(href='#') 2
+			a(href="") 
+				span.sr-only Go to page
+				2
 		li
-			a(href='#') 3
+			a(href="") 
+				span.sr-only Go to page
+				3
 		li
-			a(href='#') 4
+			a(href="") 
+				span.sr-only Go to page
+				4
 		li
-			a(href='#') 5
+			a(href="") 
+				span.sr-only Go to page
+				5
 		li
-			a(href='#', aria-label='Next')
+			a(href="", aria-label='Next page')
 				span(aria-hidden='true') »
