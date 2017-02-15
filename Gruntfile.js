@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     pkg: pkg,
     globalSettings: globalSettings,
     exportDest: 'export',
-    copyFiles: '**/*.{eot,ttf,woff,pdf}'
+    copyFiles: '**/*.{eot,ttf,woff,woff2,pdf}'
   };
 
   var configs = require('load-grunt-configs')(grunt, options);
