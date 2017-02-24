@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     pkg: pkg,
     globalSettings: globalSettings,
     exportDest: 'export',
-    copyFiles: '**/*.{eot,ttf,woff,woff2,pdf}'
+    copyFiles: '**/*.{eot,ttf,woff,woff2,pdf,svg}'
   };
 
   var configs = require('load-grunt-configs')(grunt, options);
@@ -109,6 +109,7 @@ module.exports = function(grunt) {
     'css-dev',
     'html-dev',
     'javascript-dev',
+    'images',
     'copy:target',
     'modernizr',
     'icons'
@@ -143,15 +144,15 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', 'Run tasks', function(task1, task2) {
     if (arguments.length === 0) {
-        grunt.task.run('connect', 'dev', 'watch');
+        grunt.task.run('connect', 'dev', 'copy:target', 'watch');
     }
     else if (task2 == undefined){
         grunt.config.set('dirs.output', task1);
-        grunt.task.run('connect', task1, 'watch');
+        grunt.task.run('connect', task1, 'copy:target', 'watch');
     }
     else {
         grunt.config.set('dirs.output', task1 + '-' + task2);
-        grunt.task.run('connect', task1, task2, 'watch');
+        grunt.task.run('connect', task1, task2, 'copy:target', 'watch');
     }
   });
 
