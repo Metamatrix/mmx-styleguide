@@ -4,18 +4,18 @@ Template has these regions:
 
 Page structure
 
-* [ ] <header role="banner"> 
-* [ ] <nav role="navigation"> 
-* [ ] <main role="main"> 
-* [ ] <article role="article"> 
-* [ ] <aside role="complementary"> 
-* [ ] <footer role="contentinfo"> 
-* [ ] <form role="search">
+* [ ] &lt;header role="banner"&gt; 
+* [ ] &lt;nav role="navigation"&gt;
+* [ ] &lt;main role="main"&gt; 
+* [ ] &lt;article role="article"&gt; 
+* [ ] &lt;aside role="complementary"&gt; 
+* [ ] &lt;footer role="contentinfo"&gt;
+* [ ] &lt;form role="search"&gt;
 
 HTML
 
 * [ ] Markup is correct. Test with W3C Validator or Sitevalidator
-* [ ] Template has lang attribute: <html lang="en">
+* [ ] Template has lang attribute: &lt;html lang="en"&gt;
 * [ ] Tempalte uses semantic headings and structure (h1-h6, sections, articles, ul/li, etc)
 * [ ] Semantic elements are not used for visual presentation only. Use div and span for visual presentation.
 * [ ] Don't use links to run scripts only. Buttons run scripts and submits forms. Links link to content.
