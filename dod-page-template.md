@@ -14,6 +14,7 @@ Page structure
 
 HTML
 
+* [ ] Markup is correct. Test with W3C Validator or Sitevalidator
 * [ ] Template has lang attribute: <html lang="en">
 * [ ] Tempalte uses semantic headings and structure (h1-h6, sections, articles, ul/li, etc)
 * [ ] Semantic elements are not used for visual presentation only. Use div and span for visual presentation.
@@ -32,5 +33,26 @@ Forms
 * [ ] The label text indicates that a form filed is required or optional.
 * [ ] Use attributes like required, aria-required, aria-invalid on form fields.
 
-Test
-* [ ] Test using keyboardnavigation
+Template has been tested in browsers:
+
+* [ ] Internet Explorer 9
+* [ ] Internet Explorer 10
+* [ ] Internet Explorer 11
+* [ ] Edge
+* [ ] Firefox
+* [ ] Chrome
+* [ ] Mobile Safari
+
+Template has been tested in: 
+
+* [ ] Desktop
+* [ ] Tablet
+* [ ] Mobil
+
+Accessibility and Quality
+
+* [ ] Test keyboard navigation and that it works according to https://www.w3.org/TR/wai-aria-practices/#aria_ex
+* [ ] Tested with WAVE evaluation tool, Google Chrome Accessibility Tools, Tota11y or similar tool
+* [ ] WAI-ARIA is used if needed. Check https://www.w3.org/TR/wai-aria-practices/#aria_ex
+* [ ] If template uses AJAX it uses aria-live
+* [ ] Color contrast has been checked
