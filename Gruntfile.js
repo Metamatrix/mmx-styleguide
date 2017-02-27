@@ -220,6 +220,17 @@ module.exports = function(grunt) {
     content += '$img-path: \'' + globalSettings.imgPath + '\';\n';
 
     grunt.file.write('src/sass/_application-paths.scss', content);
+
+    // Generate icons
+
+    content = '// Icons\n\r// Auto generated from settings.json at ' + (new Date()).toLocaleString() + '\n\n';
+
+    for(var key in globalSettings.icons.sizes) {
+      var iconSize = globalSettings.icons.sizes[key];
+      content += '.' + globalSettings.icons.prefix + key + ' { width: ' + iconSize + '; height: ' + iconSize + '; }\n';
+    }
+
+    grunt.file.write('src/sass/_application-icons.scss', content);
   
   });
 

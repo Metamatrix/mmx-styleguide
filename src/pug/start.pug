@@ -1,7 +1,5 @@
-include layouts/root
+extends layouts/fullwidth
 
-block rootcontent
-	h1 Hello World 4
-
-	+repeat(5)
-		p Hello
+block content
+	main#main-content.container(role="main")
+		h1 Start page :)

@@ -7,11 +7,10 @@
     <title>Metamatrix</title>
     <script src="scripts/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/styleguide.css">
   </head>
-  <body data-spy="scroll" data-target="#mmx-document-nav">
+  <body>
     <div class="mmx-componentlibrary" data-appname="Metamatrix">
       <header class="mmx-docs-header">
         <div class="container mmx-docs-container">
@@ -250,9 +249,9 @@
             <h3 class="mmx-docs-heading" id="Images">Images
               <button class="btn" data-clipboard-text="#Images"><span class="fa fa-link"></span></button>
             </h3>
-            <h3>16x9</h3><img class="img-responsive" data-src="holder.js/770x433?bg=CCC&amp;fg=333&amp;text=16x9">
-            <h3>4x3</h3><img class="img-responsive" data-src="holder.js/400x300?bg=CCC&amp;fg=333&amp;text=4x3">
-            <h3>3x2</h3><img class="img-responsive" data-src="holder.js/300x200?bg=CCC&amp;fg=333&amp;text=3x2">
+            <h3>16x9</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=16x9" data-srcset="holder.js/NaNxNaN 2x">
+            <h3>4x3</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=4x3" data-srcset="holder.js/NaNxNaN 2x">
+            <h3>3x2</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" data-srcset="holder.js/NaNxNaN 2x">
           </div>
         </section>
       </section>
@@ -921,14 +920,14 @@
               <button class="btn" data-clipboard-text="#Cards"><span class="fa fa-link"></span></button>
             </h3>
             <div style="max-width:300px">
-              <div class="card card-default"><img class="img-responsive" data-src="holder.js/300x200?bg=CCC&amp;fg=333&amp;text=3x2">
+              <div class="card card-default"><img class="card-img-top" data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" alt="Card top image">
                 <div class="card-block">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary" href="#">Button</a>
                 </div>
               </div>
               <h3>Simple card</h3>
-              <div class="card card-default"><img class="img-responsive" data-src="holder.js/300x200?bg=CCC&amp;fg=333&amp;text=3x2">
+              <div class="card card-default"><img class="card-img-top" data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" alt="Card top image">
                 <div class="card-block">
                   <p class="card-text"></p>Some quick example text to build on the card title and make up the bulk of the card's content.
                 </div>
@@ -948,7 +947,7 @@
                 <div class="card-footer text-muted">2 days ago</div>
               </div>
               <h3>Card with background image</h3>
-              <div class="card card-inverse"><img class="img-responsive" data-src="holder.js/300x200?bg=333&amp;fg=666&amp;text=3x2">
+              <div class="card card-inverse"><img data-src="holder.js/undefinedxundefined?bg=333&amp;fg=666&amp;text=3x2" alt="Card image">
                 <div class="card-img-overlay">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -1164,16 +1163,37 @@
             </h3>
             <div class="vcard">
               <div class="vcard-inner">
-                <div class="vcard-img"><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=portrait">
+                <div class="vcard-img">
+                  <div class="img-wrapper img-wrapper-1x1"><img class="img-circle" data-src="holder.js/180x180?bg=CCC&amp;fg=333&amp;text=1x1">
+                  </div>
                 </div>
                 <div class="vcard-body">
-                  <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2><span class="vcard-title">Job title</span>
-                  <dl>
-                    <dt>Phone</dt>
-                    <dd><a class="vcard-email" href="mailto:firstname.lastname@metamatrix.se">firstname.lastname@metamatrix.se</a></dd>
+                  <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+                  <p class="vcard-title">Job title</p>
+                  <dl class="vcard-dl">
                     <dt>E-mail</dt>
+                    <dd><a class="vcard-email" href="mailto:firstname.lastname@metamatrix.se">firstname.lastname@metamatrix.se</a></dd>
+                    <dt>Phone</dt>
                     <dd><a class="vcard-phone" href="tel:+46812345678">08 1234 5678</a></dd>
                   </dl>
+                </div>
+              </div>
+            </div>
+            <div class="vcard">
+              <div class="vcard-inner">
+                <div class="vcard-body">
+                  <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+                  <p class="vcard-title">Job title</p>
+                  <dl class="vcard-dl">
+                    <dt>E-mail</dt>
+                    <dd><a class="vcard-email" href="mailto:firstname.lastname@metamatrix.se">firstname.lastname@metamatrix.se</a></dd>
+                    <dt>Phone</dt>
+                    <dd><a class="vcard-phone" href="tel:+46812345678">08 1234 5678</a></dd>
+                  </dl>
+                </div>
+                <div class="vcard-img vcard-img-right">
+                  <div class="img-wrapper img-wrapper-1x1"><img class="img-circle" data-src="holder.js/180x180?bg=CCC&amp;fg=333&amp;text=1x1">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1192,7 +1212,7 @@
               <button class="btn" data-clipboard-text="#Site header"><span class="fa fa-link"></span></button>
             </h3>
           </div>
-          <header class="main-header clearfix" id="main-header" role="banner">
+          <header class="global-header" id="global-header" role="banner">
             <div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
               <div class="container-fluid collapse in" id="mobile-navbar-container">
                 <div class="pull-left navbar-text">
@@ -1207,40 +1227,42 @@
             <div class="container">
               <div class="row">
                 <div class="row-md-eq">
-                  <div class="col-md-4 col-middle"> <a href="" title="Till startsidan" id="site-logo"> <img src="/images/logo.svg" alt="Metamatrix"></a></div>
+                  <div class="col-md-4 col-middle"> <a class="site-logo" href="" title="Till startsidan"><img src="/images/logo.svg" alt="Metamatrix"></a></div>
                   <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
-                    <div class="site-toolbar text-right" id="site-toolbar">
+                    <div class="function-menu" id="function-menu">
                       <ul class="link-list-inline">
                         <li><a href="">Kontakt</a></li>
                         <li><a href="">Press</a></li>
                         <li><a href="">In English</a></li>
                       </ul>
                     </div>
-                    <form class="site-search" role="search">
-                      <div class="form-group">
-                        <label class="sr-only" for="sitesearchmainheader">Sök på IQS.se</label>
-                        <input class="form-control input-sm" type="text" placeholder="Sök på IQS.se" id="sitesearchmainheader">
-                        <button class="btn-search" type="submit">
-                            <svg class="icon icon-search" aria-hidden="true">
-                              <use xlink:href="images/icons/icons.svg#icon-search"></use>
-                            </svg><span class="sr-only">Sök</span>
-                        </button>
+                    <form class="global-search" role="search">
+                      <div class="input-group">
+                        <label class="sr-only" for="global-search-input">Sök</label>
+                        <input class="form-control" id="global-search-input" type="search" placeholder="Sök..."><span class="input-group-btn">
+                          <button class="btn btn-search" type="submit">
+                              <svg class="icon icon-search icon-sm" aria-hidden="true">
+                                <use xlink:href="images/icons/icons.svg#icon-search"></use>
+                              </svg><span class="sr-only">Sök</span>
+                          </button></span>
                       </div>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-            <nav class="hidden-xs hidden-sm" id="main-nav">
-              <div class="container">
-                <ul>
-                    <li><a href="#">Om IQ Samhällsbyggnad</a></li>
-                    <li class="active"><a href="#">Forskning & innovation</a></li>
-                    <li><a href="#">Nätverk</a></li>
-                    <li><a href="#">Bli medlem</a></li>
-                </ul>
-              </div>
-            </nav>
+            <div class="container">
+              <nav class="global-nav navbar navbar-default">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                      <li><a href="">A arcu</a></li>
+                      <li class="active"><a href="">Nulla non</a></li>
+                      <li><a href="">Integer malesuada</a></li>
+                      <li><a href="">Odio urna</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
           </header>
         </section>
         <section class="mmx-docs-section">
@@ -1249,16 +1271,16 @@
               <button class="btn" data-clipboard-text="#Site footer"><span class="fa fa-link"></span></button>
             </h3>
           </div>
-          <footer id="main-footer">
+          <footer class="global-footer" id="global-footer">
             <div class="container"><a class="site-logo" href=""><img src="images/logo-inverted.svg" alt=""></a>
-              <p>Vi är föreningen för innovation och kvalitet inom samhällsbyggandet</p>
+              <p> Enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut
+              </p>
               <nav>
                 <ul class="list-inline">
                   <li> <a href="">Kontakta oss</a></li>
                   <li> <a href="">Facebook</a></li>
                   <li> <a href="">Twitter</a></li>
                   <li> <a href="">LinkedIn</a></li>
-                  <li> <a href="">Mynewsdesk</a></li>
                 </ul>
               </nav>
             </div>
@@ -1270,17 +1292,17 @@
               <button class="btn" data-clipboard-text="#Site search"><span class="fa fa-link"></span></button>
             </h3>
           </div>
-          <form class="site-search" role="search">
-            <div class="form-group m-xs-b-small">
-              <label class="sr-only" for="sitesearch">Sök på IQS.se</label>
-              <input class="form-control" type="text" placeholder="Sök på IQS.se" id="sitesearch">
-              <button class="btn-search" type="submit">
-                  <svg class="icon icon-search" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-search"></use>
-                  </svg><span class="sr-only">Sök</span>
-              </button>
+          <form class="global-search" role="search">
+            <div class="input-group">
+              <label class="sr-only" for="global-search-input">Sök</label>
+              <input class="form-control" id="global-search-input" type="search" placeholder="Sök..."><span class="input-group-btn">
+                <button class="btn btn-search" type="submit">
+                    <svg class="icon icon-search icon-sm" aria-hidden="true">
+                      <use xlink:href="images/icons/icons.svg#icon-search"></use>
+                    </svg><span class="sr-only">Sök</span>
+                </button></span>
             </div>
-          </form><span class="help-block">26 resultat för<strong> "Projekt 123"</strong></span>
+          </form>
         </section>
       </section>
       <section class="mmx-docs-chapter">
@@ -1296,6 +1318,7 @@
             </h3>
             <ul class="list-unstyled mmx-docs-link-list">
               <li><a href="start.html">Start Page</a></li>
+              <li><a href="content.html">Content Page</a></li>
             </ul>
           </div>
         </section>

@@ -63,7 +63,12 @@
       "music-file-1",
       "upload-file-2", 
       "zip-file",
-      "search-plus" ]
+      "search-plus" ],
+    "sizes": {
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px"
+    }
   },
   "images": {
     "phBgColor": "CCC",
@@ -94,8 +99,7 @@
         "name": "portrait",
         "displayName": "1x1",
         "width": "180",
-        "height": "180",
-        "class": "img-responsive img-circle"
+        "height": "180"
       }
     ]
   },
@@ -131,6 +135,7 @@
     }
   ],
   "templates": {
-    "start": "Start Page"
+    "start": "Start Page",
+    "content": "Content Page"
   }
 }
