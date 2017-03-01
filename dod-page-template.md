@@ -25,6 +25,9 @@ Images
 * [ ] All images without exact width and height have img-wrapper
 * [ ] All images have alt-attribute. Leave the attribute value empty if the image is visual presentation and has no meaning.
 * [ ] Alt text describes the image. Images do not have alt texts like alt="list image" or alt="image description".
+* [ ] Images that appear on all pages can be inlined in HTML code to reduce requests. SVG-images can be included as SVG code in the page. Other Images can be encoded as base64 and included with img-element.
+* [ ] Resize images to the correct sizes used in the design. Provide a version of the image that has the double size for retina displays.
+* [ ] Optimize all images with https://tinypng.com/ and https://jakearchibald.github.io/svgomg/ or other image optimization tool.
 
 Forms
 
