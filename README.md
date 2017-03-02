@@ -48,6 +48,13 @@ In this project you can run BackstopJS to output a visual regression test report
 
 Screenshot references, tests and the html report can be found in reports/backstop_data.
 
+## Defenition of Done
+
+Use these checklists to make sure you have completed a component or a template fully.
+
+* [Definition of Done Component](https://github.com/Metamatrix/mmx-styleguide/blob/master/dod-component.md)
+* [Definition of Done Template](https://github.com/Metamatrix/mmx-styleguide/blob/master/dod-page-template.md)
+
 ## Exporting files to .Net-project
 
 You can use the command grunt export to export files for a .Net-project. The command will generate a directory named export where all assets like css, js, images and fonts are placed. You can then copy these files to your próject. The default setting is that the command assumes that your assets in the project will be located in a directory called static. If this isn't the case you can change this in settings.json with the parameter projectAssetPath.
