@@ -1,0 +1,117 @@
+extends layouts/content
+
+block sidebar
+	nav(role="navigation")
+		ul.nav.nav-pills.nav-stacked
+			li.active
+				a(href="", aria-current="page")
+					+lipsum-words(2)
+			+repeat(5)
+				li
+					a(href="")
+						+lipsum-words(2)
+
+block maincontent
+	article.article
+		h1.article-heading
+			+lipsum-words(3)
+
+		p.article-preamble
+			+lipsum-words(40)
+
+		div.article-body
+			p
+				+lipsum-sentences(2,4)
+				a(href="")
+					+lipsum-words(3)
+				| .
+				+lipsum-sentences(3,6)
+
+			h2 
+				+lipsum-words(5, 30)
+
+			p
+				+lipsum-sentences(8,8)
+
+			h3
+				+lipsum-words(5)
+
+			p
+				+lipsum-sentences(8,10)
+
+			h4
+				+lipsum-words(5, 5)
+
+			p
+				+lipsum-sentences(6,14)
+
+			h5
+				+lipsum-words(5, 20)
+
+			p
+				+lipsum-sentences(6,18)
+
+			h6
+				+lipsum-words(5, 10)
+
+			p
+				+lipsum-sentences(6,28)
+		
+			+img-ph("4:3")(class="img-left")
+
+			p
+				+lipsum-words(50)
+			
+			+img-ph("4:3")(class="img-right")
+
+			p
+				+lipsum-words(50)
+	
+			+img-ph("16:9")(class="img-center")
+				
+			blockquote
+				+lipsum-words(35)
+
+			ul
+				+repeat(5)
+					li
+						+lipsum-words(30, 10)
+
+			ol
+				+repeat(5)
+					li
+						+lipsum-words(30, 50)
+
+			.table-responsive
+				table.table
+					thead
+						tr
+							th
+								+lipsum-words(1, 10)
+							th
+								+lipsum-words(2, 20)
+							th
+								+lipsum-words(3, 30)
+							th
+								+lipsum-words(2, 50)
+					tbody
+						+repeat(5)
+							tr
+								td
+									+lipsum-words(1, 10)
+								td
+									+lipsum-words(2, 20)
+								td
+									+lipsum-words(3, 30)
+								td
+									+lipsum-words(2, 50)
+					tfooter
+						tr
+							th
+								+lipsum-words(1, 10)
+							th
+								+lipsum-words(2, 20)
+							th
+								+lipsum-words(3, 30)
+							th
+								+lipsum-words(2, 50)

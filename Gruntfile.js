@@ -42,11 +42,13 @@ module.exports = function(grunt) {
    * HTML tasks
    */
   grunt.registerTask('html-dev', [
-    'pug:dev'
+    //'pug:dev',
+    'nunjucks'
   ]);
 
   grunt.registerTask('html-dist', [
-    'pug:dist'
+    //'pug:dist'
+    'nunjucks'
   ]);
 
   grunt.registerTask('html-dev-validate', [
@@ -56,7 +58,8 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('html-dist-validate', [
-    'pug:dist',
+    //'pug:dist',
+    'nunjucks'
     'validation',
     'shell'
   ]);

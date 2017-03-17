@@ -1,0 +1,7 @@
+
+each mrgn in settings.margins
+	p.mmx-docs-margin
+		span(style="width:"+mrgn.margin+";" + "height:"+mrgn.margin+";")
+		span= mrgn.displayName
+		| :
+		span= mrgn.margin

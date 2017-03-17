@@ -1,0 +1,18 @@
+﻿include ../includes/mixins
+
+div.breadcrumb-wrapper
+	span#breadcrumb-label.sr-only Brödsmulenavigering
+	ol.breadcrumb.main-breadcrumb(aria-labelledby="breadcrumb-label", itemscope='', itemtype='http://schema.org/BreadcrumbList')
+		li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			a(href="", itemprop='item') 
+				+icon("home")(class="fa-lg")
+				span.sr-only(itemprop='name') Hem
+				meta(itemprop='position', content='1')
+		li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			a(href="", itemprop='item') 
+				span(itemprop='name') Om oss
+				meta(itemprop='position', content='2')
+		li.active(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			a(href="", itemprop='item', aria-current="True")
+				span(itemprop='name') Ledningen
+				meta(itemprop='position', content='3')

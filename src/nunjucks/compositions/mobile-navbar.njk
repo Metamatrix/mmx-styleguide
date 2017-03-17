@@ -1,0 +1,8 @@
+﻿include ../includes/mixins
+
+.navbar.navbar-default.mobile-navbar.hidden-md.hidden-lg.m-xs-b-0
+	#mobile-navbar-container.container-fluid.collapse.in
+		.pull-left.navbar-text
+			button.btn-clean.icon-link(data-toggle="menu",data-target="#mobile-nav")
+				+icon("bars")
+				span Meny

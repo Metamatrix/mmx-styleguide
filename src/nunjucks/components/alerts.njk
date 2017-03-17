@@ -1,0 +1,24 @@
+﻿.alert.alert-success(role='alert')
+	strong Well done!
+	|  You successfully read this important 
+	a(class="alert-link") alert message.
+.alert.alert-info(role='alert')
+	strong Heads up!
+	|  This alert needs your attention, but it's not 
+	a(class="alert-link") super important
+.alert.alert-warning(role='alert')
+	strong Warning!
+	|  Better check yourself, you're not looking 
+	a(class="alert-link") too good
+.alert.alert-danger(role='alert')
+	strong Oh snap!
+	|  Change a few things up and try submitting again. 
+	a(class="alert-link") Click here!
+
+h3 Dissmissabled alert
+
+.alert.alert-info.alert-dismissible(role='alert')
+	button.close(type='button', data-dismiss='alert', aria-label='Close')
+		span(aria-hidden='true') ×
+	strong Warning!
+		|  Better check yourself, you're not looking too good.
