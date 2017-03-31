@@ -1,15 +1,24 @@
-﻿include ../includes/mixins
+﻿
+{% import '../includes/macros.njk' as macros %}
 
-header#global-header.global-header(role="banner")
-	include ../compositions/mobile-navbar
-	.container
-		.row
-			.row-md-eq
-				.col-md-4.col-middle 
-					a.site-logo(href="",title="Till startsidan")
-						img(src=settings.logotypes.default, alt=settings.title)
-				.col-md-8.hidden-sm.hidden-xs.col-middle.text-right
-					include ../compositions/function-menu
-					include ../compositions/global-search
-	.container
-		include global-navigation
+<header id="global-header" role="banner" class="global-header">
+	{% include "./mobile-navbar.njk" %}
+	<div class="container">
+    <div class="row">
+      <div class="row-md-eq">
+        <div class="col-md-4 col-middle"> 
+					<a href="" title="Till startsidan" class="site-logo">
+						<img src=settings.logotypes.default, alt=settings.title></img>
+					</a>
+				</div>
+        <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
+					{% include "./function-menu.njk" %}
+					{% include "./global-search.njk" %}
+				</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+		{% include "./global-navigation.njk" %}
+	</div>
+</header>

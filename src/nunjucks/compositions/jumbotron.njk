@@ -1,39 +1,42 @@
-style.
-    .main-jumbotron-img {
-        background-image: url(prototypecontent/images/bannerimage.png?preset=bannermobile);
-    }
-
-    @media screen and (-webkit-min-device-pixel-ratio: 1.5),
-        screen and (-moz-min-device-pixel-ratio: 1.5),
-        screen and (min-device-pixel-ratio: 1.5) {
-        .main-jumbotron-img {
-            background-image: url(prototypecontent/images/bannerimage.png?preset=bannermobilehighres);
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .main-jumbotron-img {
-            background-image: url(prototypecontent/images/bannerimage.png?preset=banner);
-        }
-    }
-
-    @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
-        screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 1.5),
-        screen and (min-width: 768px) and (min-device-pixel-ratio: 1.5) {
-        .main-jumbotron-img {
-            background-image: url(prototypecontent/images/bannerimage.png?preset=bannerhighres);
-        }
-    }
-
-section.jumbotron.main-jumbotron
-    .main-jumbotron-img
-    .container
-        .row
-            .col-xs-12
-                h2.h1 Nyfiken på samhällsbyggnad?
-        .row
-            .col-sm-8.col-md-9                
-                p Som medlem i IQS får du tillgång till ett unikt och brett nätverk med många intressanta aktiviteter och seminarier. Du får också tillgång till omvärldsbevakning och den senaste forskningen för att alltid ligga i framkant.
-            .col-sm-4.col-md-3
-                .text-center
-                    a.btn(href="", class="btn btn-primary btn-lg") Bli medlem
+<style>
+  .main-jumbotron-img {
+      background-image: url(prototypecontent/images/bannerimage.png?preset=bannermobile);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+      screen and (-moz-min-device-pixel-ratio: 1.5),
+      screen and (min-device-pixel-ratio: 1.5) {
+      .main-jumbotron-img {
+          background-image: url(prototypecontent/images/bannerimage.png?preset=bannermobilehighres);
+      }
+  }
+  @media only screen and (min-width: 768px) {
+      .main-jumbotron-img {
+          background-image: url(prototypecontent/images/bannerimage.png?preset=banner);
+      }
+  }
+  @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+      screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 1.5),
+      screen and (min-width: 768px) and (min-device-pixel-ratio: 1.5) {
+      .main-jumbotron-img {
+          background-image: url(prototypecontent/images/bannerimage.png?preset=bannerhighres);
+      }
+  }
+</style>
+<section class="jumbotron main-jumbotron">
+  <div class="main-jumbotron-img"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="h1">Nyfiken på samhällsbyggnad?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-md-9">
+        <p>Som medlem i IQS får du tillgång till ett unikt och brett nätverk med många intressanta aktiviteter och seminarier. Du får också tillgång till omvärldsbevakning och den senaste forskningen för att alltid ligga i framkant.</p>
+      </div>
+      <div class="col-sm-4 col-md-3">
+        <div class="text-center"><a href="" class="btn btn btn-primary btn-lg">Bli medlem</a></div>
+      </div>
+    </div>
+  </div>
+</section>

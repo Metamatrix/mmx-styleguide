@@ -1,11 +1,19 @@
-﻿nav.global-nav.navbar.navbar-default
-	.container-fluid
-		ul.nav.navbar-nav
-			+nav_item("")
-				+lipsum-words(2,7)
-			+nav_item("", "active")
-				+lipsum-words(2,40)
-			+nav_item("")
-				+lipsum-words(2,3)
-			+nav_item("")
-				+lipsum-words(2,15)
+﻿{% import '../includes/macros.njk' as macros %}
+
+<nav class="global-nav navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+			{{ macros.nav_item("") }}
+				{{ macros.lipsum-words(2,7) }}
+
+			{{ macros.nav_item("", "active") }}
+				{{ macros.lipsum-words(2,40) }}
+
+			{{ macros.nav_item("") }}
+				{{ macros.lipsum-words(2,3) }}
+
+			{{ macros.nav_item("") }}
+				{{ macros.lipsum-words(2,15) }}
+		</ul>
+  </div>
+</nav>

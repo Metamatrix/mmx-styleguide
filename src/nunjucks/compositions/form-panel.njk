@@ -1,15 +1,20 @@
-form.panel
-	.form-group.form-group-sm
-		label(for='input1') Namn
-		input(type="text", required).form-control
-	.form-group.form-group-sm
-		label(for='input1') E-postadress
-		input(type="text", required).form-control
-	.form-group.form-group-sm
-		.checkbox
-			label
-				input(type='checkbox',checked=true)
-				| Jag vill gå båda dagarna tack
-	input(type="submit").btn.btn-primary
+<form class="panel">
+  <div class="form-group form-group-sm">
+    <label for="input1">Namn</label>
+    <input type="text" required="required" class="form-control"/>
+  </div>
+  <div class="form-group form-group-sm">
+    <label for="input1">E-postadress</label>
+    <input type="text" required="required" class="form-control"/>
+  </div>
+  <div class="form-group form-group-sm">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" checked="checked"/>Jag vill gå båda dagarna tack
+      </label>
+    </div>
+  </div>
+  <input type="submit" class="btn btn-primary"/>
+</form>
 	
 						

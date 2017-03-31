@@ -1,8 +1,16 @@
-form(class="global-search",role="search")
-	.input-group
-		label.sr-only(for="global-search-input") Sök
-		input#global-search-input.form-control(type="search",placeholder="Sök...")
-		span.input-group-btn
-			button.btn.btn-search(type="submit")
-				+icon("search")(class="icon-sm")
-				span.sr-only Sök
+{% import '../includes/macros.njk' as macros %}
+
+<form role="search" class="global-search">
+  <div class="input-group">
+    <label for="global-search-input" class="sr-only">Sök</label>
+    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
+		<span class="input-group-btn">
+      <button type="submit" class="btn btn-search">
+				<span class="icon-sm">
+					{{ macros.icon("search") }}
+				</span>
+				<span class="sr-only">Sök</span>
+			</button>
+		</span>
+  </div>
+</form>
