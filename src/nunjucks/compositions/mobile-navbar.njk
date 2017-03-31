@@ -1,8 +1,12 @@
-﻿include ../includes/mixins
+﻿{% import '../includes/macros.njk' as macros %}
 
-.navbar.navbar-default.mobile-navbar.hidden-md.hidden-lg.m-xs-b-0
-	#mobile-navbar-container.container-fluid.collapse.in
-		.pull-left.navbar-text
-			button.btn-clean.icon-link(data-toggle="menu",data-target="#mobile-nav")
-				+icon("bars")
-				span Meny
+<div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
+  <div id="mobile-navbar-container" class="container-fluid collapse in">
+    <div class="pull-left navbar-text">
+      <button data-toggle="menu" data-target="#mobile-nav" class="btn-clean icon-link">
+				{{ macros.icon("bars") }}
+				<span>Meny</span>
+			</button>
+    </div>
+  </div>
+</div>
