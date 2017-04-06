@@ -3,6 +3,7 @@ module.exports = function(grunt, options){
     options: {
       data: {
         debug: true,
+        pretty: true,
         // these are global project settings passed to the views
         settings: '<%= globalSettings %>'
       }
