@@ -1,7 +1,10 @@
-p
-	a(href="") This is a stand alone link
+{% import '../includes/macros.njk' as macros %}
 
-p
-	+lipsum-words(20)
-	a(href="") This is a link in a text
-	| +lipsum-words(20)
+<p>
+	<a href="">This is a stand alone link</a>
+</p>
+<p>
+	{{ macros.lipsum-words(20) }}
+	<a href="">This is a link in a text</a>
+	{{ macros.lipsum-words(20) }}
+</p>

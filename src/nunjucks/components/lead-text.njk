@@ -1,4 +1,5 @@
-﻿include ../includes/mixins
+﻿{% import '../includes/macros.njk' as macros %}
 
-p.lead
-	+lipsum-sentences(15)
+<p class="lead">
+	{{ macros.lipsum-sentences(15) }}
+</p>

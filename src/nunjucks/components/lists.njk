@@ -1,81 +1,73 @@
-﻿include ../includes/mixins
+﻿{% import '../includes/macros.njk' as macros %}
 
-h3 Bullet list
+<h3>Bullet list</h3>
+<ul>
+  <li>
+		{{ macros.lipsum-words(5) }}
+    <ul>
+      <li>{{ macros.lipsum-words(5) }}</li>
+      <li>{{ macros.lipsum-words(5) }}</li>
+    </ul>
+	{{ macros.repeat(3) }}
+    <li>{{ macros.lipsum-words(5) }}</li>
+  </li>
+</ul>
+<ul>
+{{ macros.repeat(5) }}
+  <li>{{ macros.lipsum-words(25) }}</li>
+</ul>
 
-ul
-	li
-		+lipsum-words(5)
-		ul
-			li
-				+lipsum-words(5)
-			li
-				+lipsum-words(5)
-	+repeat(3)
-		li
-			+lipsum-words(5)
+<h3>BNumber list</h3>
+<ol>
+  <li>
+		{{ macros.lipsum-words(5) }}
+    <ol>
+      <li>{{ macros.lipsum-words(5) }}</li>
+      <li>{{ macros.lipsum-words(5) }}</li>
+    </ol>
+	{{ macros.repeat(3) }}
+    <li>{{ macros.lipsum-words(5) }}</li>
+  </li>
+</ol>
+<ul>
+{{ macros.repeat(5) }}
+  <li>{{ macros.lipsum-words(25) }}</li>
+</ol>
 
-ul
-	+repeat(5)
-		li
-			+lipsum-words(25)
+<h3>Unstyled list</h3>
+<ul class="list-unstyled">
+	{{ macros.repeat(5) }}
+  	<li>{{ macros.lipsum-words(5) }}</li>
+</ul>
 
-h3 Number list
-
-ol
-	li
-		+lipsum-words(5)
-		ol
-			li
-				+lipsum-words(5)
-			li
-				+lipsum-words(5)
-	+repeat(3)
-		li
-			+lipsum-words(5)
-
-ol
-	+repeat(5)
-		li
-			+lipsum-words(25)
-
-h3 Unstyled list
-
-ul.list-unstyled
-	+repeat(5)
-		li
-			+lipsum-words(5)
-
-h3 Inline list
-
-ul.list-inline
-	+repeat(5)
-		li
-			+lipsum-words(3)
+<h3>Inline list</h3>
+<ul class="list-inline">
+	{{ macros.repeat(5) }}
+  	<li>{{ macros.lipsum-words(3) }}</li>
+</ul>
 
 
-h3 Description list
+<h3>Description list</h3>
+<dl>
+	{{ macros.repeat(4) }}
+  	<dt>{{ macros.lipsum-words(2) }}</dt>
+  	<dd>{{ macros.lipsum-words(10) }}</dd>
+</dl>
 
-dl
-	+repeat(4)
-		dt 
-			+lipsum-words(2)
-		dd
-			+lipsum-words(10)
+<h3>Horizontal description list</h3>
+<dl class="dl-horizontal">
+	{{ macros.repeat(4) }}
+  	<dt>{{ macros.lipsum-words(2) }}</dt>
+  	<dd>{{ macros.lipsum-words(10) }}</dd>
+</dl>
 
-h3 Horizontal description list
-
-dl.dl-horizontal
-	+repeat(4)
-		dt 
-			+lipsum-words(2)
-		dd
-			+lipsum-words(10)
-
-h3 Link list with icons
-
-ul.link-list
-	+repeat(5)
-		li
-			a.icon-link
-				+icon("chevron-right")
-				+lipsum-words(3)
+<h3>Link list with icons</h3>
+<ul class="link-list">
+	{{ macros.repeat(5) }}
+		<li>
+			<a class="icon-link">
+				{{ macros.icon("chevron-right") }}
+				{{ macros.lipsum-words(3) }}
+			</a>
+		</li>
+</ul>

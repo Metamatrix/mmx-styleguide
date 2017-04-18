@@ -1,37 +1,36 @@
-.vcard
-	.vcard-inner
-		.vcard-img
-			.img-wrapper.img-wrapper-1x1
-				+img-ph('portrait')(class="img-circle")
-		.vcard-body
-			h2.vcard-heading 
-				span.vcard-name Firstname Lastname
-			
-			p.vcard-title Job title
-			
-			dl.vcard-dl
-				dt E-mail
-				dd
-					a.vcard-email(href="mailto:firstname.lastname@metamatrix.se") firstname.lastname@metamatrix.se
-				dt Phone
-				dd
-					a.vcard-phone(href="tel:+46812345678") 08 1234 5678
+{% import '../includes/macros.njk' as macros %}
 
-.vcard
-	.vcard-inner
-		.vcard-body
-			h2.vcard-heading 
-				span.vcard-name Firstname Lastname
-			
-			p.vcard-title Job title
-			
-			dl.vcard-dl
-				dt E-mail
-				dd
-					a.vcard-email(href="mailto:firstname.lastname@metamatrix.se") firstname.lastname@metamatrix.se
-				dt Phone
-				dd
-					a.vcard-phone(href="tel:+46812345678") 08 1234 5678
-		.vcard-img.vcard-img-right
-			.img-wrapper.img-wrapper-1x1
-				+img-ph('portrait')(class="img-circle")
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-img">
+      <div class="img-wrapper img-wrapper-1x1">{{ macros.img-ph('portrait', class='img-circle') }}</div>
+    </div>
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+    <div class="vcard-img vcard-img-right">
+      <div class="img-wrapper img-wrapper-1x1">{{ macros.img-ph('portrait', class='img-circle') }}</div>
+    </div>
+  </div>
+</div>

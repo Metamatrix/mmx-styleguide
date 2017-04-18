@@ -1,15 +1,9 @@
-﻿include ../includes/mixins
-
-.dropdown.open
-	button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-		| Dropdown
-		span.caret
-	ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-		li
-			a(href='#') Action
-		li
-			a(href='#') Another action
-		li
-			a(href='#') Something else here
-		li
-			a(href='#') Separated link
+﻿<div class="dropdown open">
+  <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">Dropdown<span class="caret"></span></button>
+  <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>

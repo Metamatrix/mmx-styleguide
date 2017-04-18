@@ -1,11 +1,13 @@
-﻿include ../includes/mixins
+﻿{% import '../includes/macros.njk' as macros %}
 
-p.text-left Left aligned text.
-p.text-center Center aligned text.
-p.text-right Right aligned text.
-p.text-justify 
-	| Justified text.
-	+lipsum-sentences(20)
-p.text-nowrap 
-	| No wrap text.
-	+lipsum-sentences(20)
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">
+  Justified text.
+	{{ macros.lipsum-sentences(20) }}
+</p>
+<p class="text-nowrap">
+  No wrap text.
+	{{ macros.lipsum-sentences(20) }}
+</p>

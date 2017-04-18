@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('html-dist-validate', [
     //'pug:dist',
-    'nunjucks'
+    'nunjucks',
     'validation',
     'shell'
   ]);

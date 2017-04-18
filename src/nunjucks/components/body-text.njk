@@ -1,8 +1,7 @@
-﻿include ../includes/mixins
+﻿{% import '../includes/macros.njk' as macros %}
 
-p
-	+lipsum-sentences(10)
-p
-	+lipsum-sentences(15, 5)
-p
-	+lipsum-sentences(10, 7)
+<p>{{ macros.lipsum-sentences(10) }}</p>
+
+<p>{{ macros.lipsum-sentences(15,5) }}</p>
+
+<p>{{ macros.lipsum-sentences(10,7) }}</p>
