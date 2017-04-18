@@ -2,10 +2,13 @@
 
     {% if !bgColor %}
         var bgColor = settings.images.phBgColor
+    {% endif %}
     {% if !frontColor %}
         var frontColor = settings.images.phFgColor
+    {% endif %}
     {% if !text %}
         var text = name
+    {% endif %}
 
     var array = settings.images.sizes
     var key = "name"
@@ -18,6 +21,8 @@
             var height = settings.images.sizes[i].height
             className = settings.images.sizes[i].class
             text = settings.images.sizes[i].displayName
+        {% endif %}
+    {% endfor %}
 
     <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
 

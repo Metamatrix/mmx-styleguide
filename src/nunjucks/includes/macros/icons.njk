@@ -1,21 +1,26 @@
 //- Icons
-mixin icon(name)
-	-var cssClass = settings.icons.className + " " + settings.icons.prefix + name;
+{% macro icon(name) %}
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
 
-	-if(attributes.class) 
-		-cssClass += " " + attributes.class;
+	{% if attributes.class %}
+		cssClass += " " + attributes.class;
+	{% endif %}
 
-	svg(class=cssClass, aria-hidden="true")
-		use(xlink:href="images/icons/icons.svg#icon-"+name)
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
 
-mixin icon-circle(name)
-	-var cssClass = settings.icons.className + " " + settings.icons.prefix + name;
+{% endmacro %}
 
-	-if(attributes.class) 
-		-cssClass += " " + attributes.class;
+{% macro icon-circle(name) %}
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
 
-	-cssClass += " fa-stack-1x fa-inverse";
+	{% if attributes.class %}
+		cssClass += " " + attributes.class;
+	{% endif %}
 
-	span.fa-stack
-		span.fa.fa-circle.fa-stack-2x
-		span(class=cssClass,aria-hidden="true")
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+{% endmacro %}

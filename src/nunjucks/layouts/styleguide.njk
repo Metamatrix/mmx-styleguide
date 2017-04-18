@@ -1,6 +1,24 @@
-extends root
+{% extends "./root.njk" %}
 
-mixin doc-section(heading)
+{% macro doc-section(heading) %}
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+			{% if block %}
+				{% block %}
+			{% endif %}
+		</div>
+	</section>
+{% endmacro %}
+
+
+
+{#mixin doc-section(heading)
 	- var id = heading.replace(/ /g,'')
 	section.mmx-docs-section
 		.container.mmx-docs-container
@@ -10,8 +28,6 @@ mixin doc-section(heading)
 			if block
 				block
 
-
-
 mixin doc-section-no-container(heading)
 	- var id = heading.replace(/ /g,'')
 	section.mmx-docs-section
@@ -20,16 +36,57 @@ mixin doc-section-no-container(heading)
 				button.btn(data-clipboard-text= "#" + heading)
 					span.fa.fa-link
 		if block
-			block
+			block#}
 
-mixin docs-heading(heading)
+
+{% macro doc-heading(heading) %}
+	var id = heading.replace(/ /g,'')
+	<div class="mmx-docs-heading-container">
+		<div class="container mmx-docs-container">
+			<h2 class="mmx-docs-heading" id="heading">
+		</div>
+	</div>
+{% endmacro %}
+
+{#mixin docs-heading(heading)
 	- var id = heading.replace(/ /g,'')
 	.mmx-docs-heading-container
 		.container.mmx-docs-container
-			h2.mmx-docs-heading(id= id)= heading
+			h2.mmx-docs-heading(id= id)= heading#}
+
+{% block headerstyles %}
+	<link rel="stylesheet" href={{data.stylesPath}} + "styleguide.css"/>
+{% endblock %}
+
+{% block rootcontent %}
+<div data-appname="data.title" class="mmx-componentlibrary">
+  <header class="mmx-docs-header">
+    <div class="container mmx-docs-container">
+      <h1 class="page-heading">{{data.title}} + Styleguide</h1>
+      <div id="rss-feeds"></div>
+    </div>
+  </header>
+</div>
+<nav id="mmx-document-nav" class="hidden-xs hidden-sm hidden-md">
+  <button id="mmx-docs-toggle-button"><span class="fa fa-thumb-tack"></span></button>
+  <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""/></div>
+  <ul class="list-unstyled nav"></ul>
+</nav>
+<footer class="mmx-docs-footer">
+  <div class="container mmx-docs-container">
+    <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"/></a></div>
+  </div>
+</footer>
+{% endblock %}
 
 
-block headerstyles
+{% block footerscripts %}
+<script src={{data.scriptsPath}} + "styleguide.min.js"></script>
+{% endblock %}
+
+
+
+{#block headerstyles
 	link(rel='stylesheet', href=settings.stylesPath + 'styleguide.css')
 
 block rootcontent
@@ -54,4 +111,4 @@ block rootcontent
 
 
 block footerscripts
-	script(src=settings.scriptsPath + 'styleguide.min.js')
+	script(src=settings.scriptsPath + 'styleguide.min.js')#}

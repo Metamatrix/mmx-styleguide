@@ -1,5 +1,4 @@
-﻿- 
-	var lipsum = (function() {
+﻿var lipsum = (function() {
 
 		function capitalizeFirstLetter(text) {
 			return text.charAt(0).toUpperCase() + text.slice(1);
@@ -40,14 +39,19 @@
 			return text;
 		};
 	})();
-mixin lipsum(type, count, startIndex)
+
+{% macro lipsum(type, count, startIndex) %}
 	= lipsum(type, count, startIndex)
+{% endmacro %}
 
-mixin lipsum-characters(count, startIndex)
-	+lipsum("characters", count, startIndex)
+{% macro lipsum-characters(count, startIndex) %}
+	{{ lipsum('characters', count, startIndex) }}
+{% endmacro %}
 
-mixin lipsum-words(count, startIndex)
-	+lipsum("words", count, startIndex)
+{% macro lipsum-words(count, startIndex) %}
+	{{ lipsum('words', count, startIndex) }}
+{% endmacro %}
 
-mixin lipsum-sentences(count, startIndex)
-	+lipsum("sentences", count, startIndex)
+{% macro lipsum-sentences(count, startIndex) %}
+	{{ lipsum('sentences', count, startIndex) }}
+{% endmacro %}

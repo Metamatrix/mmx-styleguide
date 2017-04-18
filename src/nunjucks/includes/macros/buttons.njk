@@ -1,4 +1,4 @@
-//- button mixins
+{#//- button mixins
 //- anchor buttons
 mixin a-btn(url,style)
 	- var type = (typeof style === 'undefined') ? "default" : style
@@ -23,129 +23,182 @@ mixin a-btn-danger(url)
 
 mixin a-btn-success(url)
 	+a-btn(url,"success")
-		block
+		block#}
 
 //- buttons
-mixin btn(caption,style,size)
+
+{% macro btn(caption, style, size) %}
+	var type = (typeof style === 'undefined') ? "default" : style
+{% if !size %}
+	<button class="btn-" + type, type="button"></button>
+{% else %}
+	<button class="btn-" + type "btn-" + size, type="button"></button>
+{% endif %}
+{% endmacro %}
+
+
+{#mixin btn(caption,style,size)
 	- var type = (typeof style === 'undefined') ? "default" : style
 	unless size
 		button.btn(class="btn-" + type,type="button")&attributes(attributes)= caption
 	else
-		button.btn(class="btn-" + type "btn-" + size,type="button")&attributes(attributes)= caption
+		button.btn(class="btn-" + type "btn-" + size,type="button")&attributes(attributes)= caption#}
 
+{% macro btn-primary(caption) %}
+	{{ btn(caption,"primary") }}
+{% endmacro %}
 
-mixin btn-primary(caption)
-	+btn(caption,"primary")
+{% macro btn-info(caption) %}
+	{{ btn(caption,"info") }}
+{% endmacro %}
 
-mixin btn-info(caption)
-	+btn(caption,"info")
+{% macro btn-warning(caption) %}
+	{{ btn(caption,"warning") }}
+{% endmacro %}
 
-mixin btn-warning(caption)
-	+btn(caption,"warning")
+{% macro btn-danger(caption) %}
+	{{ btn(caption,"danger") }}
+{% endmacro %}
 
-mixin btn-danger(caption)
-	+btn(caption,"danger")
+{% macro btn-success(caption) %}
+	{{ btn(caption,"success") }}
+{% endmacro %}
 
-mixin btn-success(caption)
-	+btn(caption,"success")
 
 //- Large buttons
-mixin btn-lg(caption)
-	- var type = (typeof style === 'undefined') ? 'default' : style
-	+btn(caption,type,"lg")
 
-mixin btn-lg-primary(caption)
-	+btn(caption,"primary","lg")
+{% macro btn-lg(caption) %}
+	var type = (typeof style === 'undefined') ? 'default' : style
+	{{ btn(caption,type,"lg") }}
+{% endmacro %}
 
-mixin btn-lg-info(caption)
-	+btn(caption,"info","lg")
+{% macro btn-lg-primary(caption) %}
+	{{ btn(caption,"primary","lg") }}
+{% endmacro %}
 
-mixin btn-lg-success(caption)
-	+btn(caption,"success","lg")
+{% macro btn-lg-info(caption) %}
+	{{ btn(caption,"info","lg") }}
+{% endmacro %}
 
-mixin btn-lg-warning(caption)
-	+btn(caption,"warning","lg")
+{% macro btn-lg-success(caption) %}
+	{{ btn(caption,"success","lg") }}
+{% endmacro %}
 
-mixin btn-lg-danger(caption)
-	+btn(caption,"danger","lg")
+{% macro btn-lg-warning(caption) %}
+	{{ btn(caption,"warning","lg") }}
+{% endmacro %}
+
+{% macro btn-lg-danger(caption) %}
+	{{ btn(caption,"danger","lg") }}
+{% endmacro %}
+
 
 //- Small buttons
-mixin btn-sm(caption)
-	- var type = (typeof style === 'undefined') ? 'default' : style
-	+btn(caption,type,"sm")
 
-mixin btn-sm-primary(caption)
-	+btn(caption,"primary","sm")
+{% macro btn-sm(caption) %}
+	var type = (typeof style === 'undefined') ? 'default' : style
+	{{ btn(caption,type,"sm") }}
+{% endmacro %}
 
-mixin btn-sm-info(caption)
-	+btn(caption,"info","sm")
+{% macro btn-sm-primary(caption) %}
+	{{ btn(caption,"primary","sm") }}
+{% endmacro %}
 
-mixin btn-sm-success(caption)
-	+btn(caption,"success","sm")
+{% macro btn-sm-info(caption) %}
+	{{ btn(caption,"info","sm") }}
+{% endmacro %}
 
-mixin btn-sm-warning(caption)
-	+btn(caption,"warning","sm")
+{% macro btn-sm-success(caption) %}
+	{{ btn(caption,"success","sm") }}
+{% endmacro %}
 
-mixin btn-sm-danger(caption)
-	+btn(caption,"danger","sm")
+{% macro btn-sm-warning(caption) %}
+	{{ btn(caption,"warning","sm") }}
+{% endmacro %}
+
+{% macro btn-sm-danger(caption) %}
+	{{ btn(caption,"danger","sm") }}
+{% endmacro %}
+
+
 
 //- Extra Small buttons
-mixin btn-xs(caption)
-	- var type = (typeof style === 'undefined') ? 'default' : style
-	+btn(caption,type,"xs")
 
-mixin btn-xs-primary(caption)
-	+btn(caption,"primary","xs")
+{% macro btn-xs(caption) %}
+	var type = (typeof style === 'undefined') ? 'default' : style
+	{{ btn(caption,type,"xs") }}
+{% endmacro %}
 
-mixin btn-xs-info(caption)
-	+btn(caption,"info","xs")
+{% macro btn-xs-primary(caption) %}
+	{{ btn(caption,"primary","xs") }}
+{% endmacro %}
 
-mixin btn-xs-success(caption)
-	+btn(caption,"success","xs")
+{% macro btn-xs-info(caption) %}
+	{{ btn(caption,"info","xs") }}
+{% endmacro %}
 
-mixin btn-xs-warning(caption)
-	+btn(caption,"warning","xs")
+{% macro btn-xs-success(caption) %}
+	{{ btn(caption,"success","xs") }}
+{% endmacro %}
 
-mixin btn-xs-danger(caption)
-	+btn(caption,"danger","xs")
+{% macro btn-xs-warning(caption) %}
+	{{ btn(caption,"warning","xs") }}
+{% endmacro %}
+
+{% macro btn-xs-danger(caption) %}
+	{{ btn(caption,"danger","xs") }}
+{% endmacro %}
 
 //- input buttons
-mixin input-btn(caption,style)
-	- var type = (typeof style === 'undefined') ? "default" : style
-	input.btn(class="btn-" + type,type="button",value=caption)
 
-mixin input-btn-primary(caption)
-	+input-btn(caption,"primary")
+{% macro input-btn(caption) %}
+	var type = (typeof style === 'undefined') ? 'default' : style
+	<input class="btn btn-" + type,type="button",value=caption></input>
+{% endmacro %}
 
-mixin input-btn-info(caption)
-	+input-btn(caption,"info")
+{% macro input-btn-primary(caption) %}
+	{{ input-btn(caption,"primary") }}
+{% endmacro %}
 
-mixin input-btn-warning(caption)
-	+input-btn(caption,"warning")
+{% macro input-btn-info(caption) %}
+	{{ input-btn(caption,"info") }}
+{% endmacro %}
 
-mixin input-btn-danger(caption)
-	+input-btn(caption,"danger")
+{% macro input-btn-warning(caption) %}
+	{{ input-btn(caption,"warning") }}
+{% endmacro %}
 
-mixin input-btn-success(caption)
-	+input-btn(caption,"success")
+{% macro input-btn-danger(caption) %}
+	{{ input-btn(caption,"danger") }}
+{% endmacro %}
+
+{% macro input-btn-success(caption) %}
+	{{ input-btn(caption,"success") }}
+{% endmacro %}
 
 //- submit buttons
-mixin submit(caption,style)
-	- var type = (typeof style === 'undefined') ? "default" : style
-	input.btn(class="btn-" + type,type="submit",value=caption)
 
-mixin submit-primary(caption)
-	+submit(caption,"primary")
+{% macro submit(caption, style) %}
+	var type = (typeof style === 'undefined') ? 'default' : style
+	<input class="btn btn-" + type,type="submit",value=caption></input>
+{% endmacro %}
 
-mixin submit-info(caption)
-	+submit(caption,"info")
+{% macro submit-primary(caption) %}
+	{{ submit(caption,"primary") }}
+{% endmacro %}
 
-mixin submit-warning(caption)
-	+submit(caption,"warning")
+{% macro submit-info(caption) %}
+	{{ submit(caption,"info") }}
+{% endmacro %}
 
-mixin submit-danger(caption)
-	+submit(caption,"danger")
+{% macro submit-warning(caption) %}
+	{{ submit(caption,"warning") }}
+{% endmacro %}
 
-mixin submit-success(caption)
-	+submit(caption,"success")
+{% macro submit-danger(caption) %}
+	{{ submit(caption,"danger") }}
+{% endmacro %}
 
+{% macro submit-success(caption) %}
+	{{ submit(caption,"success") }}
+{% endmacro %}
