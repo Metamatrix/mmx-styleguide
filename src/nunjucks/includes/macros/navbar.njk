@@ -1,4 +1,4 @@
-//- Navbar mixins by Kezz Bracey
+{#//- Navbar mixins by Kezz Bracey
 //- https://github.com/tutsplus/baking-bootstrap-snippets-with-jade
 //- Author:  http://tutsplus.com/authors/kezz-bracey
 mixin navbar(name, id, style)
@@ -14,13 +14,19 @@ mixin navbar(name, id, style)
 
 		.collapse.navbar-collapse( id=id )
 			ul.nav.navbar-nav
-				block
+				block#}
 
-mixin nav_item(href, active)
+{#mixin nav_item(href, active)
 	li(class=active): a( href=href )
-		block
+		block#}
 
-mixin nav_item_dropdown(href, active)
+{% macro nav_item(href, active) %}
+	<li class=active>
+		<a href=href></a>
+	</li>
+{% endmacro %}
+
+{#mixin nav_item_dropdown(href, active)
 	li(class=["dropdown", active])
 		a.dropdown-toggle( href=href, data-toggle="dropdown", role="button", aria-expanded="false" )= attributes.label
 			span.caret
@@ -63,4 +69,4 @@ mixin navbar-static(name,id,style)
 			.collapse.navbar-collapse( id=id )
 				ul.nav.navbar-nav
 					block
-//- End navbar mixins
+//- End navbar mixins#}

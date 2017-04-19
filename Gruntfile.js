@@ -52,7 +52,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('html-dev-validate', [
-    'pug:dev',
+    'nunjucks',
     'validation',
     'shell'
   ]);

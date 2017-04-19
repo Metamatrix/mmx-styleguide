@@ -1,12 +1,12 @@
-﻿{% macro img-ph(name, text, bgColor, frontColor) %}
+﻿{% macro imgph(name, text, bgColor, frontColor) %}
 
-    {% if !bgColor %}
+    {% if not bgColor %}
         var bgColor = settings.images.phBgColor
     {% endif %}
-    {% if !frontColor %}
+    {% if not frontColor %}
         var frontColor = settings.images.phFgColor
     {% endif %}
-    {% if !text %}
+    {% if  not text %}
         var text = name
     {% endif %}
 
@@ -15,14 +15,14 @@
     var value = name
     var className = ""
 
-    {% for (var i = 0; i < array.length; i++) %}
+{#    {% for (var i = 0; i < array.length; i++) %}
         {% if(array[i][key] === value) %}
             var width = settings.images.sizes[i].width
             var height = settings.images.sizes[i].height
             className = settings.images.sizes[i].class
             text = settings.images.sizes[i].displayName
         {% endif %}
-    {% endfor %}
+    {% endfor %}#}
 
     <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
 

@@ -1,6 +1,6 @@
 {% extends "./root.njk" %}
 
-{% macro doc-section(heading) %}
+{% macro docsection(heading) %}
 	var id = heading.replace(/ /g,'')
 	<section class="mmx-docs-section">
 		<div class="container mmx-docs-container">
@@ -9,9 +9,20 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-			{% if block %}
-				{% block %}
-			{% endif %}
+		</div>
+	</section>
+{% endmacro %}
+
+
+{% macro docsectionnocontainer(heading) %}
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
 		</div>
 	</section>
 {% endmacro %}
@@ -39,7 +50,7 @@ mixin doc-section-no-container(heading)
 			block#}
 
 
-{% macro doc-heading(heading) %}
+{% macro docsheading(heading) %}
 	var id = heading.replace(/ /g,'')
 	<div class="mmx-docs-heading-container">
 		<div class="container mmx-docs-container">
@@ -72,6 +83,7 @@ mixin doc-section-no-container(heading)
   <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""/></div>
   <ul class="list-unstyled nav"></ul>
 </nav>
+{% block content %}{% endblock %}
 <footer class="mmx-docs-footer">
   <div class="container mmx-docs-container">
     <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"/></a></div>

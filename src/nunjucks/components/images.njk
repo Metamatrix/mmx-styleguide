@@ -1,8 +1,11 @@
 ﻿{% import '../includes/macros.njk' as macros %}
 
 <h3>16x9</h3>
-{{ macros.img-ph("16x9", data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x") }}
+{{ macros.imgph("16x9") }}
 <h3>4x3</h3>
-{{ macros.img-ph("4x3", data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x") }}
+{{ macros.imgph("4x3") }}
 <h3>3x2</h3>
-{{ macros.img-ph("3x2", data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x") }}
+{{ macros.imgph("3x2") }}
+
+
+{#data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x")#}

@@ -1,127 +1,128 @@
-﻿{% extends "../layouts/styleguide.njk" %}
+﻿{% extends "./layouts/styleguide.njk" %}
+{% import './layouts/styleguide.njk' as styleguide %}
 
 {% block content %}
 	<section class="mmx-docs-chapter">
-		{{	docs-heading("Profile") }}
+		{{	styleguide.docsheading("Profile") }}
 
-		{{	doc-section("Fonts") }}
-		{% include "components/fonts" %}
+		{{	styleguide.docsection("Fonts") }}
+		{% include "./components/fonts.njk" %}
 
-		{{	doc-section("colors") }}
-		{#{% include "components/colors" %}#}
+		{{	styleguide.docsection("colors") }}
+		{% include "./components/colors.njk" %}
 
-		{{	doc-section("Logotypes") }}
-		{% include "components/logotype" %}
+		{{	styleguide.docsection("Logotypes") }}
+		{% include "./components/logotype.njk" %}
 
-		{{	doc-section("Margins") }}
-		{#{% include "components/margins" %}#}
+		{{	styleguide.docsection("Margins") }}
+		{% include "./components/margins.njk" %}
 
-		{{	doc-section("icons") }}
-		{% include "components/icons" %}
+		{{	styleguide.docsection("icons") }}
+		{% include "./components/icons.njk" %}
 
-		{{	doc-section("Images") }}
-		{% include "components/images" %}
+		{{	styleguide.docsection("Images") }}
+		{% include "./components/images.njk" %}
 	</section>
 
 
 	<section class="mmx-docs-chapter">
-		{{	docs-heading("Components") }}
+		{{	docsheading("Components") }}
 
-		{{	doc-section("Headings") }}
-		{% include "components/headings" %}
+		{{	docsection("Headings") }}
+		{% include "./components/headings.njk" %}
 
-		{{	doc-section("Body text") }}
-		{% include "components/body-text" %}
+		{{	docsection("Body text") }}
+		{% include "./components/body-text.njk" %}
 
-		{{	doc-section("Lead text") }}
-		{% include "components/lead-text" %}
+		{{	docsection("Lead text") }}
+		{% include "./components/lead-text.njk" %}
 
-		{{	doc-section("Small text") }}
-		{% include "components/small-text" %}
+		{{	docsection("Small text") }}
+		{% include "./components/small-text.njk" %}
 
-		{{	doc-section("Link text") }}
-		{% include "components/links" %}
+		{{	docsection("Link text") }}
+		{% include "./components/links.njk" %}
 
-		{{	doc-section("Text alignment") }}
-		{% include "components/text-alignment" %}
+		{{	docsection("Text alignment") }}
+		{% include "./components/text-alignment.njk" %}
 
-		{{	doc-section("Text helpers") }}
-		{% include "components/text-helpers" %}
+		{{	docsection("Text helpers") }}
+		{% include "./components/text-helpers.njk" %}
 
-		{{	doc-section("Blockquote") }}
-		{% include "components/blockquote" %}
+		{{	docsection("Blockquote") }}
+		{% include "./components/blockquote.njk" %}
 
-		{{	doc-section("Lists") }}
-		{% include "components/lists" %}
+		{{	docsection("Lists") }}
+		{% include "./components/lists.njk" %}
 
-		{{	doc-section("Tables") }}
-		{#{% include "components/tables" %}#}
+		{{	docsection("Tables") }}
+		{% include "./components/tables.njk" %}
 
-		{{	doc-section("Forms") }}
-		{#{% include "components/forms" %}#}
+		{{	docsection("Forms") }}
+		{% include "./components/forms.njk" %}
 
-		{{	doc-section("Buttons") }}
-		{% include "components/buttons" %}
+		{{	docsection("Buttons") }}
+		{% include "./components/buttons.njk" %}
 
-		{{	doc-section("Video") }}
-		{% include "components/video" %}
+		{{	docsection("Video") }}
+		{% include "./components/video.njk" %}
 
-		{{	doc-section("Breadcrumbs") }}
-		{% include "components/breadcrumb" %}
+		{{	docsection("Breadcrumbs") }}
+		{% include "./components/breadcrumb.njk" %}
 
-		{{	doc-section("Pagination") }}
-		{% include "components/pagination" %}
+		{{	docsection("Pagination") }}
+		{% include "./components/pagination.njk" %}
 
-		{{	doc-section("Alert") }}
-		{% include "components/alerts" %}
+		{{	docsection("Alert") }}
+		{% include "./components/alerts.njk" %}
 
-		{{	doc-section("Lables") }}
-		{% include "components/labels" %}
+		{{	docsection("Lables") }}
+		{% include "./components/labels.njk" %}
 
-		{{	doc-section("Cards") }}
-		{% include "components/cards" %}
+		{{	docsection("Cards") }}
+		{% include "./components/cards.njk" %}
 
-		{{	doc-section("Dropdowns") }}
-		{% include "components/dropdowns" %}
+		{{	docsection("Dropdowns") }}
+		{% include "./components/dropdowns.njk" %}
 
-		{{	doc-section("Tabs") }}
-		{% include "components/nav-tabs" %}
+		{{	docsection("Tabs") }}
+		{% include "./components/nav-tabs.njk" %}
 
-		{{	doc-section("Navbar") }}
-		{% include "components/navbar" %}
+		{{	docsection("Navbar") }}
+		{% include "./components/navbar.njk" %}
 
-		{{	doc-section("Navtree") }}
-		{% include "components/navtree" %}
+		{{	docsection("Navtree") }}
+		{% include "./components/navtree.njk" %}
 
-		{{	doc-section("Media object") }}
-		{% include "components/media-object" %}
+		{{	docsection("Media object") }}
+		{% include "./components/media-object.njk" %}
 
-		{{	doc-section("Vcard") }}
-		{% include "components/vcard" %}
+		{{	docsection("Vcard") }}
+		{% include "./components/vcard.njk" %}
 	</section>
 
 	<section class="mmx-docs-chapter">
-		{{	docs-heading("Compositions") }}
+		{{	docsheading("Compositions") }}
 
-		{{	doc-section-no-container("Site header") }}
-		{% include "compositions/global-header" %}
+		{{	docsectionnocontainer("Site header") }}
+		{% include "./compositions/global-header.njk" %}
 
-		{{	doc-section-no-container("Site footer") }}
-		{% include "compositions/global-footer" %}
+		{{	docsectionnocontainer("Site footer") }}
+		{% include "./compositions/global-footer.njk" %}
 
-		{{	doc-section-no-container("Site search") }}
-		{% include "compositions/global-search" %}
+		{{	docsectionnocontainer("Site search") }}
+		{% include "./compositions/global-search.njk" %}
 	</section>
 
 	<section class="mmx-docs-chapter">
-		{{	docs-heading("Templates") }}
-
-		{{	doc-section("Pages") }}
+		var templates = {{data.templates}}
+		{{	docsheading("Templates") }}
+		{{	docsection("Pages") }}
 		<ul class="list-unstyled mmx-docs-link-list">
 		<ul>
-			{% for name, fileName in {{data.templates}} %}
+			{% for template in templates %}
 				<li>
-					<a href=FileName + ".html">{{name}}</a>
+					<a href=template + ".html">{{template}}</a>
 				</li>
 			{% endfor %}
 		</ul>

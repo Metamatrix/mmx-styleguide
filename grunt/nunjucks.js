@@ -2,7 +2,8 @@ module.exports = function(grunt, options){
   //Accessibility test - output to terminal
   return {
     options: {
-      data: '<%= globalSettings %>'
+      data: grunt.file.readJSON('settings.json')
+      
     },
     render: {
       files: [

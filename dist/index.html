@@ -1,1337 +1,2111 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex nofollow">
-    <title>Metamatrix</title>
-    <script src="scripts/modernizr.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/styleguide.css">
-  </head>
-  <body>
-    <div class="mmx-componentlibrary" data-appname="Metamatrix">
-      <header class="mmx-docs-header">
-        <div class="container mmx-docs-container">
-          <h1 class="page-heading">Metamatrix Styleguide</h1>
-          <div id="rss-feeds"></div>
-        </div>
-      </header>
-      <nav class="hidden-xs hidden-sm hidden-md" id="mmx-document-nav">
-        <button id="mmx-docs-toggle-button"><span class="fa fa-thumb-tack"></span></button>
-        <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""></div>
-        <ul class="list-unstyled nav"></ul>
-      </nav>
-      <section class="mmx-docs-chapter">
-        <div class="mmx-docs-heading-container">
-          <div class="container mmx-docs-container">
-            <h2 class="mmx-docs-heading" id="Profile">Profile</h2>
-          </div>
-        </div>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Fonts">Fonts
-              <button class="btn" data-clipboard-text="#Fonts"><span class="fa fa-link"></span></button>
-            </h3>
-            <p>PT Sans</p>
-            <p class="italic">PT Sans Italic</p>
-            <p><b>PT Sans Bold</b></p>
-            <p> <b><i>PT Sans Bold Italic</i></b></p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Colors">Colors
-              <button class="btn" data-clipboard-text="#Colors"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="row row-blocks">
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#9ed355;"></div>
-                <p class="small"><b>Apple</b><br>#9ed355<br>RGB:158,211,85
-                </p>
-              </div>
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#e74c3c;"></div>
-                <p class="small"><b>Tomato</b><br>#e74c3c<br>RGB:231,76,60
-                </p>
-              </div>
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#e2e55d;"></div>
-                <p class="small"><b>Lemon</b><br>#e2e55d<br>RGB:226,229,93
-                </p>
-              </div>
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#8a8a8a;"></div>
-                <p class="small"><b>Gray</b><br>#8a8a8a<br>RGB:138,138,138
-                </p>
-              </div>
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#f6f6f6;"></div>
-                <p class="small"><b>Gray light</b><br>#f6f6f6<br>RGB:246,246,246
-                </p>
-              </div>
-              <div class="mmx-docs-swatch col-sm-2">
-                <div class="color" style="background:#3d3d3d;"></div>
-                <p class="small"><b>Gray Dark</b><br>#3d3d3d<br>RGB:61,61,61
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Logotypes">Logotypes
-              <button class="btn" data-clipboard-text="#Logotypes"><span class="fa fa-link"></span></button>
-            </h3>
-            <h3>Default</h3>
-            <div style="padding:10px;"><img src="/images/logo.svg" alt=""></div>
-            <h3>Inverted</h3>
-            <div style="background:black; padding:10px ;"><img src="/images/logo-inverted.svg" alt=""></div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Margins">Margins
-              <button class="btn" data-clipboard-text="#Margins"><span class="fa fa-link"></span></button>
-            </h3>
-            <p class="mmx-docs-margin"><span style="width:5px;height:5px;"></span><span>Extra small</span>:<span>5px</span></p>
-            <p class="mmx-docs-margin"><span style="width:10px;height:10px;"></span><span>Small</span>:<span>10px</span></p>
-            <p class="mmx-docs-margin"><span style="width:15px;height:15px;"></span><span>Base</span>:<span>15px</span></p>
-            <p class="mmx-docs-margin"><span style="width:20px;height:20px;"></span><span>large</span>:<span>20px</span></p>
-            <p class="mmx-docs-margin"><span style="width:30px;height:30px;"></span><span>Extra large</span>:<span>30px</span></p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Icons">Icons
-              <button class="btn" data-clipboard-text="#Icons"><span class="fa fa-link"></span></button>
-            </h3>
-            <ul class="list-unstyled mmx-docs-icon-list row">
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>
-                </div><span class="prv-icon-name">Chevron right</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-times" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-times"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Times</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-search" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-search"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Search</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-file" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-file"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> File</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-menu" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-menu"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Bars</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-down-open" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-down-open"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Down open</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-facebook" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-facebook"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Facebook</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-twitter" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-twitter"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Twitter</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-linkedin" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Linkedin</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-instagram" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-instagram"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Instagram</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-user" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-user"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> User</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-plus" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-plus"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Plus</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-arrow-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-arrow-right"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Arrow right</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-bubble" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-bubble"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Bubble</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-movie-play-file-2" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-movie-play-file-2"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Movie play</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-music-file-1" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-music-file-1"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Music</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-upload-file-2" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-upload-file-2"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Upload</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-zip-file" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-zip-file"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Zip file</span>
-              </li>
-              <li class="col-xs-2 text-center"> 
-                <div class="mmx-docs-icon-container">
-                  <svg class="icon icon-search-plus" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-search-plus"></use>
-                  </svg>
-                </div><span class="mmx-docs-icon-name"> Search plus</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Images">Images
-              <button class="btn" data-clipboard-text="#Images"><span class="fa fa-link"></span></button>
-            </h3>
-            <h3>16x9</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=16x9" data-srcset="holder.js/NaNxNaN 2x">
-            <h3>4x3</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=4x3" data-srcset="holder.js/NaNxNaN 2x">
-            <h3>3x2</h3><img data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" data-srcset="holder.js/NaNxNaN 2x">
-          </div>
-        </section>
-      </section>
-      <section class="mmx-docs-chapter">
-        <div class="mmx-docs-heading-container">
-          <div class="container mmx-docs-container">
-            <h2 class="mmx-docs-heading" id="Components">Components</h2>
-          </div>
-        </div>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Headings">Headings
-              <button class="btn" data-clipboard-text="#Headings"><span class="fa fa-link"></span></button>
-            </h3>
-            <h1>Component Heading 1</h1>
-            <h2>Component Heading 2</h2>
-            <h3>Component Heading 3</h3>
-            <h4>Component Heading 4</h4>
-            <h5>Component Heading 5</h5>
-            <h6>Component Heading 6</h6><hr>
-            <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-            <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-            <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-            <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-            <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-            <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Bodytext">Body text
-              <button class="btn" data-clipboard-text="#Body text"><span class="fa fa-link"></span></button>
-            </h3>
-            <p>Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla.
-            </p>
-            <p>Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor.
-            </p>
-            <p>Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Leadtext">Lead text
-              <button class="btn" data-clipboard-text="#Lead text"><span class="fa fa-link"></span></button>
-            </h3>
-            <p class="lead">Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus.
-            </p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Smalltext">Small text
-              <button class="btn" data-clipboard-text="#Small text"><span class="fa fa-link"></span></button>
-            </h3>
-            <p class="small">Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla.
-            </p><small>Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla.</small>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Linktext">Link text
-              <button class="btn" data-clipboard-text="#Link text"><span class="fa fa-link"></span></button>
-            </h3>
-            <p><a href="">This is a stand alone link</a></p>
-            <p>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor<a href="">This is a link in a text</a>+lipsum-words(20)
-            </p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Textalignment">Text alignment
-              <button class="btn" data-clipboard-text="#Text alignment"><span class="fa fa-link"></span></button>
-            </h3>
-            <p class="text-left">Left aligned text.</p>
-            <p class="text-center">Center aligned text.</p>
-            <p class="text-right">Right aligned text.</p>
-            <p class="text-justify">
-               Justified text.Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor.
-            </p>
-            <p class="text-nowrap">
-               No wrap text.Nam quis nulla. Integer malesuada. In enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor.
-            </p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Texthelpers">Text helpers
-              <button class="btn" data-clipboard-text="#Text helpers"><span class="fa fa-link"></span></button>
-            </h3>
-            <h3>Color</h3>
-            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="text-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <h3>Background color</h3>
-            <p class="bg-primary" style="padding:10px;">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="bg-secondary" style="padding:10px;">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="bg-success" style="padding:10px;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p class="bg-info" style="padding:10px;">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            <p class="bg-warning" style="padding:10px;">Etiam porta sem malesuada magna mollis euismod.</p>
-            <p class="bg-danger" style="padding:10px;">Donec ullamcorper nulla non metus auctor fringilla.</p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Blockquote">Blockquote
-              <button class="btn" data-clipboard-text="#Blockquote"><span class="fa fa-link"></span></button>
-            </h3>
-            <blockquote>
-              <p> Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec
-              </p>
-            </blockquote>
-            <blockquote>
-              <p> Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec
-              </p>
-              <footer>
-                 Someone famous in 
-                <cite title="Source title">Source title</cite>
-              </footer>
-            </blockquote>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Lists">Lists
-              <button class="btn" data-clipboard-text="#Lists"><span class="fa fa-link"></span></button>
-            </h3>
-            <h3>Bullet list</h3>
-            <ul>
-              <li>Nam quis nulla integer malesuada
-                <ul>
-                  <li>Nam quis nulla integer malesuada
-                  </li>
-                  <li>Nam quis nulla integer malesuada
-                  </li>
-                </ul>
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-            </ul>
-            <ul>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-            </ul>
-            <h3>Number list</h3>
-            <ol>
-              <li>Nam quis nulla integer malesuada
-                <ol>
-                  <li>Nam quis nulla integer malesuada
-                  </li>
-                  <li>Nam quis nulla integer malesuada
-                  </li>
-                </ol>
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-            </ol>
-            <ol>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-              <li>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
-              </li>
-            </ol>
-            <h3>Unstyled list</h3>
-            <ul class="list-unstyled">
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-              <li>Nam quis nulla integer malesuada
-              </li>
-            </ul>
-            <h3>Inline list</h3>
-            <ul class="list-inline">
-              <li>Nam quis nulla
-              </li>
-              <li>Nam quis nulla
-              </li>
-              <li>Nam quis nulla
-              </li>
-              <li>Nam quis nulla
-              </li>
-              <li>Nam quis nulla
-              </li>
-            </ul>
-            <h3>Description list</h3>
-            <dl>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-            </dl>
-            <h3>Horizontal description list</h3>
-            <dl class="dl-horizontal">
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-              <dt> Nam quis
-              </dt>
-              <dd>Nam quis nulla integer malesuada in enim a arcu imperdiet
-              </dd>
-            </dl>
-            <h3>Link list with icons</h3>
-            <ul class="link-list">
-              <li><a class="icon-link">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>Nam quis nulla</a></li>
-              <li><a class="icon-link">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>Nam quis nulla</a></li>
-              <li><a class="icon-link">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>Nam quis nulla</a></li>
-              <li><a class="icon-link">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>Nam quis nulla</a></li>
-              <li><a class="icon-link">
-                  <svg class="icon icon-chevron-right" aria-hidden="true">
-                    <use xlink:href="images/icons/icons.svg#icon-chevron-right"></use>
-                  </svg>Nam quis nulla</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Tables">Tables
-              <button class="btn" data-clipboard-text="#Tables"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="table-responsive">
-              <table class="table">
-                <caption>Optional table caption.
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>E-mail</th>
-                      <th>Username</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td> Nam quis
-                      </td>
-                      <td>example@example.com</td>
-                      <td> Nam
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td> Nam quis
-                      </td>
-                      <td>example@example.com</td>
-                      <td> Nam
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td> Nam quis
-                      </td>
-                      <td>example@example.com</td>
-                      <td> Nam
-                      </td>
-                    </tr>
-                  </tbody>
-                </caption>
-              </table>
-            </div>
-            <h3>Striped table</h3>
-            <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>E-mail</th>
-                    <th>Username</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="table-responsive">
-              <table class="table table-condensed">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>E-mail</th>
-                    <th>Username</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td> Nam quis
-                    </td>
-                    <td>example@example.com</td>
-                    <td> Nam
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Forms">Forms
-              <button class="btn" data-clipboard-text="#Forms"><span class="fa fa-link"></span></button>
-            </h3>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input class="form-control" id="exampleInputEmail1" type="email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleDisabled">Disabled</label>
-                <input class="form-control" id="exampleDisabled" type="text" value="Disabled text" disabled>
-              </div>
-              <div class="form-group">
-                <label for="eaxmpleSelect">Select</label>
-                <select class="form-control" id="exampleInputPassword1">
-                  <option>Nam quis nulla
-                  </option>
-                  <option>Nam quis nulla
-                  </option>
-                  <option>Nam quis nulla
-                  </option>
-                  <option>Nam quis nulla
-                  </option>
-                  <option>Nam quis nulla
-                  </option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="expleTextarea">Text</label>
-                <textarea class="form-control" id="expleTextarea" placeholder="Text"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input id="exampleInputFile" type="file">
-                <p class="help-block">Example block-level help text here.</p>
-              </div>
-              <div class="form-group">
-                <div class="checkbox styled-checkbox styled-input-primary">
-                  <label>
-                    <input type="checkbox"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-                <div class="checkbox styled-checkbox styled-input-primary">
-                  <label>
-                    <input type="checkbox"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-                <div class="checkbox styled-checkbox styled-input-primary">
-                  <label>
-                    <input type="checkbox"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-                <div class="radio styled-radio styled-input-primary">
-                  <label>
-                    <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-                <div class="radio styled-radio styled-input-primary">
-                  <label>
-                    <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-                <div class="radio styled-radio styled-input-primary">
-                  <label>
-                    <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="checkbox-inline styled-checkbox-inline styled-input-primary">
-                  <input type="checkbox" name="checkbox"><span class="input-control"></span>Nam quis nulla
-                </label>
-                <label class="checkbox-inline styled-checkbox-inline styled-input-primary">
-                  <input type="checkbox" name="checkbox"><span class="input-control"></span>Nam quis nulla
-                </label>
-                <label class="checkbox-inline styled-checkbox-inline styled-input-primary">
-                  <input type="checkbox" name="checkbox"><span class="input-control"></span>Nam quis nulla
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="radio-inline styled-radio-inline styled-input-primary">
-                  <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                </label>
-                <label class="radio-inline styled-radio-inline styled-input-primary">
-                  <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                </label>
-                <label class="radio-inline styled-radio-inline styled-input-primary">
-                  <input type="radio" name="radio"><span class="input-control"></span>Nam quis nulla
-                </label>
-              </div>
-              <div class="form-group">
-                <div class="checkbox styled-checkbox styled-input-primary">
-                  <label>
-                    <input type="checkbox"><span class="input-control input-control-center"></span>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="radio styled-radio styled-input-primary">
-                  <label>
-                    <input type="radio" name="radio" checked><span class="input-control input-control-center"></span>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id
-                  </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="checkbox styled-checkbox styled-input-primary">
-                  <label>
-                    <input type="checkbox" checked><span class="input-control input-control-center"></span>Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id
-                  </label><a class="label-addon" href="">Read more about the terms</a>
-                </div>
-              </div>
-              <div class="form-group">
-                <input class="styled-inputfile form-control" id="file1" type="file" data-multiple-caption="{count} filer valda">
-                <label for="file1"><span>Choose a file...</span></label>
-              </div>
-              <h2>Form sizes</h2>
-              <input class="form-control input-lg" type="text" placeholder=".input-lg">
-              <input class="form-control" type="text" placeholder="Default input">
-              <input class="form-control input-sm" type="text" placeholder=".input-sm">
-              <button class="btn btn-default" type="submit">Submit</button>
-            </form>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Buttons">Buttons
-              <button class="btn" data-clipboard-text="#Buttons"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="btn-list">
-              <button class="btn btn-primary" type="button">Primary button</button>
-              <button class="btn btn-primary-inverted" type="button">Primary inverted button</button>
-              <button class="btn btn-default" type="button">Default button</button>
-              <button class="btn btn-secondary" type="button">Secondary button</button>
-              <button class="btn btn-info" type="button">Info button</button>
-              <button class="btn btn-success" type="button">Success button</button>
-              <button class="btn btn-warning" type="button">Warning button</button>
-              <button class="btn btn-danger" type="button">Danger button</button>
-              <button class="btn btn-link" type="button">Link button</button>
-              <button class="btn btn-clean" type="button">Clean button</button>
-            </div>
-            <h3>Button sizes</h3>
-            <p>
-              <button class="btn btn-primary btn-lg" type="button">Large button</button>
-            </p>
-            <p>
-              <button class="btn btn-primary" type="button">Default button</button>
-            </p>
-            <p>
-              <button class="btn btn-primary btn-sm" type="button">Small button</button>
-            </p>
-            <p>
-              <button class="btn btn-primary btn-xs" type="button">Extra small button</button>
-            </p>
-            <p>
-              <button class="btn btn-primary btn-block" type="button">Block button</button>
-            </p>
-            <h3>Disabled buttons</h3>
-            <div class="btn-list">
-              <button class="btn btn-primary" type="button" disabled>Primary button</button>
-              <button class="btn btn-primary-inverted" type="button" disabled>Primary inverted button</button>
-              <button class="btn btn-default" type="button" disabled>Default button</button>
-              <button class="btn btn-secondary" type="button" disabled>Secondary button</button>
-              <button class="btn btn-info" type="button" disabled>Info button</button>
-              <button class="btn btn-success" type="button" disabled>Success button</button>
-              <button class="btn btn-warning" type="button" disabled>Warning button</button>
-              <button class="btn btn-danger" type="button" disabled>Danger button</button>
-              <button class="btn btn-link" type="button" disabled>Link button</button>
-              <button class="btn btn-clean" type="button" disabled>Clean button</button>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Video">Video
-              <button class="btn" data-clipboard-text="#Video"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="embed-responsive embed-responsive-16by9 offset-both">
-              <iframe width="1280" height="720" src="https://www.youtube.com/embed/ul1F935mOTM" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Breadcrumbs">Breadcrumbs
-              <button class="btn" data-clipboard-text="#Breadcrumbs"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="breadcrumb-wrapper"><span class="sr-only" id="breadcrumb-label">Brödsmulenavigering</span>
-              <ol class="breadcrumb main-breadcrumb" aria-labelledby="breadcrumb-label" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"> 
-                    <svg class="icon icon-home fa-lg" aria-hidden="true">
-                      <use xlink:href="images/icons/icons.svg#icon-home"></use>
-                    </svg><span class="sr-only" itemprop="name">Hem</span>
-                    <meta itemprop="position" content="1"></a></li>
-                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"> <span itemprop="name">Om oss</span>
-                    <meta itemprop="position" content="2"></a></li>
-                <li class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item" aria-current="True"><span itemprop="name">Ledningen</span>
-                    <meta itemprop="position" content="3"></a></li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Pagination">Pagination
-              <button class="btn" data-clipboard-text="#Pagination"><span class="fa fa-link"></span></button>
-            </h3>
-            <nav aria-labelledby="paging-label"><span class="sr-only" id="paging-label">Pagination navigation</span>
-              <ul class="pagination">
-                <li><a href="" aria-label="Previous page"><span aria-hidden="true">«</span></a></li>
-                <li class="active" aria-current="True"><a href=""> <span class="sr-only">Go to page</span>
-                    <1></1></a></li>
-                <li><a href=""> <span class="sr-only">Go to page</span>
-                    <2></2></a></li>
-                <li><a href=""> <span class="sr-only">Go to page</span>
-                    <3></3></a></li>
-                <li><a href=""> <span class="sr-only">Go to page</span>
-                    <4></4></a></li>
-                <li><a href=""> <span class="sr-only">Go to page</span>
-                    <5></5></a></li>
-                <li><a href="" aria-label="Next page"><span aria-hidden="true">»</span></a></li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Alert">Alert
-              <button class="btn" data-clipboard-text="#Alert"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important <a class="alert-link">alert message.</a></div>
-            <div class="alert alert-info" role="alert"><strong>Heads up!</strong> This alert needs your attention, but it's not <a class="alert-link">super important</a></div>
-            <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Better check yourself, you're not looking <a class="alert-link">too good</a></div>
-            <div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> Change a few things up and try submitting again. <a class="alert-link">Click here!</a></div>
-            <h3>Dissmissabled alert</h3>
-            <div class="alert alert-info alert-dismissible" role="alert">
-              <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><strong>
-                Warning! Better check yourself, you're not looking too good.</strong>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Lables">Lables
-              <button class="btn" data-clipboard-text="#Lables"><span class="fa fa-link"></span></button>
-            </h3>
-            <p><span class="label label-default">Default</span></p>
-            <p><span class="label label-primary">Primary</span></p>
-            <p><span class="label label-secondary">Secondary</span></p>
-            <p><span class="label label-success">Success</span></p>
-            <p><span class="label label-info">Info</span></p>
-            <p><span class="label label-warning">Warning</span></p>
-            <p><span class="label label-danger">Danger</span></p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Cards">Cards
-              <button class="btn" data-clipboard-text="#Cards"><span class="fa fa-link"></span></button>
-            </h3>
-            <div style="max-width:300px;">
-              <div class="card card-default"><img class="card-img-top" data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" alt="Card top image">
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary" href="#">Button</a>
-                </div>
-              </div>
-              <h3>Simple card</h3>
-              <div class="card card-default"><img class="card-img-top" data-src="holder.js/undefinedxundefined?bg=CCC&amp;fg=333&amp;text=3x2" alt="Card top image">
-                <div class="card-block">
-                  <p class="card-text"></p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                </div>
-              </div>
-              <h3>Card with title and text</h3>
-              <div class="card card-block card-default">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="card-link" href="#">Card link</a><a class="card-link" href="#">Another link</a>
-              </div>
-              <h3>Card with header and footer</h3>
-              <div class="card text-center card-default">
-                <div class="card-header">Featured</div>
-                <div class="card-block">
-                  <h4 class="card-title">Special title treatment</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">2 days ago</div>
-              </div>
-              <h3>Card with background image</h3>
-              <div class="card card-inverse"><img data-src="holder.js/undefinedxundefined?bg=333&amp;fg=666&amp;text=3x2" alt="Card image">
-                <div class="card-img-overlay">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <h3>Card with inversed text</h3>
-              <div class="card card-inverse" style="background-color: #333; border-color: #333;">
-                <div class="card-block">
-                  <h3 class="card-title">Special title treatment</h3>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Button</a>
-                </div>
-              </div>
-              <h3>Card background colors</h3>
-              <div class="card card-inverse card-primary text-center">
-                <div class="card-block">
-                  <div class="card-title">PrimaryNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-              <div class="card card-secondary text-center">
-                <div class="card-block">
-                  <div class="card-title">SecondaryNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-              <div class="card card-inverse card-success text-center">
-                <div class="card-block">
-                  <div class="card-title">SuccessNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-              <div class="card card-inverse card-info text-center">
-                <div class="card-block">
-                  <div class="card-title">InfoNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-              <div class="card card-inverse card-warning text-center">
-                <div class="card-block">
-                  <div class="card-title">WarningNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-              <div class="card card-inverse card-danger text-center">
-                <div class="card-block">
-                  <div class="card-title">DangerNam quis nulla
-                  </div>
-                  <p class="card-text">Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Dropdowns">Dropdowns
-              <button class="btn" data-clipboard-text="#Dropdowns"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="dropdown open">
-              <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown<span class="caret"></span></button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Tabs">Tabs
-              <button class="btn" data-clipboard-text="#Tabs"><span class="fa fa-link"></span></button>
-            </h3>
-            <p>
-              <ul class="nav nav-tabs">
-                <li class="active" role="presentation"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-              </ul>
-            </p>
-            <p>
-              <ul class="nav nav-tabs nav-justified">
-                <li class="active" role="presentation"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-              </ul>
-            </p>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Navbar">Navbar
-              <button class="btn" data-clipboard-text="#Navbar"><span class="fa fa-link"></span></button>
-            </h3>
-            <div>
-              <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider" role="separator"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider" role="separator"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Search">
-                      <button class="btn btn-primary" type="submit">Submit</button>
-                    </div>
-                  </form>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Navtree">Navtree
-              <button class="btn" data-clipboard-text="#Navtree"><span class="fa fa-link"></span></button>
-            </h3>
-            <h2 class="h4 nav-heading"><span class="sr-only">Navigering för </span><a href="">Dricksvatten</a></h2>
-            <ul class="nav nav-tree">
-              <li> <a href="">Råvattenhantering</a>
-                <button class="nav-expander btn-clean"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="icon icon-plus text-primary fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                </button>
-              </li>
-              <li class="active"><a href="">Vattenverk &amp; reningstekniker</a>
-                <button class="nav-expander btn-clean"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="icon icon-minus fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                </button>
-                <ul class="nav">
-                  <li><a href="">Mikrobiologiska barriärer</a></li>
-                  <li class="active"><a href="">UV-ljus</a>
-                    <button class="nav-expander btn-clean"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="icon icon-plus fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                    </button>
-                  </li>
-                  <li><a href="">Kemikalier</a></li>
-                </ul>
-              </li>
-              <li><a href="">Vattendistribution</a></li>
-              <li><a href="">Säkerhet, kris &amp; beredskap</a>
-                <button class="nav-expander btn-clean"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="icon icon-plus fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                </button>
-              </li>
-              <li><a href="">Undersökning och analys</a>
-                <button class="nav-expander btn-clean"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="icon icon-plus fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Mediaobject">Media object
-              <button class="btn" data-clipboard-text="#Media object"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="media">
-              <div class="media-left"><a href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMWJjNSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxYmM1Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;"></a></div>
-              <div class="media-body">
-                <h4 class="media-heading">Top aligned media</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div>
-            </div>
-            <div class="media">
-              <div class="media-left media-middle"><a href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUxZDRlMCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTFkNGUwIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;"></a></div>
-              <div class="media-body">
-                <h4 class="media-heading">Middle aligned media</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div>
-              <div class="media">
-                <div class="media-left media-bottom"><a href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMTEwMiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxMTAyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;"></a></div>
-                <div class="media-body">
-                  <h4 class="media-heading">Bottom aligned media</h4>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                  <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-                <div class="media-right"><a href="#"><img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMTlmMSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxOWYxIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;"></a></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Vcard">Vcard
-              <button class="btn" data-clipboard-text="#Vcard"><span class="fa fa-link"></span></button>
-            </h3>
-            <div class="vcard">
-              <div class="vcard-inner">
-                <div class="vcard-img">
-                  <div class="img-wrapper img-wrapper-1x1"><img class="img-circle" data-src="holder.js/180x180?bg=CCC&amp;fg=333&amp;text=1x1">
-                  </div>
-                </div>
-                <div class="vcard-body">
-                  <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
-                  <p class="vcard-title">Job title</p>
-                  <dl class="vcard-dl">
-                    <dt>E-mail</dt>
-                    <dd><a class="vcard-email" href="mailto:firstname.lastname@metamatrix.se">firstname.lastname@metamatrix.se</a></dd>
-                    <dt>Phone</dt>
-                    <dd><a class="vcard-phone" href="tel:+46812345678">08 1234 5678</a></dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-            <div class="vcard">
-              <div class="vcard-inner">
-                <div class="vcard-body">
-                  <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
-                  <p class="vcard-title">Job title</p>
-                  <dl class="vcard-dl">
-                    <dt>E-mail</dt>
-                    <dd><a class="vcard-email" href="mailto:firstname.lastname@metamatrix.se">firstname.lastname@metamatrix.se</a></dd>
-                    <dt>Phone</dt>
-                    <dd><a class="vcard-phone" href="tel:+46812345678">08 1234 5678</a></dd>
-                  </dl>
-                </div>
-                <div class="vcard-img vcard-img-right">
-                  <div class="img-wrapper img-wrapper-1x1"><img class="img-circle" data-src="holder.js/180x180?bg=CCC&amp;fg=333&amp;text=1x1">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section class="mmx-docs-chapter">
-        <div class="mmx-docs-heading-container">
-          <div class="container mmx-docs-container">
-            <h2 class="mmx-docs-heading" id="Compositions">Compositions</h2>
-          </div>
-        </div>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Siteheader">Site header
-              <button class="btn" data-clipboard-text="#Site header"><span class="fa fa-link"></span></button>
-            </h3>
-          </div>
-          <header class="global-header" id="global-header" role="banner">
-            <div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
-              <div class="container-fluid collapse in" id="mobile-navbar-container">
-                <div class="pull-left navbar-text">
-                  <button class="btn-clean icon-link" data-toggle="menu" data-target="#mobile-nav">
-                      <svg class="icon icon-bars" aria-hidden="true">
-                        <use xlink:href="images/icons/icons.svg#icon-bars"></use>
-                      </svg><span>Meny</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="row-md-eq">
-                  <div class="col-md-4 col-middle"> <a class="site-logo" href="" title="Till startsidan"><img src="/images/logo.svg" alt="Metamatrix"></a></div>
-                  <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
-                    <div class="function-menu" id="function-menu">
-                      <ul class="link-list-inline">
-                        <li><a href="">Kontakt</a></li>
-                        <li><a href="">Press</a></li>
-                        <li><a href="">In English</a></li>
-                      </ul>
-                    </div>
-                    <form class="global-search" role="search">
-                      <div class="input-group">
-                        <label class="sr-only" for="global-search-input">Sök</label>
-                        <input class="form-control" id="global-search-input" type="search" placeholder="Sök..."><span class="input-group-btn">
-                          <button class="btn btn-search" type="submit">
-                              <svg class="icon icon-search icon-sm" aria-hidden="true">
-                                <use xlink:href="images/icons/icons.svg#icon-search"></use>
-                              </svg><span class="sr-only">Sök</span>
-                          </button></span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <nav class="global-nav navbar navbar-default">
-                <div class="container-fluid">
-                  <ul class="nav navbar-nav">
-                      <li><a href="">A arcu</a></li>
-                      <li class="active"><a href="">Nulla non</a></li>
-                      <li><a href="">Integer malesuada</a></li>
-                      <li><a href="">Odio urna</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </header>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Sitefooter">Site footer
-              <button class="btn" data-clipboard-text="#Site footer"><span class="fa fa-link"></span></button>
-            </h3>
-          </div>
-          <footer class="global-footer" id="global-footer">
-            <div class="container"><a class="site-logo" href=""><img src="images/logo-inverted.svg" alt=""></a>
-              <p> Enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut
-              </p>
-              <nav>
-                <ul class="list-inline">
-                  <li> <a href="">Kontakta oss</a></li>
-                  <li> <a href="">Facebook</a></li>
-                  <li> <a href="">Twitter</a></li>
-                  <li> <a href="">LinkedIn</a></li>
-                </ul>
-              </nav>
-            </div>
-          </footer>
-        </section>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Sitesearch">Site search
-              <button class="btn" data-clipboard-text="#Site search"><span class="fa fa-link"></span></button>
-            </h3>
-          </div>
-          <form class="global-search" role="search">
-            <div class="input-group">
-              <label class="sr-only" for="global-search-input">Sök</label>
-              <input class="form-control" id="global-search-input" type="search" placeholder="Sök..."><span class="input-group-btn">
-                <button class="btn btn-search" type="submit">
-                    <svg class="icon icon-search icon-sm" aria-hidden="true">
-                      <use xlink:href="images/icons/icons.svg#icon-search"></use>
-                    </svg><span class="sr-only">Sök</span>
-                </button></span>
-            </div>
-          </form>
-        </section>
-      </section>
-      <section class="mmx-docs-chapter">
-        <div class="mmx-docs-heading-container">
-          <div class="container mmx-docs-container">
-            <h2 class="mmx-docs-heading" id="Templates">Templates</h2>
-          </div>
-        </div>
-        <section class="mmx-docs-section">
-          <div class="container mmx-docs-container">
-            <h3 class="mmx-docs-heading" id="Pages">Pages
-              <button class="btn" data-clipboard-text="#Pages"><span class="fa fa-link"></span></button>
-            </h3>
-            <ul class="list-unstyled mmx-docs-link-list">
-              <li><a href="start.html">Start Page</a></li>
-              <li><a href="content.html">Content Page</a></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-      <footer class="mmx-docs-footer">
-        <div class="container mmx-docs-container">
-          <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"></a></div>
-        </div>
-      </footer>
+		
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex nofollow">
+<title></title>
+<script src=+"modernizr.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/styleguide.css">
+		
+	<link rel="stylesheet" href= + "styleguide.css"/>
+
+		
+</head>
+<body>
+	
+<div data-appname="data.title" class="mmx-componentlibrary">
+  <header class="mmx-docs-header">
+    <div class="container mmx-docs-container">
+      <h1 class="page-heading"> + Styleguide</h1>
+      <div id="rss-feeds"></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="scripts/script.min.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-    <script src="scripts/styleguide.min.js"></script>
-  </body>
+  </header>
+</div>
+<nav id="mmx-document-nav" class="hidden-xs hidden-sm hidden-md">
+  <button id="mmx-docs-toggle-button"><span class="fa fa-thumb-tack"></span></button>
+  <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""/></div>
+  <ul class="list-unstyled nav"></ul>
+</nav>
+
+	<section class="mmx-docs-chapter">
+		
+	var id = heading.replace(/ /g,'')
+	<div class="mmx-docs-heading-container">
+		<div class="container mmx-docs-container">
+			<h2 class="mmx-docs-heading" id="heading">
+		</div>
+	</div>
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<p>PT Sans</p>
+<p class="italic">PT Sans Italic</p>
+<p><b>PT Sans Bold</b></p>
+<p> <b><i>PT Sans Bold Italic</i></b></p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿mixin swatch(color)
+	- var rgb = utils.hex2rgb(color.color);
+	div.mmx-docs-swatch.col-sm-2
+		div(style="background:"+color.color+";").color
+		p.small
+			b= color.displayName
+			br
+			= color.color
+			br
+			| RGB:
+			= rgb.r
+			|,
+			= rgb.g
+			|,
+			= rgb.b
+
+.row.row-blocks
+	each color in settings.colors
+		+swatch(color)
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		<h3>Default</h3>
+<div style="padding:10px"><img src= alt=""/></div>
+<h3>Inverted</h3>
+<div style="background:black; padding:10px "><img src= alt=""/></div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+each mrgn in settings.margins
+	p.mmx-docs-margin
+		span(style="width:"+mrgn.margin+";" + "height:"+mrgn.margin+";")
+		span= mrgn.displayName
+		| :
+		span= mrgn.margin
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+
+
+<ul class="list-unstyled mmx-docs-icon-list row">
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="prv-icon-name">Chevron right</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Times</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Search</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> File</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Bars</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Down open</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Facebook</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Twitter</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Linkedin</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Instagram</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> User</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Plus</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Arrow right</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Bubble</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Movie play</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Music</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Upload</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Zip file</span>
+  </li>
+  <li class="col-xs-2 text-center">
+    <div class="mmx-docs-icon-container">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+</div><span class="mmx-docs-icon-name"> Search plus</span>
+  </li>
+</ul>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<h3>16x9</h3>
+
+
+    
+        var bgColor = 
+    
+    
+        var frontColor = 
+    
+    
+        var text = name
+    
+
+    var array = 
+    var key = "name"
+    var value = name
+    var className = ""
+
+
+
+    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+
+
+<h3>4x3</h3>
+
+
+    
+        var bgColor = 
+    
+    
+        var frontColor = 
+    
+    
+        var text = name
+    
+
+    var array = 
+    var key = "name"
+    var value = name
+    var className = ""
+
+
+
+    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+
+
+<h3>3x2</h3>
+
+
+    
+        var bgColor = 
+    
+    
+        var frontColor = 
+    
+    
+        var text = name
+    
+
+    var array = 
+    var key = "name"
+    var value = name
+    var className = ""
+
+
+
+    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+
+
+
+
+
+	</section>
+
+
+	<section class="mmx-docs-chapter">
+		
+	var id = heading.replace(/ /g,'')
+	<div class="mmx-docs-heading-container">
+		<div class="container mmx-docs-container">
+			<h2 class="mmx-docs-heading" id="heading">
+		</div>
+	</div>
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<h1>Component Heading 1</h1>
+<h2>Component Heading 2</h2>
+<h3>Component Heading 3</h3>
+<h4>Component Heading 4</h4>
+<h5>Component Heading 5</h5>
+<h6>Component Heading 6</h6><hr>
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<p class="lead">
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<p class="small">
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</p>
+
+<small>
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</small>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+
+<p>
+	<a href="">This is a stand alone link</a>
+</p>
+<p>
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+	<a href="">This is a link in a text</a>
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">
+  Justified text.
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</p>
+<p class="text-nowrap">
+  No wrap text.
+	
+	
+	= lipsum(type, count, startIndex)
+
+
+</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<h3>Color</h3>
+<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+<h3>Background color</h3>
+<p style="padding:10px" class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p style="padding:10px" class="bg-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p style="padding:10px" class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<p style="padding:10px" class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<p style="padding:10px" class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p style="padding:10px" class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<blockquote>
+  <p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+</blockquote>
+<blockquote>
+  <p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+  <footer>
+    Someone famous in
+    <cite title="Source title">Source title</cite>
+  </footer>
+</blockquote>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<h3>Bullet list</h3>
+<ul>
+  <li>
+		
+	
+	= lipsum(type, count, startIndex)
+
+
+    <ul>
+      <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+      <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+    </ul>
+	
+
+
+    <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+  </li>
+</ul>
+<ul>
+
+
+
+  <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+</ul>
+
+<h3>BNumber list</h3>
+<ol>
+  <li>
+		
+	
+	= lipsum(type, count, startIndex)
+
+
+    <ol>
+      <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+      <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+    </ol>
+	
+
+
+    <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+  </li>
+</ol>
+<ul>
+
+
+
+  <li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+</ol>
+
+<h3>Unstyled list</h3>
+<ul class="list-unstyled">
+	
+
+
+  	<li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+</ul>
+
+<h3>Inline list</h3>
+<ul class="list-inline">
+	
+
+
+  	<li>
+	
+	= lipsum(type, count, startIndex)
+
+</li>
+</ul>
+
+
+<h3>Description list</h3>
+<dl>
+	
+
+
+  	<dt>
+	
+	= lipsum(type, count, startIndex)
+
+</dt>
+  	<dd>
+	
+	= lipsum(type, count, startIndex)
+
+</dd>
+</dl>
+
+<h3>Horizontal description list</h3>
+<dl class="dl-horizontal">
+	
+
+
+  	<dt>
+	
+	= lipsum(type, count, startIndex)
+
+</dt>
+  	<dd>
+	
+	= lipsum(type, count, startIndex)
+
+</dd>
+</dl>
+
+<h3>Link list with icons</h3>
+<ul class="link-list">
+	
+
+
+		<li>
+			<a class="icon-link">
+				
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+
+				
+	
+	= lipsum(type, count, startIndex)
+
+
+			</a>
+		</li>
+</ul>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿include ../includes/mixins
+
+.table-responsive
+	table.table
+		caption Optional table caption.
+			thead
+				tr
+					th #
+					th Name
+					th E-mail
+					th Username
+			tbody
+				tr
+					th(scope='row') 1
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 2
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 3
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+
+h3 Striped table
+
+.table-responsive
+	table.table.table-striped
+			thead
+				tr
+					th #
+					th Name
+					th E-mail
+					th Username
+			tbody
+				tr
+					th(scope='row') 1
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 2
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 3
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+
+.table-responsive
+	table.table.table-condensed
+			thead
+				tr
+					th #
+					th Name
+					th E-mail
+					th Username
+			tbody
+				tr
+					th(scope='row') 1
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 2
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+				tr
+					th(scope='row') 3
+					td 
+						+lipsum-words(2)
+					td example@example.com
+					td 
+						+lipsum-words(1)
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿include ../includes/mixins
+
+form
+	.form-group
+		label(for='exampleInputEmail1') Email address
+		input#exampleInputEmail1.form-control(type='email')
+	.form-group
+		label(for='exampleInputPassword1') Password
+		input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+	.form-group
+		label(for='exampleDisabled') Disabled
+		input#exampleDisabled.form-control(type='text', value='Disabled text', disabled=true)
+	.form-group
+		label(for='eaxmpleSelect') Select
+		select#exampleInputPassword1.form-control
+			+repeat(5)
+				option
+					+lipsum-words(3)
+	.form-group
+		label(for='expleTextarea') Text
+		textarea#expleTextarea.form-control(placeholder='Text')
+	.form-group
+		label(for='exampleInputFile') File input
+		input#exampleInputFile(type='file')
+		p.help-block Example block-level help text here.
+	.form-group
+		+repeat(3)
+			.checkbox.styled-checkbox.styled-input-primary
+				label
+					input(type='checkbox')
+					span.input-control
+					+lipsum-words(3)
+		+repeat(3)
+			.radio.styled-radio.styled-input-primary
+				label
+					input(type='radio',name="radio")
+					span.input-control
+					+lipsum-words(3)
+	.form-group
+		+repeat(3)
+			label.checkbox-inline.styled-checkbox-inline.styled-input-primary
+				input(type='checkbox',name="checkbox")
+				span.input-control
+				+lipsum-words(3)
+	.form-group
+		+repeat(3)
+			label.radio-inline.styled-radio-inline.styled-input-primary
+				input(type='radio',name="radio")
+				span.input-control
+				+lipsum-words(3)
+
+	.form-group
+		.checkbox.styled-checkbox.styled-input-primary
+			label
+				input(type='checkbox')
+				span.input-control.input-control-center
+				+lipsum-words(30)
+	.form-group
+		.radio.styled-radio.styled-input-primary
+			label
+				input(type='radio',name="radio",checked=true)
+				span.input-control.input-control-center
+				+lipsum-words(30)
+	.form-group
+		.checkbox.styled-checkbox.styled-input-primary
+			label
+				input(type='checkbox',checked=true)
+				span.input-control.input-control-center
+				+lipsum-words(30)
+			a.label-addon(href="") Read more about the terms
+	.form-group
+		input#file1(type="file", class="styled-inputfile form-control", data-multiple-caption="{count} filer valda")
+		label(for='file1', class="")
+			span Choose a file...
+
+	h2 Form sizes
+
+	input(class="form-control input-lg", type="text", placeholder=".input-lg")
+	input(class="form-control", type="text", placeholder="Default input")
+	input(class="form-control input-sm", type="text", placeholder=".input-sm")
+
+	button.btn.btn-default(type='submit') Submit
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+
+<div class="btn-list">
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+	
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+</div>
+
+<h3>Button sizes</h3>
+
+<p>
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+</p>
+<p>
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+</p>
+<p>
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+</p>
+<p>
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+</p>
+<p>
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+</p>
+
+<h3>Disabled buttons</h3>
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+	var type = (typeof style === 'undefined') ? "default" : style
+
+	<button class="btn-" + type, type="button"></button>
+
+
+
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		<div class="embed-responsive embed-responsive-16by9 offset-both">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/ul1F935mOTM" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<div class="breadcrumb-wrapper"><span id="breadcrumb-label" class="sr-only">Brödsmulenavigering</span>
+  <ol aria-labelledby="breadcrumb-label" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb main-breadcrumb">
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a href="" itemprop="item">
+				
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+
+				<span itemprop="name" class="sr-only">Hem</span>
+        <meta itemprop="position" content="1"/>
+			</a>
+		</li>
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a href="" itemprop="item"> 
+				<span itemprop="name">Om oss</span>
+        <meta itemprop="position" content="2"/>
+			</a>
+		</li>
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="active">
+			<a href="" itemprop="item" aria-current="True">
+				<span itemprop="name">Ledningen</span>
+        <meta itemprop="position" content="3"/>
+			</a>
+		</li>
+  </ol>
+</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<nav aria-labelledby="paging-label"><span id="paging-label" class="sr-only">Pagination navigation</span>
+  <ul class="pagination">
+    <li><a href="" aria-label="Previous page"><span aria-hidden="true">«</span></a></li>
+    <li aria-current="True" class="active"><a href=""> <span class="sr-only">Go to page</span>
+        <1></1></a></li>
+    <li><a href=""> <span class="sr-only">Go to page</span>
+        <2></2></a></li>
+    <li><a href=""> <span class="sr-only">Go to page</span>
+        <3></3></a></li>
+    <li><a href=""> <span class="sr-only">Go to page</span>
+        <4></4></a></li>
+    <li><a href=""> <span class="sr-only">Go to page</span>
+        <5></5></a></li>
+    <li><a href="" aria-label="Next page"><span aria-hidden="true">»</span></a></li>
+  </ul>
+</nav>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<div role="alert" class="alert alert-success"><strong>Well done!</strong> You successfully read this important <a class="alert-link">alert message.</a></div>
+<div role="alert" class="alert alert-info"><strong>Heads up!</strong> This alert needs your attention, but it's not <a class="alert-link">super important</a></div>
+<div role="alert" class="alert alert-warning"><strong>Warning!</strong> Better check yourself, you're not looking <a class="alert-link">too good</a></div>
+<div role="alert" class="alert alert-danger"><strong>Oh snap!</strong> Change a few things up and try submitting again. <a class="alert-link">Click here!</a></div>
+<h3>Dissmissabled alert</h3>
+<div role="alert" class="alert alert-info alert-dismissible">
+  <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">×</span></button><strong>
+    Warning!
+     Better check yourself, you're not looking too good.</strong>
+</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<p><span class="label label-default">Default</span></p>
+<p><span class="label label-primary">Primary</span></p>
+<p><span class="label label-secondary">Secondary</span></p>
+<p><span class="label label-success">Success</span></p>
+<p><span class="label label-info">Info</span></p>
+<p><span class="label label-warning">Warning</span></p>
+<p><span class="label label-danger">Danger</span></p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		include ../includes/mixins
+
+div(style="max-width:300px")
+
+	.card.card-default
+		+img-ph("3x2")(class="card-img-top",alt="Card top image")
+		.card-block
+			h4.card-title Card title
+			p.card-text
+				| Some quick example text to build on the card title and make up the bulk of the card's content.
+			a.btn.btn-primary(href='#') Button
+
+	h3 Simple card
+
+	.card.card-default
+		+img-ph("3x2")(class="card-img-top",alt="Card top image")
+		.card-block
+			p.card-text
+			| Some quick example text to build on the card title and make up the bulk of the card's content.
+
+	h3 Card with title and text
+
+	.card.card-block.card-default
+		h4.card-title Card title
+		p.card-text
+			| Some quick example text to build on the card title and make up the bulk of the card's content.
+		a.card-link(href='#') Card link
+		a.card-link(href='#') Another link
+
+	h3 Card with header and footer
+
+	.card.text-center.card-default
+		.card-header
+			| Featured
+		.card-block
+			h4.card-title Special title treatment
+			p.card-text With supporting text below as a natural lead-in to additional content.
+			a.btn.btn-primary(href='#') Go somewhere
+		.card-footer.text-muted
+			| 2 days ago
+
+	h3 Card with background image
+
+	.card.card-inverse
+		+img-ph("3x2","3x2" ,"333", "666")(alt='Card image')
+		.card-img-overlay
+			h4.card-title Card title
+			p.card-text
+				| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+			p.card-text
+				small.text-muted Last updated 3 mins ago
+
+	h3 Card with inversed text
+
+	.card.card-inverse(style='background-color: #333; border-color: #333;')
+		.card-block
+			h3.card-title Special title treatment
+			p.card-text With supporting text below as a natural lead-in to additional content.
+			a.btn.btn-primary(href='#') Button
+
+	h3 Card background colors
+
+	.card.card-inverse.card-primary.text-center
+		.card-block
+			.card-title
+				| Primary
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-secondary.text-center
+		.card-block
+			.card-title
+				| Secondary
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-success.text-center
+		.card-block
+			.card-title
+				| Success
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-info.text-center
+		.card-block
+			.card-title
+				| Info
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-warning.text-center
+		.card-block
+			.card-title
+				| Warning
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+	.card.card-inverse.card-danger.text-center
+		.card-block
+			.card-title
+				| Danger
+				+lipsum-words(3)
+			p.card-text
+				+lipsum-words(20)
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<div class="dropdown open">
+  <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">Dropdown<span class="caret"></span></button>
+  <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<p>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+  </ul>
+</p>
+<p>
+  <ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+  </ul>
+</p>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<div style="">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form role="search" class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" placeholder="Search" class="form-control"/>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<h2 class="h4 nav-heading"><span class="sr-only">Navigering för </span><a href="">Dricksvatten</a></h2>
+<ul class="nav nav-tree">
+  <li> <a href="">Råvattenhantering</a>
+    <button class="nav-expander btn-clean">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+</button>
+  </li>
+  <li class="active"><a href="">Vattenverk &amp; reningstekniker</a>
+    <button class="nav-expander btn-clean">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+</button>
+    <ul class="nav">
+      <li><a href="">Mikrobiologiska barriärer</a></li>
+      <li class="active"><a href="">UV-ljus</a>
+        <button class="nav-expander btn-clean">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+</button>
+      </li>
+      <li><a href="">Kemikalier</a></li>
+    </ul>
+  </li>
+  <li><a href="">Vattendistribution</a></li>
+  <li><a href="">Säkerhet, kris &amp; beredskap</a>
+    <button class="nav-expander btn-clean">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+</button>
+  </li>
+  <li><a href="">Undersökning och analys</a>
+    <button class="nav-expander btn-clean">
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+	cssClass += " fa-stack-1x fa-inverse";
+
+	<span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span aria-hidden="true"></span></span>
+
+</button>
+  </li>
+</ul>
+	
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿.media
+	.media-left
+		a(href='#')
+			img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMWJjNSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxYmM1Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
+	.media-body
+		h4.media-heading Top aligned media
+		p
+			| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		p
+			| Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+.media
+	.media-left.media-middle
+		a(href='#')
+			img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUxZDRlMCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTFkNGUwIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
+	.media-body
+		h4.media-heading Middle aligned media
+		p
+			| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		p
+			| Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	.media
+		.media-left.media-bottom
+			a(href='#')
+				img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMTEwMiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxMTAyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
+		.media-body
+			h4.media-heading Bottom aligned media
+			p
+				| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			p
+				| Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	.media
+		.media-body
+			h4.media-heading Media heading
+			| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+		.media-right
+			a(href='#')
+				img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMTlmMSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxOWYxIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-img">
+      <div class="img-wrapper img-wrapper-1x1">
+
+    
+        var bgColor = 
+    
+    
+        var frontColor = 
+    
+    
+        var text = name
+    
+
+    var array = 
+    var key = "name"
+    var value = name
+    var className = ""
+
+
+
+    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+
+</div>
+    </div>
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+    <div class="vcard-img vcard-img-right">
+      <div class="img-wrapper img-wrapper-1x1">
+
+    
+        var bgColor = 
+    
+    
+        var frontColor = 
+    
+    
+        var text = name
+    
+
+    var array = 
+    var key = "name"
+    var value = name
+    var className = ""
+
+
+
+    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+
+</div>
+    </div>
+  </div>
+</div>
+	</section>
+
+	<section class="mmx-docs-chapter">
+		
+	var id = heading.replace(/ /g,'')
+	<div class="mmx-docs-heading-container">
+		<div class="container mmx-docs-container">
+			<h2 class="mmx-docs-heading" id="heading">
+		</div>
+	</div>
+
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿<header id="global-header", role="banner", class="global-header">
+	﻿
+
+<div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
+  <div id="mobile-navbar-container" class="container-fluid collapse in">
+    <div class="pull-left navbar-text">
+      <button data-toggle="menu" data-target="#mobile-nav" class="btn-clean icon-link">
+				
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+
+				<span>Meny</span>
+			</button>
+    </div>
+  </div>
+</div>
+	
+	<div class="container">
+    <div class="row">
+      <div class="row-md-eq">
+        <div class="col-md-4 col-middle"> 
+					<a href="" title="Till startsidan" class="site-logo">
+						<img src=, alt=settings.title></img>
+					</a>
+				</div>
+        <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
+					﻿<div id="function-menu" class="function-menu">
+  <ul class="link-list-inline">
+    <li><a href="">Kontakt</a></li>
+    <li><a href="">Press</a></li>
+    <li><a href="">In English</a></li>
+  </ul>
+</div>
+					
+
+<form role="search", class="global-search">
+  <div class="input-group">
+    <label for="global-search-input" class="sr-only">Sök</label>
+    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
+		<span class="input-group-btn">
+      <button type="submit" class="btn btn-search">
+				<span class="icon-sm">
+					
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+
+				</span>
+				<span class="sr-only">Sök</span>
+			</button>
+		</span>
+  </div>
+</form>
+				</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+		﻿
+
+<nav class="global-nav navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+			
+	<li class=active>
+		<a href=href></a>
+	</li>
+
+				
+	
+	= lipsum(type, count, startIndex)
+
+
+
+			
+	<li class=active>
+		<a href=href></a>
+	</li>
+
+				
+	
+	= lipsum(type, count, startIndex)
+
+
+
+			
+	<li class=active>
+		<a href=href></a>
+	</li>
+
+				
+	
+	= lipsum(type, count, startIndex)
+
+
+
+			
+	<li class=active>
+		<a href=href></a>
+	</li>
+
+				
+	
+	= lipsum(type, count, startIndex)
+
+
+		</ul>
+  </div>
+</nav>
+	</div>
+</header>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		﻿
+
+<footer id="global-footer" class="global-footer">
+  <div class="container"><a href="" class="site-logo"><img src="images/logo-inverted.svg" alt=""/></a>
+    <p> 
+	
+	= lipsum(type, count, startIndex)
+
+ </p>
+    <nav>
+      <ul class="list-inline">
+        <li> <a href="">Kontakta oss</a></li>
+        <li> <a href="">Facebook</a></li>
+        <li> <a href="">Twitter</a></li>
+        <li> <a href="">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		
+
+<form role="search", class="global-search">
+  <div class="input-group">
+    <label for="global-search-input" class="sr-only">Sök</label>
+    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
+		<span class="input-group-btn">
+      <button type="submit" class="btn btn-search">
+				<span class="icon-sm">
+					
+	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+
+	
+
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
+
+
+				</span>
+				<span class="sr-only">Sök</span>
+			</button>
+		</span>
+  </div>
+</form>
+	</section>
+
+	<section class="mmx-docs-chapter">
+		var templates = 
+		
+	var id = heading.replace(/ /g,'')
+	<div class="mmx-docs-heading-container">
+		<div class="container mmx-docs-container">
+			<h2 class="mmx-docs-heading" id="heading">
+		</div>
+	</div>
+
+		
+	var id = heading.replace(/ /g,'')
+	<section class="mmx-docs-section">
+		<div class="container mmx-docs-container">
+			<h3 class="mmx-docs-heading" id=heading>
+				<button data-clipboard-text="#" + heading class="btn">
+					<span class="fa fa-link"></span>
+				</button>
+			</h3>
+		</div>
+	</section>
+
+		<ul class="list-unstyled mmx-docs-link-list">
+		<ul>
+			
+		</ul>
+
+	</section>
+
+
+<footer class="mmx-docs-footer">
+  <div class="container mmx-docs-container">
+    <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"/></a></div>
+  </div>
+</footer>
+
+	﻿
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="scripts/script.min.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
+	
+<script src= + "styleguide.min.js"></script>
+
+</body>
 </html>
+
