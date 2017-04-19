@@ -1,4 +1,27 @@
-﻿mixin swatch(color)
+﻿{% macro swatch(color) %}
+	var rgb = utils.hex2rgb(color.color);
+	<div class="mmx-docs-swatch col-sm-2">
+		<div style="background:"+color.color+";" class="color">
+			<p class="small">
+				<b>{{color.displayName}}</b>
+				{{color.color}}
+				RGB:
+				{{rgb.r}}
+				{{rgb.g}}
+				{{rgb.b}}
+			</p>
+		</div>
+	</div>
+<div class="row row-blocks">
+
+{% for color in settings.colors %}
+  {{swatch(color)}}
+{% endfor %}
+
+{% endmacro %}
+
+
+{#mixin swatch(color)
 	- var rgb = utils.hex2rgb(color.color);
 	div.mmx-docs-swatch.col-sm-2
 		div(style="background:"+color.color+";").color
@@ -17,3 +40,6 @@
 .row.row-blocks
 	each color in settings.colors
 		+swatch(color)
+#}
+
+

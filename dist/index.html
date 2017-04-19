@@ -72,25 +72,12 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-				﻿mixin swatch(color)
-	- var rgb = utils.hex2rgb(color.color);
-	div.mmx-docs-swatch.col-sm-2
-		div(style="background:"+color.color+";").color
-		p.small
-			b= color.displayName
-			br
-			= color.color
-			br
-			| RGB:
-			= rgb.r
-			|,
-			= rgb.g
-			|,
-			= rgb.b
+				﻿
 
-.row.row-blocks
-	each color in settings.colors
-		+swatch(color)
+
+
+
+
 
 		</div>
 	</section>
