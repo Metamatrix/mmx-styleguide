@@ -1,10 +1,11 @@
 {% extends "./root.njk" %}
 
 {% macro docsection(heading) %}
-	var id = heading.replace(/ /g,'')
+	{#var id = heading.replace(/ /g,'')#}
 	<section class="mmx-docs-section">
 		<div class="container mmx-docs-container">
-			<h3 class="mmx-docs-heading" id=heading>
+			<h3 class="mmx-docs-heading" id={{heading}}>
+				{{heading}}
 				<button data-clipboard-text="#" + heading class="btn">
 					<span class="fa fa-link"></span>
 				</button>
@@ -15,10 +16,11 @@
 
 
 {% macro docsectionnocontainer(heading) %}
-	var id = heading.replace(/ /g,'')
+	{#var id = heading.replace(/ /g,'')#}
 	<section class="mmx-docs-section">
 		<div class="container mmx-docs-container">
-			<h3 class="mmx-docs-heading" id=heading>
+			<h3 class="mmx-docs-heading" id={{heading}}>
+				{{heading}}
 				<button data-clipboard-text="#" + heading class="btn">
 					<span class="fa fa-link"></span>
 				</button>
@@ -51,19 +53,15 @@ mixin doc-section-no-container(heading)
 
 
 {% macro docsheading(heading) %}
-	var id = heading.replace(/ /g,'')
+	{#var id = heading.replace(/ /g,'')#}
 	<div class="mmx-docs-heading-container">
 		<div class="container mmx-docs-container">
-			<h2 class="mmx-docs-heading" id="heading">
+			<h2 class="mmx-docs-heading" id={{heading}}>
+			{{heading}}
+			</h2>
 		</div>
 	</div>
 {% endmacro %}
-
-{#mixin docs-heading(heading)
-	- var id = heading.replace(/ /g,'')
-	.mmx-docs-heading-container
-		.container.mmx-docs-container
-			h2.mmx-docs-heading(id= id)= heading#}
 
 {% block headerstyles %}
 	<link rel="stylesheet" href={{data.stylesPath}} + "styleguide.css"/>
