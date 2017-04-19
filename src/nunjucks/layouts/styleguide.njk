@@ -1,6 +1,7 @@
 {% extends "./root.njk" %}
 
-{% macro docsection(heading) %}
+
+{% macro docsection(heading, content) %}
 	{#var id = heading.replace(/ /g,'')#}
 	<section class="mmx-docs-section">
 		<div class="container mmx-docs-container">
@@ -10,8 +11,17 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
+				{% include content %}
 		</div>
 	</section>
+{% endmacro %}
+
+
+{% macro field(name, value='', type='text') %}
+<div class="field">
+  <input type="{{ type }}" name="{{ name }}"
+         value="{{ value | escape }}" />
+</div>
 {% endmacro %}
 
 

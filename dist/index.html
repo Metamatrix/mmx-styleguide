@@ -54,13 +54,13 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<p>PT Sans</p>
+				﻿<p>PT Sans</p>
 <p class="italic">PT Sans Italic</p>
 <p><b>PT Sans Bold</b></p>
 <p> <b><i>PT Sans Bold Italic</i></b></p>
+		</div>
+	</section>
+
 
 		
 	
@@ -72,10 +72,7 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿mixin swatch(color)
+				﻿mixin swatch(color)
 	- var rgb = utils.hex2rgb(color.color);
 	div.mmx-docs-swatch.col-sm-2
 		div(style="background:"+color.color+";").color
@@ -95,6 +92,9 @@
 	each color in settings.colors
 		+swatch(color)
 
+		</div>
+	</section>
+
 
 		
 	
@@ -106,13 +106,13 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		<h3>Default</h3>
+				<h3>Default</h3>
 <div style="padding:10px"><img src= alt=""/></div>
 <h3>Inverted</h3>
 <div style="background:black; padding:10px "><img src= alt=""/></div>
+		</div>
+	</section>
+
 
 		
 	
@@ -124,16 +124,16 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		
+				
 each mrgn in settings.margins
 	p.mmx-docs-margin
 		span(style="width:"+mrgn.margin+";" + "height:"+mrgn.margin+";")
 		span= mrgn.displayName
 		| :
 		span= mrgn.margin
+
+		</div>
+	</section>
 
 
 		
@@ -146,10 +146,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		
+				
 
 
 <ul class="list-unstyled mmx-docs-icon-list row">
@@ -382,6 +379,9 @@ each mrgn in settings.margins
 </div><span class="mmx-docs-icon-name"> Search plus</span>
   </li>
 </ul>
+		</div>
+	</section>
+
 
 		
 	
@@ -393,10 +393,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <h3>16x9</h3>
 
@@ -470,6 +467,9 @@ each mrgn in settings.margins
 
 
 
+		</div>
+	</section>
+
 	</section>
 
 
@@ -495,10 +495,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<h1>Component Heading 1</h1>
+				﻿<h1>Component Heading 1</h1>
 <h2>Component Heading 2</h2>
 <h3>Component Heading 3</h3>
 <h4>Component Heading 4</h4>
@@ -510,6 +507,9 @@ each mrgn in settings.margins
 <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
 <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
 <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+		</div>
+	</section>
+
 
 		
 	
@@ -521,28 +521,28 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
+				﻿
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
+
+<p>
+	
+	= lipsum(type, count, startIndex)
+
+</p>
 		</div>
 	</section>
 
-		﻿
-
-<p>
-	
-	= lipsum(type, count, startIndex)
-
-</p>
-
-<p>
-	
-	= lipsum(type, count, startIndex)
-
-</p>
-
-<p>
-	
-	= lipsum(type, count, startIndex)
-
-</p>
 
 		
 	
@@ -554,10 +554,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <p class="lead">
 	
@@ -566,6 +563,9 @@ each mrgn in settings.margins
 
 
 </p>
+		</div>
+	</section>
+
 
 		
 	
@@ -577,10 +577,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <p class="small">
 	
@@ -597,6 +594,9 @@ each mrgn in settings.margins
 
 
 </small>
+		</div>
+	</section>
+
 
 		
 	
@@ -608,10 +608,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		
+				
 
 <p>
 	<a href="">This is a stand alone link</a>
@@ -629,6 +626,9 @@ each mrgn in settings.margins
 
 
 </p>
+		</div>
+	</section>
+
 
 		
 	
@@ -640,10 +640,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <p class="text-left">Left aligned text.</p>
 <p class="text-center">Center aligned text.</p>
@@ -664,6 +661,9 @@ each mrgn in settings.margins
 
 
 </p>
+		</div>
+	</section>
+
 
 		
 	
@@ -675,10 +675,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<h3>Color</h3>
+				﻿<h3>Color</h3>
 <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
 <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 <p class="text-secondary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -693,6 +690,9 @@ each mrgn in settings.margins
 <p style="padding:10px" class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 <p style="padding:10px" class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
 <p style="padding:10px" class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+		</div>
+	</section>
+
 
 		
 	
@@ -704,10 +704,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <blockquote>
   <p>
@@ -727,6 +724,9 @@ each mrgn in settings.margins
     <cite title="Source title">Source title</cite>
   </footer>
 </blockquote>
+		</div>
+	</section>
+
 
 		
 	
@@ -738,10 +738,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <h3>Bullet list</h3>
 <ul>
@@ -909,6 +906,9 @@ each mrgn in settings.margins
 			</a>
 		</li>
 </ul>
+		</div>
+	</section>
+
 
 		
 	
@@ -920,10 +920,7 @@ each mrgn in settings.margins
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿include ../includes/mixins
+				﻿include ../includes/mixins
 
 .table-responsive
 	table.table
@@ -1020,6 +1017,9 @@ h3 Striped table
 					td example@example.com
 					td 
 						+lipsum-words(1)
+		</div>
+	</section>
+
 
 		
 	
@@ -1031,10 +1031,7 @@ h3 Striped table
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿include ../includes/mixins
+				﻿include ../includes/mixins
 
 form
 	.form-group
@@ -1116,6 +1113,9 @@ form
 	input(class="form-control input-sm", type="text", placeholder=".input-sm")
 
 	button.btn.btn-default(type='submit') Submit
+		</div>
+	</section>
+
 
 		
 	
@@ -1127,10 +1127,7 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		
+				
 
 <div class="btn-list">
 	
@@ -1292,6 +1289,9 @@ form
 
 
 
+		</div>
+	</section>
+
 
 		
 	
@@ -1303,12 +1303,12 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
+				<div class="embed-responsive embed-responsive-16by9 offset-both">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/ul1F935mOTM" frameborder="0" allowfullscreen=""></iframe>
+</div>
 		</div>
 	</section>
 
-		<div class="embed-responsive embed-responsive-16by9 offset-both">
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/ul1F935mOTM" frameborder="0" allowfullscreen=""></iframe>
-</div>
 
 		
 	
@@ -1320,10 +1320,7 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <div class="breadcrumb-wrapper"><span id="breadcrumb-label" class="sr-only">Brödsmulenavigering</span>
   <ol aria-labelledby="breadcrumb-label" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb main-breadcrumb">
@@ -1357,6 +1354,9 @@ form
 		</li>
   </ol>
 </div>
+		</div>
+	</section>
+
 
 		
 	
@@ -1368,10 +1368,7 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<nav aria-labelledby="paging-label"><span id="paging-label" class="sr-only">Pagination navigation</span>
+				﻿<nav aria-labelledby="paging-label"><span id="paging-label" class="sr-only">Pagination navigation</span>
   <ul class="pagination">
     <li><a href="" aria-label="Previous page"><span aria-hidden="true">«</span></a></li>
     <li aria-current="True" class="active"><a href=""> <span class="sr-only">Go to page</span>
@@ -1387,6 +1384,9 @@ form
     <li><a href="" aria-label="Next page"><span aria-hidden="true">»</span></a></li>
   </ul>
 </nav>
+		</div>
+	</section>
+
 
 		
 	
@@ -1398,10 +1398,7 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<div role="alert" class="alert alert-success"><strong>Well done!</strong> You successfully read this important <a class="alert-link">alert message.</a></div>
+				﻿<div role="alert" class="alert alert-success"><strong>Well done!</strong> You successfully read this important <a class="alert-link">alert message.</a></div>
 <div role="alert" class="alert alert-info"><strong>Heads up!</strong> This alert needs your attention, but it's not <a class="alert-link">super important</a></div>
 <div role="alert" class="alert alert-warning"><strong>Warning!</strong> Better check yourself, you're not looking <a class="alert-link">too good</a></div>
 <div role="alert" class="alert alert-danger"><strong>Oh snap!</strong> Change a few things up and try submitting again. <a class="alert-link">Click here!</a></div>
@@ -1411,6 +1408,9 @@ form
     Warning!
      Better check yourself, you're not looking too good.</strong>
 </div>
+		</div>
+	</section>
+
 
 		
 	
@@ -1422,16 +1422,16 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<p><span class="label label-default">Default</span></p>
+				﻿<p><span class="label label-default">Default</span></p>
 <p><span class="label label-primary">Primary</span></p>
 <p><span class="label label-secondary">Secondary</span></p>
 <p><span class="label label-success">Success</span></p>
 <p><span class="label label-info">Info</span></p>
 <p><span class="label label-warning">Warning</span></p>
 <p><span class="label label-danger">Danger</span></p>
+		</div>
+	</section>
+
 
 		
 	
@@ -1443,10 +1443,7 @@ form
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		include ../includes/mixins
+				include ../includes/mixins
 
 div(style="max-width:300px")
 
@@ -1555,6 +1552,9 @@ div(style="max-width:300px")
 				+lipsum-words(3)
 			p.card-text
 				+lipsum-words(20)
+		</div>
+	</section>
+
 
 		
 	
@@ -1566,10 +1566,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<div class="dropdown open">
+				﻿<div class="dropdown open">
   <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">Dropdown<span class="caret"></span></button>
   <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
     <li><a href="#">Action</a></li>
@@ -1578,6 +1575,9 @@ div(style="max-width:300px")
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+		</div>
+	</section>
+
 
 		
 	
@@ -1589,10 +1589,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<p>
+				﻿<p>
   <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#">Home</a></li>
     <li role="presentation"><a href="#">Profile</a></li>
@@ -1606,6 +1603,9 @@ div(style="max-width:300px")
     <li role="presentation"><a href="#">Messages</a></li>
   </ul>
 </p>
+		</div>
+	</section>
+
 
 		
 	
@@ -1617,10 +1617,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿<div style="">
+				﻿<div style="">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
@@ -1647,6 +1644,9 @@ div(style="max-width:300px")
     </div>
   </nav>
 </div>
+		</div>
+	</section>
+
 
 		
 	
@@ -1658,10 +1658,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿
+				﻿
 
 <h2 class="h4 nav-heading"><span class="sr-only">Navigering för </span><a href="">Dricksvatten</a></h2>
 <ul class="nav nav-tree">
@@ -1732,6 +1729,9 @@ div(style="max-width:300px")
   </li>
 </ul>
 	
+		</div>
+	</section>
+
 
 		
 	
@@ -1743,10 +1743,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		﻿.media
+				﻿.media
 	.media-left
 		a(href='#')
 			img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMWJjNSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxYmM1Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
@@ -1785,6 +1782,9 @@ div(style="max-width:300px")
 			a(href='#')
 				img.media-object(data-src='holder.js/64x64', alt='64x64', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGZmNTUyMTlmMSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZmY1NTIxOWYxIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==', data-holder-rendered='true', style='width: 64px; height: 64px;')
 
+		</div>
+	</section>
+
 
 		
 	
@@ -1796,10 +1796,7 @@ div(style="max-width:300px")
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-		</div>
-	</section>
-
-		
+				
 
 <div class="vcard">
   <div class="vcard-inner">
@@ -1877,6 +1874,9 @@ div(style="max-width:300px")
     </div>
   </div>
 </div>
+		</div>
+	</section>
+
 	</section>
 
 	<section class="mmx-docs-chapter">
@@ -1904,128 +1904,6 @@ div(style="max-width:300px")
 		</div>
 	</section>
 
-		﻿<header id="global-header", role="banner", class="global-header">
-	﻿
-
-<div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
-  <div id="mobile-navbar-container" class="container-fluid collapse in">
-    <div class="pull-left navbar-text">
-      <button data-toggle="menu" data-target="#mobile-nav" class="btn-clean icon-link">
-				
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
-
-	
-
-<svg aria-hidden="true", class="cssClass">
-  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
-</svg>
-
-
-				<span>Meny</span>
-			</button>
-    </div>
-  </div>
-</div>
-	
-	<div class="container">
-    <div class="row">
-      <div class="row-md-eq">
-        <div class="col-md-4 col-middle"> 
-					<a href="" title="Till startsidan" class="site-logo">
-						<img src=, alt=settings.title></img>
-					</a>
-				</div>
-        <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
-					﻿<div id="function-menu" class="function-menu">
-  <ul class="link-list-inline">
-    <li><a href="">Kontakt</a></li>
-    <li><a href="">Press</a></li>
-    <li><a href="">In English</a></li>
-  </ul>
-</div>
-					
-
-<form role="search", class="global-search">
-  <div class="input-group">
-    <label for="global-search-input" class="sr-only">Sök</label>
-    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
-		<span class="input-group-btn">
-      <button type="submit" class="btn btn-search">
-				<span class="icon-sm">
-					
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
-
-	
-
-<svg aria-hidden="true", class="cssClass">
-  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
-</svg>
-
-
-				</span>
-				<span class="sr-only">Sök</span>
-			</button>
-		</span>
-  </div>
-</form>
-				</div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-		﻿
-
-<nav class="global-nav navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-			
-	<li class=active>
-		<a href=href></a>
-	</li>
-
-				
-	
-	= lipsum(type, count, startIndex)
-
-
-
-			
-	<li class=active>
-		<a href=href></a>
-	</li>
-
-				
-	
-	= lipsum(type, count, startIndex)
-
-
-
-			
-	<li class=active>
-		<a href=href></a>
-	</li>
-
-				
-	
-	= lipsum(type, count, startIndex)
-
-
-
-			
-	<li class=active>
-		<a href=href></a>
-	</li>
-
-				
-	
-	= lipsum(type, count, startIndex)
-
-
-		</ul>
-  </div>
-</nav>
-	</div>
-</header>
 
 		
 	
@@ -2040,25 +1918,6 @@ div(style="max-width:300px")
 		</div>
 	</section>
 
-		﻿
-
-<footer id="global-footer" class="global-footer">
-  <div class="container"><a href="" class="site-logo"><img src="images/logo-inverted.svg" alt=""/></a>
-    <p> 
-	
-	= lipsum(type, count, startIndex)
-
- </p>
-    <nav>
-      <ul class="list-inline">
-        <li> <a href="">Kontakta oss</a></li>
-        <li> <a href="">Facebook</a></li>
-        <li> <a href="">Twitter</a></li>
-        <li> <a href="">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
 
 		
 	
@@ -2073,64 +1932,8 @@ div(style="max-width:300px")
 		</div>
 	</section>
 
-		
-
-<form role="search", class="global-search">
-  <div class="input-group">
-    <label for="global-search-input" class="sr-only">Sök</label>
-    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
-		<span class="input-group-btn">
-      <button type="submit" class="btn btn-search">
-				<span class="icon-sm">
-					
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
-
-	
-
-<svg aria-hidden="true", class="cssClass">
-  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
-</svg>
-
-
-				</span>
-				<span class="sr-only">Sök</span>
-			</button>
-		</span>
-  </div>
-</form>
 	</section>
 
-	<section class="mmx-docs-chapter">
-		var templates = 
-		
-	
-	<div class="mmx-docs-heading-container">
-		<div class="container mmx-docs-container">
-			<h2 class="mmx-docs-heading" id=Templates>
-			Templates
-			</h2>
-		</div>
-	</div>
-
-		
-	
-	<section class="mmx-docs-section">
-		<div class="container mmx-docs-container">
-			<h3 class="mmx-docs-heading" id=Pages>
-				Pages
-				<button data-clipboard-text="#" + heading class="btn">
-					<span class="fa fa-link"></span>
-				</button>
-			</h3>
-		</div>
-	</section>
-
-		<ul class="list-unstyled mmx-docs-link-list">
-		<ul>
-			
-		</ul>
-
-	</section>
 
 
 <footer class="mmx-docs-footer">
