@@ -1,62 +1,12 @@
-{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/icons.njk' as icons %}
 
-
-<ul class="list-unstyled mmx-docs-icon-list row">
+<ul class="list-unstyled mmx-docs-icon-list row row-blocks">
+  {% for name, icon in settings.icons.files %}
   <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('chevron-right') }}</div><span class="prv-icon-name">Chevron right</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('times') }}</div><span class="mmx-docs-icon-name"> Times</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('search') }}</div><span class="mmx-docs-icon-name"> Search</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('file') }}</div><span class="mmx-docs-icon-name"> File</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('menu') }}</div><span class="mmx-docs-icon-name"> Bars</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('down-open') }}</div><span class="mmx-docs-icon-name"> Down open</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('facebook') }}</div><span class="mmx-docs-icon-name"> Facebook</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('twitter') }}</div><span class="mmx-docs-icon-name"> Twitter</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('linkedin') }}</div><span class="mmx-docs-icon-name"> Linkedin</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('instagram') }}</div><span class="mmx-docs-icon-name"> Instagram</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('user') }}</div><span class="mmx-docs-icon-name"> User</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('plus') }}</div><span class="mmx-docs-icon-name"> Plus</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('arrow-right') }}</div><span class="mmx-docs-icon-name"> Arrow right</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('bubble') }}</div><span class="mmx-docs-icon-name"> Bubble</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('movie-play-file-2') }}</div><span class="mmx-docs-icon-name"> Movie play</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('music-file-1') }}</div><span class="mmx-docs-icon-name"> Music</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('upload-file-2') }}</div><span class="mmx-docs-icon-name"> Upload</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('zip-file') }}</div><span class="mmx-docs-icon-name"> Zip file</span>
-  </li>
-  <li class="col-xs-2 text-center">
-    <div class="mmx-docs-icon-container">{{ macros.icon('search-plus') }}</div><span class="mmx-docs-icon-name"> Search plus</span>
-  </li>
+    <div class="text-center">
+    {{ icons.icon(icon) }}
+    {{ icons.iconcircle(icon) }}
+    </div>
+    <span class="mmx-docs-icon-name">{{name}}</span>
+  {% endfor %}
 </ul>
