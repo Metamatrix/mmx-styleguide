@@ -15,15 +15,19 @@ module.exports = function(grunt, options){
       files: ['src/scripts/**/*.js'], // Watch for changes in JS files
       tasks: ['javascript-<%= dirs.output %>']
     },
-    pug: {
-      files: ['src/pug/**/*.pug'], // Watch for changes in JS files
-      tasks: ['html-<%= dirs.output %>']
-    },
+    // pug: {
+    //   files: ['src/pug/**/*.pug'], // Watch for changes in JS files
+    //   tasks: ['html-<%= dirs.output %>']
+    // },
     // html: {
     //   options: {
     //       spawn: false
     //   }
     // },
+    nunjucks: {
+      files: ['src/nunjucks/**/*.njk'], // Watch for changes in JS files
+      tasks: ['html-<%= dirs.output %>']
+    },
     images: {
       files: ['src/**/*.{png,jpg,gif,svg}'],
       tasks: ['images']
