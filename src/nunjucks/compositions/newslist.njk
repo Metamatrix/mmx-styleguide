@@ -1,10 +1,17 @@
-ul.list-unstyled.article-list
-	+repeat(10)
-		li
-			a(href="").card.m-xs-b-small
-					h2.card-title
-						+lipsum-words(2,5)
-					p.card-text
-						span.label.label-intro
-							time(datetime="2016-05-12") 12 maj 2016  
-						+lipsum-sentences(2,5)
+{% import '../includes/macros.njk' as macros %}
+
+<ul class="list-unstyled article-list">
+	<li>{{ macros.repeat(10) }}
+		<a href="" class="card m-xs-b-small">
+    	<h2 class="card-title">
+				{{ macros.lipsumwords(2,5) }}
+			</h2>
+			<p class="card-text">
+				<span class="label label-intro">
+		    	<time datetime="2016-05-12">12 maj 2016 </time>
+				</span>
+				{{ macros.lipsumsentences(2,5) }}
+			</p>
+		</a>
+	</li>
+</ul>
