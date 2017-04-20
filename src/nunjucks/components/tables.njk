@@ -1,97 +1,156 @@
-﻿include ../includes/mixins
+{% import '../includes/macros.njk' as macros %}
 
-.table-responsive
-	table.table
-		caption Optional table caption.
-			thead
-				tr
-					th #
-					th Name
-					th E-mail
-					th Username
-			tbody
-				tr
-					th(scope='row') 1
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 2
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 3
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
+<div class="table-responsive">
+  <table class="table">
+    <caption>Optional table caption.
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Username</th>
+        </tr>
+      </thead>
 
-h3 Striped table
+			<tbody>
+			  <tr>
+			    <th scope="row">1</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
 
-.table-responsive
-	table.table.table-striped
-			thead
-				tr
-					th #
-					th Name
-					th E-mail
-					th Username
-			tbody
-				tr
-					th(scope='row') 1
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 2
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 3
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
+				<tr>
+			    <th scope="row">2</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
 
-.table-responsive
-	table.table.table-condensed
-			thead
-				tr
-					th #
-					th Name
-					th E-mail
-					th Username
-			tbody
-				tr
-					th(scope='row') 1
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 2
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
-				tr
-					th(scope='row') 3
-					td 
-						+lipsum-words(2)
-					td example@example.com
-					td 
-						+lipsum-words(1)
+				<tr>
+			    <th scope="row">3</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+			</tbody>
+    </caption>
+  </table>
+</div>
+
+<h3>Striped table</h3>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <caption>Optional table caption.
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+
+			<tbody>
+			  <tr>
+			    <th scope="row">1</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+				<tr>
+			    <th scope="row">2</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+				<tr>
+			    <th scope="row">3</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+			</tbody>
+    </caption>
+  </table>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-condensed">
+    <caption>Optional table caption.
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+
+			<tbody>
+			  <tr>
+			    <th scope="row">1</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+				<tr>
+			    <th scope="row">2</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+				<tr>
+			    <th scope="row">3</th>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			    <td>example@example.com</td>
+			    <td>
+			      Lorem ipsum
+			    </td>
+			  </tr>
+
+			</tbody>
+    </caption>
+  </table>
+</div>
