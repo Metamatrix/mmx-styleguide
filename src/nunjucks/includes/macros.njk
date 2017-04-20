@@ -34,7 +34,7 @@
 //Icons
 
 {% macro icon(name) %}
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+	var cssClass = {{settings.icons.className}} + " " + {{settings.icons.prefix}} + name;
 
 	{% if attributes.class %}
 		cssClass += " " + attributes.class;
@@ -47,7 +47,7 @@
 {% endmacro %}
 
 {% macro iconcircle(name) %}
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+	var cssClass = {{settings.icons.className}} + " " + {{settings.icons.prefix}} + name;
 
 	{% if attributes.class %}
 		cssClass += " " + attributes.class;
@@ -59,7 +59,7 @@
 
 {% endmacro %}
 
-//Images 
+//Images
 
 {% macro imgph(name, text, bgColor, frontColor) %}
 
@@ -103,7 +103,7 @@ var lipsum = (function() {
 		function loop(index, length) {
 			if(index <= length) {
 				return index;
-			} 
+			}
 
 			return index % length;
 		}

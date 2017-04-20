@@ -1,6 +1,6 @@
 //- Icons
 {% macro icon(name) %}
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+	var cssClass = {{settings.icons.className}} + " " + {{settings.icons.prefix}} + name;
 
 	{% if attributes.class %}
 		cssClass += " " + attributes.class;
@@ -13,7 +13,7 @@
 {% endmacro %}
 
 {% macro iconcircle(name) %}
-	var cssClass = data.icons.className + " " + data.icons.prefix + name;
+	var cssClass = {{settings.icons.className}} + " " + {{settings.icons.prefix}} + name;
 
 	{% if attributes.class %}
 		cssClass += " " + attributes.class;
