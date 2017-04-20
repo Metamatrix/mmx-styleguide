@@ -1,22 +1,22 @@
-﻿{% macro imgph(name, text, bgColor, frontColor) %}
+﻿{% macro imgph(name, text, bgColor, frontColor, alt, class) %}
 
     {% set bgColor = bgColor if bgColor else settings.images.phBgColor %}
     {% set fgColor = frontColor if frontColor else settings.images.phFgColor %}
     {% set imgSizes = settings.images.sizes %}
     {% set width, height = 0 %}
-    {% set className = "" %}
+    {% set className = class if class else "" %}
 
     {% for imgSize in imgSizes %}
         {% if(imgSize["name"] == name) %}
             {% set width = imgSize.width %}
             {% set height = imgSize.height %}
-            {% set className = imgSize.class %}
+            {% set className = className + " " + imgSize.class %}
             {% set text = imgSize.displayName %}
         {% endif %}
     {% endfor %}
 
     <div class="img-wrapper img-wrapper-{{name | replace(":", "x")}}">
-        <img class="{{className}}" data-src="holder.js/{{width}}x{{height}}?bg={{bgColor}}&fg={{frontColor}}&text={{text}}" alt="">
+        <img class="{{className}}" data-src="holder.js/{{width}}x{{height}}?bg={{bgColor}}&fg={{frontColor}}&text={{text}}" alt="{{alt}}">
     </div>
 
 {% endmacro %}

@@ -1,8 +1,9 @@
 {% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/img-ph.njk' as img %}
 
 <div style="max-width:300px">
 	<div class="card card-default">
-		{{ macros.imgph("3x2", class='img-circle', alt="Card top image") }}
+		{{ img.imgph("3:2", class="card-img", alt="Card top image") }}
 		<div class="card-block">
 			<h4 class="card-title">Card title</h4>
 			<p class="card-text">
@@ -15,7 +16,7 @@
 	<h3>Simple card</h3>
 
 	<div class="card card-default">
-		{{ macros.imgph("3x2", class='img-circle', alt="Card top image") }}
+		{{ img.imgph("3:2", class="card-img", alt="Card top image") }}
 		<div class="card-block">
 			<h4 class="card-title">Card title</h4>
 			<p class="card-text">
@@ -46,7 +47,7 @@
 
 	<h3>Card with background image</h3>
 	<div class="card card-inverse">
-		{{ macros.imgph("3x2", "3x2", "#333", "666", alt="Card top image") }}
+		{{ img.imgph("3:2", "3:2", "#333", "666", alt="Card top image") }}
 		<div class="card-img-overlay">
 		  <h4 class="card-title">Card title</h4>
 		  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
