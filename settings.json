@@ -78,28 +78,28 @@
     "sizes": [
       {
         "name": "16:9",
-        "displayName": "16x9",
+        "displayName": "16:9",
         "width": "770",
         "height": "433",
         "class": "img-responsive"
       },
       {
         "name": "4:3",
-        "displayName": "4x3",
+        "displayName": "4:3",
         "width": "400",
         "height": "300",
         "class": "img-responsive"
       },
       {
         "name": "3:2",
-        "displayName": "3x2",
+        "displayName": "3:2",
         "width": "300",
         "height": "200",
         "class": "img-responsive"
       },
       {
         "name": "portrait",
-        "displayName": "1x1",
+        "displayName": "1:1",
         "width": "180",
         "height": "180"
       }

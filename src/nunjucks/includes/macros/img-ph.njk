@@ -1,29 +1,22 @@
 ﻿{% macro imgph(name, text, bgColor, frontColor) %}
 
-    {% if not bgColor %}
-        var bgColor = settings.images.phBgColor
-    {% endif %}
-    {% if not frontColor %}
-        var frontColor = settings.images.phFgColor
-    {% endif %}
-    {% if  not text %}
-        var text = name
-    {% endif %}
+    {% set bgColor = bgColor if bgColor else settings.images.phBgColor %}
+    {% set fgColor = frontColor if frontColor else settings.images.phFgColor %}
+    {% set imgSizes = settings.images.sizes %}
+    {% set width, height = 0 %}
+    {% set className = "" %}
 
-    var array = settings.images.sizes
-    var key = "name"
-    var value = name
-    var className = ""
-
-{#    {% for (var i = 0; i < array.length; i++) %}
-        {% if(array[i][key] === value) %}
-            var width = settings.images.sizes[i].width
-            var height = settings.images.sizes[i].height
-            className = settings.images.sizes[i].class
-            text = settings.images.sizes[i].displayName
+    {% for imgSize in imgSizes %}
+        {% if(imgSize["name"] == name) %}
+            {% set width = imgSize.width %}
+            {% set height = imgSize.height %}
+            {% set className = imgSize.class %}
+            {% set text = imgSize.displayName %}
         {% endif %}
-    {% endfor %}#}
+    {% endfor %}
 
-    <img class = className, data-src="holder.js/"+ width + "x" + height + "?bg=" + bgColor + "&fg=" + frontColor + "&text="+text></img>
+    <div class="img-wrapper img-wrapper-{{name | replace(":", "x")}}">
+        <img class="{{className}}" data-src="holder.js/{{width}}x{{height}}?bg={{bgColor}}&fg={{frontColor}}&text={{text}}" alt="">
+    </div>
 
 {% endmacro %}

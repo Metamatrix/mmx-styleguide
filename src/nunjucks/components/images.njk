@@ -1,11 +1,6 @@
-﻿{% import '../includes/macros.njk' as macros %}
+﻿{% import '../includes/macros/img-ph.njk' as img %}
 
-<h3>16x9</h3>
-{{ macros.imgph("16x9") }}
-<h3>4x3</h3>
-{{ macros.imgph("4x3") }}
-<h3>3x2</h3>
-{{ macros.imgph("3x2") }}
-
-
-{#data-srcset="holder.js/" + (width * 2) + "x" + (height * 2) + " 2x")#}
+{% for imgSize in settings.images.sizes %}
+	<h3>{{imgSize.displayName}}</h3>
+	{{ img.imgph(imgSize.name) }}
+{% endfor %}
