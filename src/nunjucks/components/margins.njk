@@ -1,7 +1,8 @@
 
-each mrgn in settings.margins
-	p.mmx-docs-margin
-		span(style="width:"+mrgn.margin+";" + "height:"+mrgn.margin+";")
-		span= mrgn.displayName
-		| :
-		span= mrgn.margin
+{% for mrgn in settings.margins %}
+	<p class="mmx-docs-margin">
+		<span style="width:{{mrgn.margin}};height:{{mrgn.margin}};"></span>
+		<span>{{mrgn.displayName}}:</span>
+		<span>{{mrgn.margin}}</span>
+	</p>
+{% endfor %}
