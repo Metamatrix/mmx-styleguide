@@ -17,8 +17,13 @@ $(".mmx-docs-chapter").each(function(){
     var nav_name = chapter_heading.text();
     var link_text = nav_name.replace(/ /g,'');
 
+    console.log(this);
+
 
     $("#mmx-document-nav > ul").append(
+
+
+
       "<li><a href='#"+link_text+"'>"+ nav_name +"</a><ul class='subnav'></ul></li>"
     );
 

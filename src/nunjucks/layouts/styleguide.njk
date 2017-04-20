@@ -9,7 +9,7 @@
 					<span class="fa fa-link"></span>
 				</button>
 			</h3>
-				{% include content %}
+			{% include content %}
 		</div>
 	</section>
 {% endmacro %}
@@ -52,25 +52,25 @@
 {% endblock %}
 
 {% block rootcontent %}
-<div data-appname="settings.title" class="mmx-componentlibrary">
+<div data-appname="{{settings.title}}" class="mmx-componentlibrary">
   <header class="mmx-docs-header">
     <div class="container mmx-docs-container">
       <h1 class="page-heading">{{settings.title}} Styleguide</h1>
       <div id="rss-feeds"></div>
     </div>
   </header>
+	<nav id="mmx-document-nav" class="hidden-xs hidden-sm hidden-md">
+	  <button id="mmx-docs-toggle-button"><span class="fa fa-thumb-tack"></span></button>
+	  <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""/></div>
+	  <ul class="list-unstyled nav"></ul>
+	</nav>
+	{% block content %}{% endblock %}
+	<footer class="mmx-docs-footer">
+	  <div class="container mmx-docs-container">
+	    <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"/></a></div>
+	  </div>
+	</footer>
 </div>
-<nav id="mmx-document-nav" class="hidden-xs hidden-sm hidden-md">
-  <button id="mmx-docs-toggle-button"><span class="fa fa-thumb-tack"></span></button>
-  <div class="mmx-docs-logo"><img src="images/styleguide/mmx-logo.svg" alt=""/></div>
-  <ul class="list-unstyled nav"></ul>
-</nav>
-{% block content %}{% endblock %}
-<footer class="mmx-docs-footer">
-  <div class="container mmx-docs-container">
-    <div class="text-center"><a href="http://www.metamatrix.se"><img src="images/styleguide/mmx-logo.svg"/></a></div>
-  </div>
-</footer>
 {% endblock %}
 
 {% block footerscripts %}
