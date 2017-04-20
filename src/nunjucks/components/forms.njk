@@ -1,82 +1,130 @@
-﻿include ../includes/mixins
+{% import '../includes/macros.njk' as macros %}
 
-form
-	.form-group
-		label(for='exampleInputEmail1') Email address
-		input#exampleInputEmail1.form-control(type='email')
-	.form-group
-		label(for='exampleInputPassword1') Password
-		input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-	.form-group
-		label(for='exampleDisabled') Disabled
-		input#exampleDisabled.form-control(type='text', value='Disabled text', disabled=true)
-	.form-group
-		label(for='eaxmpleSelect') Select
-		select#exampleInputPassword1.form-control
-			+repeat(5)
-				option
-					+lipsum-words(3)
-	.form-group
-		label(for='expleTextarea') Text
-		textarea#expleTextarea.form-control(placeholder='Text')
-	.form-group
-		label(for='exampleInputFile') File input
-		input#exampleInputFile(type='file')
-		p.help-block Example block-level help text here.
-	.form-group
-		+repeat(3)
-			.checkbox.styled-checkbox.styled-input-primary
-				label
-					input(type='checkbox')
-					span.input-control
-					+lipsum-words(3)
-		+repeat(3)
-			.radio.styled-radio.styled-input-primary
-				label
-					input(type='radio',name="radio")
-					span.input-control
-					+lipsum-words(3)
-	.form-group
-		+repeat(3)
-			label.checkbox-inline.styled-checkbox-inline.styled-input-primary
-				input(type='checkbox',name="checkbox")
-				span.input-control
-				+lipsum-words(3)
-	.form-group
-		+repeat(3)
-			label.radio-inline.styled-radio-inline.styled-input-primary
-				input(type='radio',name="radio")
-				span.input-control
-				+lipsum-words(3)
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input id="exampleInputEmail1" type="email" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control"/>
+  </div>
+	<div class="form-group">
+	  <label for="exampleDisabled">Disabled</label>
+	  <input id="exampleDisabled" type="text" value="Disabled text" disabled="disabled" class="form-control"/>
+	</div>
+	<div class="form-group">
+	  <label for="exampleSelect">Select</label>
+	  <select id="exampleInputPassword1" class="form-control">
+			<option value="">Lorem ipsum</option>
+			<option value="">Lorem ipsum</option>
+			<option value="">Lorem ipsum</option>
+			<option value="">Lorem ipsum</option>
+			<option value="">Lorem ipsum</option>
+		</select>
+	</div>
 
-	.form-group
-		.checkbox.styled-checkbox.styled-input-primary
-			label
-				input(type='checkbox')
-				span.input-control.input-control-center
-				+lipsum-words(30)
-	.form-group
-		.radio.styled-radio.styled-input-primary
-			label
-				input(type='radio',name="radio",checked=true)
-				span.input-control.input-control-center
-				+lipsum-words(30)
-	.form-group
-		.checkbox.styled-checkbox.styled-input-primary
-			label
-				input(type='checkbox',checked=true)
-				span.input-control.input-control-center
-				+lipsum-words(30)
-			a.label-addon(href="") Read more about the terms
-	.form-group
-		input#file1(type="file", class="styled-inputfile form-control", data-multiple-caption="{count} filer valda")
-		label(for='file1', class="")
-			span Choose a file...
+	<div class="form-group">
+	  <label for="expleTextarea">Text</label>
+	  <textarea id="expleTextarea" placeholder="Text" class="form-control"></textarea>
+	</div>
 
-	h2 Form sizes
+	<div class="form-group">
+	  <label for="exampleInputFile">File input</label>
+	  <input id="exampleInputFile" type="file"/>
+	  <p class="help-block">Example block-level help text here.</p>
+	</div>
 
-	input(class="form-control input-lg", type="text", placeholder=".input-lg")
-	input(class="form-control", type="text", placeholder="Default input")
-	input(class="form-control input-sm", type="text", placeholder=".input-sm")
+	<div class="form-group">
+		<div class="checkbox styled-checkbox styled-input-primary">
+		  <label>
+		    <input type="checkbox"/>
+		    <span class="input-control">Lorem ipsum</span>
+		  </label>
+		</div>
+		<div class="checkbox styled-checkbox styled-input-primary">
+		  <label>
+		    <input type="checkbox"/>
+		    <span class="input-control">Lorem ipsum</span>
+		  </label>
+		</div>
+		<div class="radio styled-radio styled-input-primary">
+		  <label>
+		    <input type="radio" name="radio"/>
+				<span class="input-control">Lorem ipsum</span>
+		  </label>
+		</div>
+		<div class="radio styled-radio styled-input-primary">
+		  <label>
+		    <input type="radio" name="radio"/>
+				<span class="input-control">Lorem ipsum</span>
+		  </label>
+		</div>
+	</div>
 
-	button.btn.btn-default(type='submit') Submit
+	<div class="form-group">
+		<label class="checkbox-inline styled-checkbox-inline styled-input-primary">
+		  <input type="checkbox" name="checkbox"/>
+			<span class="input-control">Lorem ipusm dolor</span>
+		</label>
+		<label class="checkbox-inline styled-checkbox-inline styled-input-primary">
+		  <input type="checkbox" name="checkbox"/>
+			<span class="input-control">Lorem ipusm dolor</span>
+		</label>
+	</div>
+
+	<div class="form-group">
+		<label class="radio-inline styled-radio-inline styled-input-primary">
+		  <input type="radio" name="radio"/>
+			<span class="input-control">Lorem ipusm dolor</span>
+		</label>
+		<label class="radio-inline styled-radio-inline styled-input-primary">
+		  <input type="radio" name="radio"/>
+			<span class="input-control">Lorem ipusm dolor</span>
+		</label>
+	</div>
+
+	<div class="form-group">
+	  <div class="checkbox styled-checkbox styled-input-primary">
+	    <label>
+	      <input type="checkbox"/>
+				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+	    </label>
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <div class="radio styled-radio styled-input-primary">
+	    <label>
+	      <input type="radio" name="radio" checked="checked"/>
+				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+	    </label>
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <div class="checkbox styled-checkbox styled-input-primary">
+	    <label>
+	      <input type="checkbox" checked="checked"/>
+				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+	    </label>
+			<a href="" class="label-addon">Read more about the terms</a>
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <input id="file1" type="file" data-multiple-caption="{count} filer valda" class="styled-inputfile form-control"/>
+	  <label for="file1">
+			<span>Choose a file...</span>
+		</label>
+	</div>
+
+	<h2>Form sizes</h2>
+
+	<input type="text" placeholder=".input-lg" class="form-control input-lg"/>
+	<input type="text" placeholder="Default input" class="form-control"/>
+	<input type="text" placeholder=".input-sm" class="form-control input-sm"/>
+
+	<button type="submit" class="btn btn-default">Submit</button>
+
+</form>
