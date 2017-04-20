@@ -1,7 +1,8 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
 
-<p>{{ macros.lipsumsentences(10) }}</p>
+<p>{{ lipsum.lipsumsentences(10) }}</p>
 
-<p>{{ macros.lipsumsentences(15,5) }}</p>
+<p>{{ lipsum.lipsumsentences(15,5) }}</p>
 
-<p>{{ macros.lipsumsentences(10,7) }}</p>
+<p>{{ lipsum.lipsumsentences(10,7) }}</p>

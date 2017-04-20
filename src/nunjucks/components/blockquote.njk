@@ -1,10 +1,11 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
 
 <blockquote>
-  <p>{{ macros.lipsumwords(15) }}</p>
+  <p>{{ lipsum.lipsumwords(35, 5) }}</p>
 </blockquote>
 <blockquote>
-  <p>{{ macros.lipsumwords(15) }}</p>
+  <p>{{ lipsum.lipsumwords(25, 15) }}</p>
   <footer>
     Someone famous in
     <cite title="Source title">Source title</cite>

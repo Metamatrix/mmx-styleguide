@@ -1,13 +1,14 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
 
 <p class="text-left">Left aligned text.</p>
 <p class="text-center">Center aligned text.</p>
 <p class="text-right">Right aligned text.</p>
 <p class="text-justify">
   Justified text.
-	{{ macros.lipsumsentences(20) }}
+	{{ lipsum.lipsumsentences(20) }}
 </p>
 <p class="text-nowrap">
   No wrap text.
-	{{ macros.lipsumsentences(20) }}
+	{{ lipsum.lipsumsentences(20) }}
 </p>
