@@ -101,7 +101,8 @@
         "name": "portrait",
         "displayName": "1:1",
         "width": "180",
-        "height": "180"
+        "height": "180",
+        "class": "img-circle"
       }
     ]
   },

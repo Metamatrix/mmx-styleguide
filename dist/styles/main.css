@@ -6752,6 +6752,70 @@ a.link-block .link-block-item:hover {
 .img-wrapper-16x9:before {
   padding-top: 56.25%; }
 
+.vcard {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .vcard {
+      text-align: left; } }
+
+@media only screen and (min-width: 768px) {
+  .vcard-img,
+  .vcard-body {
+    display: table-cell;
+    vertical-align: middle; } }
+
+.vcard-img {
+  width: 100px;
+  margin: 0 auto 10px; }
+  @media only screen and (min-width: 768px) {
+    .vcard-img {
+      margin: 0;
+      width: 130px;
+      padding-right: 30px;
+      padding-left: 0; } }
+
+.vcard-img-right {
+  width: 100px;
+  margin: 10px auto 0; }
+  @media only screen and (min-width: 768px) {
+    .vcard-img-right {
+      margin: 0;
+      width: 130px;
+      padding-right: 0;
+      padding-left: 30px; } }
+
+.vcard-body {
+  font-size: 14px; }
+  .vcard-body p:last-child {
+    margin-bottom: 0; }
+
+.vcard-heading {
+  margin: 0 0 5px;
+  font-family: inherit;
+  font-size: 18px; }
+
+.vcard-title {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .vcard-title {
+      margin-bottom: 10px; } }
+
+.vcard-dl {
+  margin: 0; }
+  .vcard-dl dt,
+  .vcard-dl dd {
+    display: block;
+    margin: 0; }
+  .vcard-dl dd + dt {
+    margin-top: 5px; }
+
 .m-xs-a-0 {
   margin: 0 !important; }
 
