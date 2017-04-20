@@ -6038,10 +6038,8 @@ a.bg-secondary:focus {
 
 .card-columns {
   -webkit-column-count: 3;
-     -moz-column-count: 3;
           column-count: 3;
   -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 1.25rem;
           column-gap: 1.25rem; }
   .card-columns .card {
     display: inline-block;
@@ -6465,10 +6463,8 @@ a.link-block .link-block-item:hover {
 @media only screen and (min-width: 768px) {
   .list-col-sm-2 {
     -webkit-columns: 2;
-    -moz-columns: 2;
     columns: 2;
     -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
     column-gap: 16px; }
     .list-col-sm-2 li {
       -webkit-column-break-inside: avoid;
@@ -6482,10 +6478,8 @@ a.link-block .link-block-item:hover {
 @media only screen and (min-width: 992px) {
   .list-col-md-2 {
     -webkit-columns: 2;
-    -moz-columns: 2;
     columns: 2;
     -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
     column-gap: 16px; }
     .list-col-md-2 li {
       -webkit-column-break-inside: avoid;
@@ -6499,10 +6493,8 @@ a.link-block .link-block-item:hover {
 @media only screen and (min-width: 1200px) {
   .list-col-lg-2 {
     -webkit-columns: 2;
-    -moz-columns: 2;
     columns: 2;
     -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
     column-gap: 16px; }
     .list-col-lg-2 li {
       -webkit-column-break-inside: avoid;
