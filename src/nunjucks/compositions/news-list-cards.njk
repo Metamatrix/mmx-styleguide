@@ -1,20 +1,23 @@
-.container
-    h2.section-heading Nyheter
-    .row.row-blocks
-        .col-sm-4
-            include ../components/card.jade
-        .col-sm-4
-            include ../components/card.jade
-        .col-sm-4
-            include ../components/card.jade
-        .col-sm-4
-            include ../components/card.jade
-        .col-sm-4
-            include ../components/card.jade
-        .col-sm-4
-            include ../components/card.jade
-    a(href="#").btn.btn-default.btn-sm Fler nyheter
-    
-    
+<div class="container">
+  <h2 class="section-heading">Nyheter</h2>
+  <div class="row row-blocks">
+    <div class="col-sm-4">
+      {% import '../includes/components/cards.njk' as cards %}
+    </div>
+    <div class="col-sm-4">
+      {% import '../includes/components/cards.njk' as cards %}
+    </div>
+    <div class="col-sm-4">
+      {% import '../includes/components/cards.njk' as cards %}
+    </div>
+    <div class="col-sm-4">
+      {% import '../includes/components/cards.njk' as cards %}
+    </div>
+    <div class="col-sm-4">
+      {% import '../includes/components/cards.njk' as cards %}
+    </div>
 
-                
+    <a href="#" class="btn btn-default btn-sm">Fler nyheter</a>
+
+  </div>
+</div>
