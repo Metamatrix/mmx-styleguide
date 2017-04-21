@@ -1,4 +1,4 @@
-﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros.njk' as macros %}
 {% import '../includes/macros/lipsum.njk' as lipsum %}
 {% import '../includes/macros/icons.njk' as icons %}
 
@@ -10,16 +10,21 @@
       <li>{{ lipsum.lipsumwords(5) }}</li>
       <li>{{ lipsum.lipsumwords(5) }}</li>
     </ul>
-	{{ macros.repeat(3) }}
+    <li>{{ lipsum.lipsumwords(5) }}</li>
+    <li>{{ lipsum.lipsumwords(5) }}</li>
     <li>{{ lipsum.lipsumwords(5) }}</li>
   </li>
 </ul>
+
 <ul>
-{{ macros.repeat(5) }}
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
   <li>{{ lipsum.lipsumwords(5) }}</li>
 </ul>
 
-<h3>BNumber list</h3>
+<h3>Number list</h3>
 <ol>
   <li>
 		{{ lipsum.lipsumwords(5) }}
@@ -27,49 +32,94 @@
       <li>{{ lipsum.lipsumwords(5) }}</li>
       <li>{{ lipsum.lipsumwords(5) }}</li>
     </ol>
-	{{ macros.repeat(3) }}
+    <li>{{ lipsum.lipsumwords(5) }}</li>
+    <li>{{ lipsum.lipsumwords(5) }}</li>
     <li>{{ lipsum.lipsumwords(5) }}</li>
   </li>
 </ol>
-<ul>
-{{ macros.repeat(5) }}
+
+<ol>
+  <li>{{ lipsum.lipsumwords(25) }}</li>
+  <li>{{ lipsum.lipsumwords(25) }}</li>
+  <li>{{ lipsum.lipsumwords(25) }}</li>
+  <li>{{ lipsum.lipsumwords(25) }}</li>
   <li>{{ lipsum.lipsumwords(25) }}</li>
 </ol>
 
 <h3>Unstyled list</h3>
 <ul class="list-unstyled">
-	{{ macros.repeat(5) }}
-  	<li>{{ lipsum.lipsumwords(5) }}</li>
+	<li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
+  <li>{{ lipsum.lipsumwords(5) }}</li>
 </ul>
 
 <h3>Inline list</h3>
 <ul class="list-inline">
-	{{ macros.repeat(5) }}
-  	<li>{{ lipsum.lipsumwords(3) }}</li>
+	<li>{{ lipsum.lipsumwords(3) }}</li>
+  <li>{{ lipsum.lipsumwords(3) }}</li>
+  <li>{{ lipsum.lipsumwords(3) }}</li>
+  <li>{{ lipsum.lipsumwords(3) }}</li>
+  <li>{{ lipsum.lipsumwords(3) }}</li>
 </ul>
 
-
 <h3>Description list</h3>
+
 <dl>
-	{{ macros.repeat(4) }}
-  	<dt>{{ lipsum.lipsumwords(2) }}</dt>
-  	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+	<dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
 </dl>
 
 <h3>Horizontal description list</h3>
+
 <dl class="dl-horizontal">
-	{{ macros.repeat(4) }}
-  	<dt>{{ lipsum.lipsumwords(2) }}</dt>
-  	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+	<dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
+  <dt>{{ lipsum.lipsumwords(2) }}</dt>
+	<dd>{{ lipsum.lipsumwords(10) }}</dd>
 </dl>
 
 <h3>Link list with icons</h3>
 <ul class="link-list">
-	{{ macros.repeat(5) }}
-		<li>
-			<a class="icon-link">
-				{{ macros.icon("chevron-right") }}
-				{{ lipsum.lipsumwords(3) }}
-			</a>
-		</li>
+	<li>
+		<a class="icon-link">
+			{{ icons.icon("chevron-right") }}
+			{{ lipsum.lipsumwords(3) }}
+		</a>
+	</li>
+  <li>
+		<a class="icon-link">
+			{{ icons.icon("chevron-right") }}
+			{{ lipsum.lipsumwords(3) }}
+		</a>
+	</li>
+  <li>
+		<a class="icon-link">
+			{{ icons.icon("chevron-right") }}
+			{{ lipsum.lipsumwords(3) }}
+		</a>
+	</li>
+  <li>
+		<a class="icon-link">
+			{{ icons.icon("chevron-right") }}
+			{{ lipsum.lipsumwords(3) }}
+		</a>
+	</li>
+  <li>
+		<a class="icon-link">
+			{{ icons.icon("chevron-right") }}
+			{{ lipsum.lipsumwords(3) }}
+		</a>
+	</li>
 </ul>
