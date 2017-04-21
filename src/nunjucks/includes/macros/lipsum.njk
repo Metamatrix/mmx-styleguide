@@ -1,0 +1,11 @@
+﻿{% macro lipsumcharacters(count, startIndex) %}
+	{{ lipsum('characters', count, startIndex) }}
+{% endmacro %}
+
+{% macro lipsumwords(count, startIndex) %}
+	{{ lipsum('words', count, startIndex) }}
+{% endmacro %}
+
+{% macro lipsumsentences(count, startIndex) %}
+	{{ lipsum('sentences', count, startIndex) }}
+{% endmacro %}

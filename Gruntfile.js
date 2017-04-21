@@ -42,21 +42,24 @@ module.exports = function(grunt) {
    * HTML tasks
    */
   grunt.registerTask('html-dev', [
-    'pug:dev'
+    //'pug:dev',
+    'nunjucks'
   ]);
 
   grunt.registerTask('html-dist', [
-    'pug:dist'
+    //'pug:dist'
+    'nunjucks'
   ]);
 
   grunt.registerTask('html-dev-validate', [
-    'pug:dev',
+    'nunjucks',
     'validation',
     'shell'
   ]);
 
   grunt.registerTask('html-dist-validate', [
-    'pug:dist',
+    //'pug:dist',
+    'nunjucks',
     'validation',
     'shell'
   ]);
@@ -225,9 +228,16 @@ module.exports = function(grunt) {
 
     content = '// Icons\n\r// Auto generated from settings.json at ' + (new Date()).toLocaleString() + '\n\n';
 
+    content += '.' + globalSettings.icons.className + ' { width: ' + globalSettings.icons.sizes.md + '; height: ' + globalSettings.icons.sizes.md + '; }\n';
+
     for(var key in globalSettings.icons.sizes) {
       var iconSize = globalSettings.icons.sizes[key];
       content += '.' + globalSettings.icons.prefix + key + ' { width: ' + iconSize + '; height: ' + iconSize + '; }\n';
+    }
+
+    for(var key in globalSettings.icons.colors) {
+      var iconColor = globalSettings.icons.colors[key];
+      content += '.' + globalSettings.icons.prefix + key + ' { fill: ' + iconColor + '; }\n';
     }
 
     grunt.file.write('src/sass/_application-icons.scss', content);

@@ -1,0 +1,171 @@
+{# buttons macros #}
+
+{% macro btn(caption, style, size, class, disabled) %}
+	{% set type = style if style else "default" %}
+	{% set computedClass = "btn btn-" + type %}
+	{% set computedClass = computedClass  + " " + class if class else computedClass %}
+	{% if  not size %}
+		<button class="{{computedClass}}" type="button"{{ " disabled" if disabled }}>{{caption}}</button>
+	{% else %}
+		<button class="{{computedClass}} btn-{{size}}" type="button">{{caption}}</button>
+	{% endif %}
+{% endmacro %}
+
+{% macro btnprimary(caption) %}
+	{{ btn(caption,"primary") }}
+{% endmacro %}
+
+{% macro btninfo(caption) %}
+	{{ btn(caption,"info") }}
+{% endmacro %}
+
+{% macro btnwarning(caption) %}
+	{{ btn(caption,"warning") }}
+{% endmacro %}
+
+{% macro btndanger(caption) %}
+	{{ btn(caption,"danger") }}
+{% endmacro %}
+
+{% macro btnsuccess(caption) %}
+	{{ btn(caption,"success") }}
+{% endmacro %}
+
+
+{# Large buttons #}
+
+{% macro btnlg(caption) %}
+	{% set type = style if style else "default" %}
+	{{ btn(caption,type,"lg") }}
+{% endmacro %}
+
+{% macro btnlgprimary(caption) %}
+	{{ btn(caption,"primary","lg") }}
+{% endmacro %}
+
+{% macro btnlginfo(caption) %}
+	{{ btn(caption,"info","lg") }}
+{% endmacro %}
+
+{% macro btnlgsuccess(caption) %}
+	{{ btn(caption,"success","lg") }}
+{% endmacro %}
+
+{% macro btnlgwarning(caption) %}
+	{{ btn(caption,"warning","lg") }}
+{% endmacro %}
+
+{% macro btnlgdanger(caption) %}
+	{{ btn(caption,"danger","lg") }}
+{% endmacro %}
+
+
+{# Small buttons #}
+
+{% macro btnsm(caption) %}
+	{% set type = style if style else "default" %}
+	{{ btn(caption,type,"sm") }}
+{% endmacro %}
+
+{% macro btnsmprimary(caption) %}
+	{{ btn(caption,"primary","sm") }}
+{% endmacro %}
+
+{% macro btnsminfo(caption) %}
+	{{ btn(caption,"info","sm") }}
+{% endmacro %}
+
+{% macro btnsmsuccess(caption) %}
+	{{ btn(caption,"success","sm") }}
+{% endmacro %}
+
+{% macro btnsmwarning(caption) %}
+	{{ btn(caption,"warning","sm") }}
+{% endmacro %}
+
+{% macro btnsmdanger(caption) %}
+	{{ btn(caption,"danger","sm") }}
+{% endmacro %}
+
+
+
+{# Extra Small buttons #}
+
+{% macro btnxs(caption) %}
+	{% set type = style if style else "default" %}
+	{{ btn(caption,type,"xs") }}
+{% endmacro %}
+
+{% macro btnxsprimary(caption) %}
+	{{ btn(caption,"primary","xs") }}
+{% endmacro %}
+
+{% macro btnxsinfo(caption) %}
+	{{ btn(caption,"info","xs") }}
+{% endmacro %}
+
+{% macro btnxssuccess(caption) %}
+	{{ btn(caption,"success","xs") }}
+{% endmacro %}
+
+{% macro btnxswarning(caption) %}
+	{{ btn(caption,"warning","xs") }}
+{% endmacro %}
+
+{% macro btnxsdanger(caption) %}
+	{{ btn(caption,"danger","xs") }}
+{% endmacro %}
+
+{# input buttons #}
+
+{% macro inputbtn(caption) %}
+	{% set type = style if style else "default" %}
+	<input class="btn btn-{{type}}" type="button" value="{{caption}}">
+{% endmacro %}
+
+{% macro inputbtnprimary(caption) %}
+	{{ inputbtn(caption,"primary") }}
+{% endmacro %}
+
+{% macro inputbtninfo(caption) %}
+	{{ inputbtn(caption,"info") }}
+{% endmacro %}
+
+{% macro inputbtnwarning(caption) %}
+	{{ inputbtn(caption,"warning") }}
+{% endmacro %}
+
+{% macro inputbtndanger(caption) %}
+	{{ inputbtn(caption,"danger") }}
+{% endmacro %}
+
+{% macro inputbtnsuccess(caption) %}
+	{{ inputbtn(caption,"success") }}
+{% endmacro %}
+
+{# submit buttons #}
+
+{% macro submit(caption, style) %}
+	{% set type = style if style else "default" %}
+	<input class="btn btn-{{type}}" type="submit" value="{{caption}}">
+{% endmacro %}
+
+{% macro submitprimary(caption) %}
+	{{ submit(caption,"primary") }}
+{% endmacro %}
+
+{% macro submitinfo(caption) %}
+	{{ submit(caption,"info") }}
+{% endmacro %}
+
+{% macro submitwarning(caption) %}
+	{{ submit(caption,"warning") }}
+{% endmacro %}
+
+{% macro submitdanger(caption) %}
+	{{ submit(caption,"danger") }}
+{% endmacro %}
+
+{% macro submitsuccess(caption) %}
+	{{ submit(caption,"success") }}
+{% endmacro %}

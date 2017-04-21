@@ -1,0 +1,6 @@
+﻿{% import '../includes/macros/img-ph.njk' as img %}
+
+{% for imgSize in settings.images.sizes %}
+	<h3>{{imgSize.displayName}}</h3>
+	{{ img.imgph(imgSize.name) }}
+{% endfor %}

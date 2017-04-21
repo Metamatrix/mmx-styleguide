@@ -1,0 +1,37 @@
+{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/img-ph.njk' as img %}
+
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-img">
+      {{ img.imgph('portrait', class='img-circle') }}
+    </div>
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="vcard">
+  <div class="vcard-inner">
+    <div class="vcard-body">
+      <h2 class="vcard-heading"> <span class="vcard-name">Firstname Lastname</span></h2>
+      <p class="vcard-title">Job title</p>
+      <dl class="vcard-dl">
+        <dt>E-mail</dt>
+        <dd><a href="mailto:firstname.lastname@metamatrix.se" class="vcard-email">firstname.lastname@metamatrix.se</a></dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+46812345678" class="vcard-phone">08 1234 5678</a></dd>
+      </dl>
+    </div>
+    <div class="vcard-img vcard-img-right">
+      {{ img.imgph('portrait', class='img-circle') }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/icons.njk' as icons %}
+
+<div class="breadcrumb-wrapper"><span id="breadcrumb-label" class="sr-only">Brödsmulenavigering</span>
+  <ol aria-labelledby="breadcrumb-label" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb main-breadcrumb">
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a href="" itemprop="item">
+        {{ icons.icon("chevron-right") }}
+				<span itemprop="name" class="sr-only">Hem</span>
+        <meta itemprop="position" content="1"/>
+			</a>
+		</li>
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a href="" itemprop="item">
+				<span itemprop="name">Om oss</span>
+        <meta itemprop="position" content="2"/>
+			</a>
+		</li>
+    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="active">
+			<a href="" itemprop="item" aria-current="True">
+				<span itemprop="name">Ledningen</span>
+        <meta itemprop="position" content="3"/>
+			</a>
+		</li>
+  </ol>
+</div>

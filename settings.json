@@ -3,6 +3,7 @@
   "scriptsPath": "scripts/",
   "stylesPath": "styles/",
   "imgPath": "images/",
+  "iconsPath": "images/icons/",
   "projectPath": "",
   "projectAssetsPath": "static/",
   "colors": [
@@ -44,26 +45,29 @@
       "white":"#fff",
       "gray": "#444"
     },
-    "files": [
-      "chevron-right", 
-      "times", 
-      "search", 
-      "file", 
-      "down-open",
-      "menu",
-      "facebook",
-      "twitter",
-      "linkedin",
-      "instagram",
-      "user",
-      "plus",
-      "arrow-right",
-      "bubble",
-      "movie-play-file-2",
-      "music-file-1",
-      "upload-file-2", 
-      "zip-file",
-      "search-plus" ],
+    "files": {
+      "Check": "check", 
+      "Chevron Right": "chevron-right", 
+      "Times": "times", 
+      "Search": "search", 
+      "File": "file", 
+      "Down Open": "down-open",
+      "Menu": "menu",
+      "Facebook": "facebook",
+      "Twitter": "twitter",
+      "Linkedin": "linkedin",
+      "Instagram": "instagram",
+      "User": "user",
+      "Plus": "plus",
+      "Minus": "minus",
+      "Arrow Right": "arrow-right",
+      "Bubble": "bubble",
+      "Movie": "movie-play-file-2",
+      "Music": "music-file-1",
+      "Upload": "upload-file-2", 
+      "Zip file": "zip-file",
+      "Search Plus": "search-plus" 
+    },
     "sizes": {
       "sm": "12px",
       "md": "16px",
@@ -76,30 +80,31 @@
     "sizes": [
       {
         "name": "16:9",
-        "displayName": "16x9",
+        "displayName": "16:9",
         "width": "770",
         "height": "433",
         "class": "img-responsive"
       },
       {
         "name": "4:3",
-        "displayName": "4x3",
+        "displayName": "4:3",
         "width": "400",
         "height": "300",
         "class": "img-responsive"
       },
       {
         "name": "3:2",
-        "displayName": "3x2",
+        "displayName": "3:2",
         "width": "300",
         "height": "200",
         "class": "img-responsive"
       },
       {
         "name": "portrait",
-        "displayName": "1x1",
+        "displayName": "1:1",
         "width": "180",
-        "height": "180"
+        "height": "180",
+        "class": "img-circle"
       }
     ]
   },
