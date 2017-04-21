@@ -1,0 +1,28 @@
+// Article list
+.article-list {
+	@extend .list-unstyled;
+
+	> li,
+	.article-list-item {
+		margin: $article-list-margin 0;
+	}
+
+	p {
+		color: $text-color;
+	}
+}
+
+.article-list-item-heading {
+	margin-top: 0;
+}
+
+.article-list-item-meta {
+	display: block;
+	color: $gray-light;
+	margin: $margin-small 0;
+}
+
+.article-list-item + .article-list-item {
+	padding-top: $article-list-margin;
+	border-top: solid 1px $hr-border;
+}

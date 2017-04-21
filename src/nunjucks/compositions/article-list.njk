@@ -1,0 +1,18 @@
+{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
+
+<div class="list-unstyled article-list">
+	{% for i in range(0,5) %}
+		<article class="article-list-item">
+			<a href="">
+	    	<h2 class="article-list-item-heading">{{ lipsum.lipsumsentences(3) }}</h2>
+	    </a>
+			<span class="article-list-item-meta">
+	    	<time datetime="2016-05-12">12 maj 2016 </time>
+			</span>
+			<p class="article-list-item-text">
+				{{ lipsum.lipsumsentences(5,15) }}
+			</p>
+		</article>
+	{% endfor %}
+</div>

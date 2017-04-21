@@ -92,11 +92,6 @@ module.exports = function(grunt) {
     'imagemin'
   ]);
 
-  grunt.registerTask('icons',[
-    'color_svg_icons:svg_options'
-  ]);
-
-
   /**
    * Export files task
    */
@@ -114,8 +109,7 @@ module.exports = function(grunt) {
     'javascript-dev',
     'images',
     'copy:target',
-    'modernizr',
-    'icons'
+    'modernizr'
   ]);
 
   /**
