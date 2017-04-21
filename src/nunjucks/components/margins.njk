@@ -1,0 +1,8 @@
+
+{% for mrgn in settings.margins %}
+	<p class="mmx-docs-margin">
+		<span style="width:{{mrgn.margin}};height:{{mrgn.margin}};"></span>
+		<span>{{mrgn.displayName}}:</span>
+		<span>{{mrgn.margin}}</span>
+	</p>
+{% endfor %}

@@ -7,6 +7,7 @@
 @import "application-colors";
 @import "application-margins";
 @import "application-paths";
+@import "application-icons";
 
 // Colors
 
@@ -508,7 +509,7 @@ $label-warning-bg:            $brand-warning;
 $label-danger-bg:             $brand-danger;
 
 //** Default label text color
-$label-color:                 #fff;
+$label-color:                 #000;
 //** Default text color of a linked label
 $label-link-hover-color:      #fff;
 

@@ -1,0 +1,11 @@
+{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
+
+<p>
+	<a href="">This is a stand alone link</a>
+</p>
+<p>
+	{{ lipsum.lipsumwords(20) }}
+	<a href="">This is a link in a text</a>
+	{{ lipsum.lipsumwords(20) }}
+</p>

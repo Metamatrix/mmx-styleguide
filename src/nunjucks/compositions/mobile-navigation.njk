@@ -1,0 +1,37 @@
+{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
+{% import '../includes/macros/icons.njk' as icons %}
+
+<nav id="mobile-nav" data-off-canvas-menu="true" aria-hidden="true" role="navigation" class="mobile-nav off-canvas-menu off-canvas-left">
+	<button class="close sr-only">
+		{{ icons.icon("times") }}
+		<span class="sr-only">Stäng</span>
+	</button>
+
+	<div class="off-canvas-content">
+		<form role="search" class="site-search">
+		  <div class="input-group input-group-xs">
+		    <label for="sitesearchmobile" class="sr-only">Sök på Metamatrix.se</label>
+		    <input type="text" placeholder="Sök på Metamatrix.se" id="sitesearchmobile" class="form-control"/>
+				<span class="input-group-btn">
+					<button type="submit" class="btn-search btn btn-default">
+						{{ icons.icon("search-plus") }}
+						<span class="sr-only">Sök</span>
+					</button>
+				</span>
+		  </div>
+
+		<ul class="list-unstyled mobile-navigation-list">
+			<li>
+        <a href="">{{ lipsum.lipsumwords(2, 7) }}</a>
+      </li>
+      <li class="active">
+        <a href="">{{ lipsum.lipsumwords(2, 4) }}</a>
+      </li>
+      <li>
+        <a href="">{{ lipsum.lipsumwords(2, 16) }}</a>
+      </li>
+		</ul>
+		</form>
+	</div>
+</nav>

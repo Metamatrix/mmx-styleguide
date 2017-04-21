@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+  <head>
+		{% include "../partials/htmlhead.njk" %}
+		{% block headerstyles %}{% endblock %}
+		{% block headerscripts %}{% endblock %}
+</head>
+<body>
+	{% block rootcontent %}{% endblock %}
+	{% include "../partials/footerscripts.njk" %}
+	{% block footerscripts %}{% endblock %}
+</body>
+</html>
+

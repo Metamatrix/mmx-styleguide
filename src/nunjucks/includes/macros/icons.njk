@@ -1,0 +1,24 @@
+//- Icons
+{% macro icon(name, class) %}
+
+	{% set cssClass = settings.icons.className + " " + settings.icons.prefix + name %}
+	{% set cssClassToRender = cssClass + " " + class if class else cssClass %}
+
+	<svg aria-hidden="true" class="{{cssClassToRender}}">
+	  <use xlink:href="{{settings.iconsPath}}icons.svg#icon-{{name}}"></use>
+	</svg>
+
+{% endmacro %}
+
+{% macro iconcircle(name, class) %}
+	
+	{% set cssClass = settings.icons.className + " " + settings.icons.prefix + name %}
+	{% set cssClassToRender = cssClass + " " + class if class else cssClass %}
+
+	<span class="icon-circle">
+		<svg aria-hidden="true" class="{{cssClassToRender}}">
+	  <use xlink:href="{{settings.iconsPath}}icons.svg#icon-{{name}}"></use>
+	</svg>
+	</span>
+
+{% endmacro %}

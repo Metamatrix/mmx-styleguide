@@ -1,0 +1,13 @@
+{% extends "./fullwidth.njk" %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			{% block sidebar %}{% endblock %}
+		</div>
+		<main id="main-content" class="col-sm-8" role="main">
+			{% block maincontent %}{% endblock %}
+		</main>
+	</div>
+</div>
+{% endblock %}

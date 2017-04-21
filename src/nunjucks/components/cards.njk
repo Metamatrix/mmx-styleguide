@@ -1,0 +1,104 @@
+{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/img-ph.njk' as img %}
+
+<div style="max-width:300px">
+	<div class="card card-default">
+		{{ img.imgph("3:2", class="card-img", alt="Card top image") }}
+		<div class="card-block">
+			<h4 class="card-title">Card title</h4>
+			<p class="card-text">
+  			Somequick example text to build on the card title and make up the bulk of the card's content.</Some>
+			</p>
+			<a href="#" class="btn btn-primary">Button</a>
+		</div>
+	</div>
+
+	<h3>Simple card</h3>
+
+	<div class="card card-default">
+		{{ img.imgph("3:2", class="card-img", alt="Card top image") }}
+		<div class="card-block">
+			<h4 class="card-title">Card title</h4>
+			<p class="card-text">
+  			Somequick example text to build on the card title and make up the bulk of the card's content.</Some>
+			</p>
+			<a href="#" class="btn btn-primary">Button</a>
+		</div>
+	</div>
+
+	<h3>Card with title and text</h3>
+	<div class="card card-block card-default">
+	  <h4 class="card-title">Card title</h4>
+	  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's contendddt.</p>
+	  <a href="#" class="card-link">Card link</a>
+	  <a href="#" class="card-link">Another link</a>
+	</div>
+
+	<h3>Card with header and footer</h3>
+	<div class="card text-center card-default">
+	  <div class="card-header">Featured</div>
+	  <div class="card-block">
+	    <h4 class="card-title">Special title treatment</h4>
+	    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	  <div class="card-footer text-muted">2 days ago</div>
+	</div>
+
+	<h3>Card with background image</h3>
+	<div class="card card-inverse">
+		{{ img.imgph("3:2", "3:2", "#333", "666", alt="Card top image") }}
+		<div class="card-img-overlay">
+		  <h4 class="card-title">Card title</h4>
+		  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <p class="card-text">
+		    <small class="text-muted">Last updated 3 mins ago</small>
+		  </p>
+		</div>
+	</div>
+
+	<h3>Card with inversed text</h3>
+	<div style="background-color: #333; border-color: #333;" class="card card-inverse"></div>
+	<div class="card-block">
+	  <h3 class="card-title">Special title treatment</h3>
+	  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a href="#" class="btn btn-primary">Button</a>
+	</div>
+
+	<h3>Card background colors</h3>
+	<div class="card card-inverse card-primary text-center">
+		<div class="card-block">
+			<div class="card-title">
+				Primary
+				<p class="card-text">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-inverse card-success text-center">
+		<div class="card-block">
+			<div class="card-title">
+				Card sucess
+				<p class="card-text">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-inverse card-warning text-center">
+		<div class="card-block">
+			<div class="card-title">
+				Card warning
+				<p class="card-text">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-inverse card-danger text-center">
+		<div class="card-block xard">
+			<div class="card-title">
+				Card danger
+				<p class="card-text">Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+
+</div>

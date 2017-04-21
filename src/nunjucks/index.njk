@@ -1,0 +1,106 @@
+﻿{% extends "./layouts/styleguide.njk" %}
+{% import './layouts/styleguide.njk' as styleguide %}
+
+{% block content %}
+	<section class="mmx-docs-chapter">
+		{{	styleguide.docsheading("Profile") }}
+
+		{{	styleguide.docsection("Fonts", "../components/fonts.njk") }}
+
+		{{	styleguide.docsection("Colors", "../components/colors.njk") }}
+
+		{{	styleguide.docsection("Logotypes", "../components/logotype.njk") }}
+
+		{{	styleguide.docsection("Margins", "../components/margins.njk") }}
+
+		{{	styleguide.docsection("Icons", "../components/icons.njk") }}
+
+		{{	styleguide.docsection("Images", "../components/images.njk") }}
+	</section>
+
+
+	<section class="mmx-docs-chapter">
+		{{	docsheading("Components") }}
+
+		{{	docsection("Headings", "../components/headings.njk") }}
+
+		{{	docsection("Body text", "../components/body-text.njk") }}
+
+		{{	docsection("Lead text", "../components/lead-text.njk") }}
+
+		{{	docsection("Small text" , "../components/small-text.njk") }}
+
+		{{	docsection("Link text", "../components/links.njk") }}
+
+		{{	docsection("Text alignment" , "../components/text-alignment.njk") }}
+
+		{{	docsection("Text helpers", "../components/text-helpers.njk") }}
+
+		{{	docsection("Blockquote", "../components/blockquote.njk") }}
+
+		{{	docsection("Lists",  "../components/lists.njk") }}
+
+		{{	docsection("Tables", "../components/tables.njk") }}
+
+		{{	docsection("Forms", "../components/forms.njk") }}
+
+		{{	docsection("Buttons" , "../components/buttons.njk") }}
+
+		{{	docsection("Video", "../components/video.njk") }}
+
+		{{	docsection("Breadcrumbs", "../components/breadcrumb.njk") }}
+
+		{{	docsection("Pagination", "../components/pagination.njk") }}
+
+		{{	docsection("Alert", "../components/alerts.njk") }}
+
+		{{	docsection("Lables", "../components/labels.njk") }}
+
+		{{	docsection("Cards", "../components/cards.njk") }}
+
+		{{	docsection("Dropdowns", "../components/dropdowns.njk") }}
+
+		{{	docsection("Tabs", "../components/nav-tabs.njk") }}
+
+		{{	docsection("Navbar", "../components/navbar.njk") }}
+
+		{{	docsection("Navtree", "../components/navtree.njk") }}
+
+		{{	docsection("Media object", "../components/media-object.njk") }}
+
+		{{	docsection("Vcard", "../components/vcard.njk") }}
+
+	</section>
+
+	<section class="mmx-docs-chapter">
+		{{	docsheading("Compositions") }}
+
+		{{	docsectionnocontainer("Site header", "../compositions/global-header.njk") }}
+
+		{{	docsectionnocontainer("Site footer", "../compositions/global-footer.njk") }}
+
+		{{	docsectionnocontainer("Site search", "../compositions/global-search.njk") }}
+
+		{# TODO: uncomment for now and fix this later #}
+		{# {{	docsection("Mobile navigation", "../compositions/mobile-navigation.njk") }} #}
+
+		{{	docsection("News list", "../compositions/newslist.njk") }}
+	</section>
+
+	<section class="mmx-docs-chapter">
+
+		{{	docsheading("Templates") }}
+
+		<div class="container mmx-docs-container">
+			<ul class="list-unstyled mmx-docs-link-list">
+				{% for templateFile, templateName in settings.templates %}
+					<li>
+						<a href="{{templateFile}}.html">{{templateName}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</section>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% import '../includes/macros/icons.njk' as icons %}
+
+<ul class="list-unstyled mmx-docs-icon-list row row-blocks">
+  {% for name, icon in settings.icons.files %}
+  <li class="col-xs-2 text-center">
+    <div class="text-center">
+    {{ icons.icon(icon) }}
+    {{ icons.iconcircle(icon) }}
+    </div>
+    <span class="mmx-docs-icon-name">{{name}}</span>
+  {% endfor %}
+</ul>

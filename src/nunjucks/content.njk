@@ -1,0 +1,123 @@
+{% extends "./layouts/content.njk" %}
+
+{% import './includes/macros.njk' as macros %}
+{% import './includes/macros/lipsum.njk' as lipsum %}
+{% import './includes/macros/img-ph.njk' as img %}
+
+{% block sidebar %}
+	<nav role="navigation">
+	  <ul class="nav nav-pills nav-stacked">
+			<li class="active">
+				<a href="" aria-current="page">{{ lipsum.lipsumwords(2,8) }}</a>
+			</li>
+			<li>
+				<a href="">{{ lipsum.lipsumwords(2,5) }}</a>
+			</li>
+			<li>
+				<a href="">{{ lipsum.lipsumwords(2,5) }}</a>
+			</li>
+			<li>
+				<a href="">{{ lipsum.lipsumwords(2,5) }}</a>
+			</li>
+			<li>
+				<a href="">{{ lipsum.lipsumwords(2,5) }}</a>
+			</li>
+			<li>
+				<a href="">{{ lipsum.lipsumwords(2,5) }}</a>
+			</li>
+		</ul>
+	</nav>
+{% endblock %}
+
+{% block maincontent %}
+	<article class="article">
+		<h1 class="article-heading">{{ lipsum.lipsumwords(3,4) }}</h1>
+
+		<p class="article-preamble">{{ lipsum.lipsumwords(40, 4) }}</p>
+
+		<div class="article-body">
+			<p>
+				{{ lipsum.lipsumsentences(2, 4) }}
+				<a href="">{{ lipsum.lipsumwords(3, 5) }}.</a>
+				{{ lipsum.lipsumsentences(3, 6) }}
+			</p>
+
+			<h2>{{ lipsum.lipsumwords(5, 30) }}</h2>
+
+			<p>{{ lipsum.lipsumsentences(8, 8) }}</p>
+
+			<h3>{{ lipsum.lipsumwords(5) }}</h3>
+
+			<p>{{ lipsum.lipsumsentences(8, 10) }}</p>
+
+			<h4>{{ lipsum.lipsumwords(5, 5) }}</h4>
+
+			<p>{{ lipsum.lipsumsentences(6, 14) }}</p>
+
+			<h5>{{ lipsum.lipsumwords(5, 20) }}</h5>
+
+			<p>{{ lipsum.lipsumsentences(6, 18) }}</p>
+
+			<h6>{{ lipsum.lipsumwords(5, 10) }}</h6>
+
+			<p>{{ lipsum.lipsumsentences(6, 28) }}</p>
+
+			{{ img.imgph('4:3', class='img-left') }}
+
+			<p>{{ lipsum.lipsumwords(50) }}</p>
+
+			{{ img.imgph('16:9', class='img-center') }}
+
+			<blockquote>
+				{{ lipsum.lipsumwords(50) }}
+			</blockquote>
+
+			<ul>
+			  <li>{{ lipsum.lipsumwords(5) }}</li>
+			  <li>{{ lipsum.lipsumwords(5) }}</li>
+			  <li>{{ lipsum.lipsumwords(5) }}</li>
+			  <li>{{ lipsum.lipsumwords(5) }}</li>
+			  <li>{{ lipsum.lipsumwords(5) }}</li>
+			</ul>
+
+			<ol>
+			  <li>{{ lipsum.lipsumwords(25) }}</li>
+			  <li>{{ lipsum.lipsumwords(25) }}</li>
+			  <li>{{ lipsum.lipsumwords(25) }}</li>
+			  <li>{{ lipsum.lipsumwords(25) }}</li>
+			  <li>{{ lipsum.lipsumwords(25) }}</li>
+			</ol>
+
+			<div class="table-responsive">
+			  <table class="table">
+		      <thead>
+		        <tr>
+		          <th>{{ lipsum.lipsumwords(1, 10) }}</th>
+		          <th>{{ lipsum.lipsumwords(2, 20) }}</th>
+		          <th>{{ lipsum.lipsumwords(3, 30) }}</th>
+		          <th>{{ lipsum.lipsumwords(2, 50) }}</th>
+		        </tr>
+		      </thead>
+
+					<tbody>
+					  <tr>
+							<td>{{ lipsum.lipsumwords(1, 10) }}</td>
+							<td>{{ lipsum.lipsumwords(2, 20) }}</td>
+							<td>{{ lipsum.lipsumwords(3, 30) }}</td>
+							<td>{{ lipsum.lipsumwords(2, 50) }}</td>
+					  </tr>
+					</tbody>
+
+					<tfooter>
+					  <tr>
+							<th>{{ lipsum.lipsumwords(1, 10) }}</th>
+		          <th>{{ lipsum.lipsumwords(2, 20) }}</th>
+		          <th>{{ lipsum.lipsumwords(3, 30) }}</th>
+		          <th>{{ lipsum.lipsumwords(2, 50) }}</th>
+					  </tr>
+					</tfooter>
+				</table>
+		</div>
+
+	</article>
+{% endblock %}

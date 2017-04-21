@@ -1,0 +1,54 @@
+{% import '../includes/macros.njk' as macros %}
+
+<div class="row row-blocks">
+  <div class="col-sm-4">
+		<a href="" class="card card-default">
+      <div class="logo-image-container">
+        <div class="logo-image-container-inner"><img src="prototypecontent/images/akademiskahus.jpg" alt=""/></div>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title text-center"> 
+				{{ macros.lipsumwords(3) }}
+				</h4>
+      </div>
+		</a>
+	</div>
+  <div class="col-sm-4"><a href="" class="card card-default">
+      <div class="logo-image-container">
+        <div class="logo-image-container-inner"><img src="prototypecontent/images/jm.png" alt=""/></div>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title text-center">
+					{{ macros.lipsumwords(3) }}
+				</h4>
+      </div></a></div>
+  <div class="col-sm-4">
+    <div class="card card-default">
+      <div class="logo-image-container">
+        <div class="logo-image-container-inner"><img src="prototypecontent/images/stockholm.png" alt=""/></div>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title text-center"> 
+					{{ macros.lipsumwords(3) }}
+						var height= Math.floor(Math.random() * (150 - 50) + 50)
+						var width= Math.floor(Math.random() * (200 - 100) + 100)
+				</h4>
+      </div>
+    </div>
+
+		{{ macros.repeat(100) }}
+
+    <div class="col-sm-4">
+			<a href="" class="card card-default">
+        <div class="logo-image-container">
+          <div class="logo-image-container-inner"></div>
+        </div>
+        <div class="card-block">
+          <h4 class="card-title text-center"> 
+						{{ macros.lipsumwords(3) }}
+					</h4>
+        </div>
+			</a>
+		</div>
+  </div>
+</div>

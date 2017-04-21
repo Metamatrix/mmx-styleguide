@@ -1,0 +1,43 @@
+// Icons
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+// TODO: Integrate this with icon settings
+
+.icon-circle {
+	position: relative;
+	width: 16px;
+	height: 16px;
+	
+	display: inline-block;
+	padding: $margin-small;
+	vertical-align: middle;
+	
+	background-color: $text-color;
+	border-radius: 50%;
+
+	&.icon-sm {
+		width: 12px;
+		height: 12px;
+	}
+
+	&.icon-lg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.icon {
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		width: 50%;
+		height: 50%;
+	}
+
+	svg {
+		fill: #fff;
+	}
+}
