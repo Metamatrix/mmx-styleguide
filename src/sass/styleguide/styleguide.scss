@@ -60,18 +60,6 @@ h3.mmx-docs-heading {
 	padding-bottom:10px;
 	position: relative;
 	margin-bottom:30px;
-
-	button {
-		background:transparent;
-		position:absolute;
-		top:2px;
-		right:0;
-		padding:0;
-
-		&:hover {
-			color:$apple;
-		}
-	}
 }
 
 h4.mmx-docs-heading {
@@ -79,6 +67,25 @@ h4.mmx-docs-heading {
 	font-weight: normal !important;
 	margin:0;
 	margin-bottom:10px;
+}
+
+.mmx-docs-heading-copy-link-btn {
+	position:absolute;
+	top: 2px;
+	right: 0;
+	width: 32px;
+	height: 32px;
+	padding: 5px;
+
+	background:transparent;
+
+	svg {
+		fill: $gray;
+
+		&:hover {
+			fill: $apple;
+		}
+	}
 }
 
 .mmx-docs-section {
@@ -147,8 +154,6 @@ h4.mmx-docs-heading {
 		}
 	}
 
-
-
 	li.active {
 		background: rgba(240,240,240,0.8);
 
@@ -212,30 +217,36 @@ h4.mmx-docs-heading {
 	position: absolute;
 	top:10px;
 	left:10px;
+	width: 32px;
+	height: 32px;
 	background:transparent;
 
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
 	opacity:0.5;
 
 	&.active {
 		opacity:0.8;
 		color:$apple;
+		
+		svg {
+			fill: $apple;
+		}
+	
 	}
 
-
 }
+
 #mmx-document-nav.mmx-document-nav-slide-left {
 
 	-webkit-transform: translate3d(-200px, 0, 0);
