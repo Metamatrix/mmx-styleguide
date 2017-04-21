@@ -14,16 +14,7 @@
 	</section>
 {% endmacro %}
 
-
-{% macro field(name, value='', type='text') %}
-<div class="field">
-  <input type="{{ type }}" name="{{ name }}"
-         value="{{ value | escape }}" />
-</div>
-{% endmacro %}
-
-
-{% macro docsectionnocontainer(heading) %}
+{% macro docsectionnocontainer(heading, content) %}
 	{% set id = heading.replace(r/ /g,'-') %}
 	<section class="mmx-docs-section">
 		<div class="container mmx-docs-container">
@@ -34,6 +25,7 @@
 				</button>
 			</h3>
 		</div>
+		{% include content %}
 	</section>
 {% endmacro %}
 
@@ -76,5 +68,5 @@
 {% endblock %}
 
 {% block footerscripts %}
-<script src="{{settings.scriptsPath}}styleguide.min.js"></script>
+	<script src="{{settings.scriptsPath}}styleguide.min.js"></script>
 {% endblock %}
