@@ -5,17 +5,18 @@
 <nav class="global-nav navbar navbar-default">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-			{{ macros.nav_item("") }}
-        {{ lipsum.lipsumwords(2, 7) }}
-
-			{{ macros.nav_item("", "active") }}
-        {{ lipsum.lipsumwords(2, 4) }}
-
-			{{ macros.nav_item("") }}
-        {{ lipsum.lipsumwords(2, 16) }}
-
-			{{ macros.nav_item("") }}
-        {{ lipsum.lipsumwords(2, 10) }}
+      <li>
+        <a href="">{{ lipsum.lipsumwords(2, 7) }}</a>
+      </li>
+      <li class="active">
+        <a href="">{{ lipsum.lipsumwords(2, 4) }}</a>
+      </li>
+      <li>
+        <a href="">{{ lipsum.lipsumwords(2, 16) }}</a>
+      </li>
+      <li>
+        <a href="">{{ lipsum.lipsumwords(2, 10) }}</a>
+      </li>
 		</ul>
   </div>
 </nav>
