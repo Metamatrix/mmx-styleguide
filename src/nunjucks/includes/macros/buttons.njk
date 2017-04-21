@@ -1,50 +1,15 @@
-//buttons macros
+{# buttons macros #}
 
-{#//- button mixins
-//- anchor buttons
-mixin a-btn(url,style)
-	- var type = (typeof style === 'undefined') ? "default" : style
-	a.btn(class="btn-" + type,href=url)
-		block
-
-mixin a-btn-primary(url)
-	+a-btn(url,"primary")
-		block
-
-mixin a-btn-info(url)
-	+a-btn(url,"info")
-		block
-
-mixin a-btn-warning(url)
-	+a-btn(url,"warning")
-		block
-
-mixin a-btn-danger(url)
-	+a-btn(url,"danger")
-		block
-
-mixin a-btn-success(url)
-	+a-btn(url,"success")
-		block#}
-
-//- buttons
-
-{% macro btn(caption, style, size) %}
-	var type = (typeof style === 'undefined') ? "default" : style
-{% if  not size %}
-	<button class="btn-" + type, type="button"></button>
-{% else %}
-	<button class="btn-" + type "btn-" + size, type="button"></button>
-{% endif %}
+{% macro btn(caption, style, size, class, disabled) %}
+	{% set type = style if style else "default" %}
+	{% set computedClass = "btn btn-" + type %}
+	{% set computedClass = computedClass  + " " + class if class else computedClass %}
+	{% if  not size %}
+		<button class="{{computedClass}}" type="button"{{ " disabled" if disabled }}>{{caption}}</button>
+	{% else %}
+		<button class="{{computedClass}} btn-{{size}}" type="button">{{caption}}</button>
+	{% endif %}
 {% endmacro %}
-
-
-{#mixin btn(caption,style,size)
-	- var type = (typeof style === 'undefined') ? "default" : style
-	unless size
-		button.btn(class="btn-" + type,type="button")&attributes(attributes)= caption
-	else
-		button.btn(class="btn-" + type "btn-" + size,type="button")&attributes(attributes)= caption#}
 
 {% macro btnprimary(caption) %}
 	{{ btn(caption,"primary") }}
@@ -67,10 +32,10 @@ mixin a-btn-success(url)
 {% endmacro %}
 
 
-//- Large buttons
+{# Large buttons #}
 
 {% macro btnlg(caption) %}
-	var type = (typeof style === 'undefined') ? 'default' : style
+	{% set type = style if style else "default" %}
 	{{ btn(caption,type,"lg") }}
 {% endmacro %}
 
@@ -95,10 +60,10 @@ mixin a-btn-success(url)
 {% endmacro %}
 
 
-//- Small buttons
+{# Small buttons #}
 
 {% macro btnsm(caption) %}
-	var type = (typeof style === 'undefined') ? 'default' : style
+	{% set type = style if style else "default" %}
 	{{ btn(caption,type,"sm") }}
 {% endmacro %}
 
@@ -124,10 +89,10 @@ mixin a-btn-success(url)
 
 
 
-//- Extra Small buttons
+{# Extra Small buttons #}
 
 {% macro btnxs(caption) %}
-	var type = (typeof style === 'undefined') ? 'default' : style
+	{% set type = style if style else "default" %}
 	{{ btn(caption,type,"xs") }}
 {% endmacro %}
 
@@ -151,11 +116,11 @@ mixin a-btn-success(url)
 	{{ btn(caption,"danger","xs") }}
 {% endmacro %}
 
-//- input buttons
+{# input buttons #}
 
 {% macro inputbtn(caption) %}
-	var type = (typeof style === 'undefined') ? 'default' : style
-	<input class="btn btn-" + type,type="button",value=caption></input>
+	{% set type = style if style else "default" %}
+	<input class="btn btn-{{type}}" type="button" value="{{caption}}">
 {% endmacro %}
 
 {% macro inputbtnprimary(caption) %}
@@ -178,11 +143,11 @@ mixin a-btn-success(url)
 	{{ inputbtn(caption,"success") }}
 {% endmacro %}
 
-//- submit buttons
+{# submit buttons #}
 
 {% macro submit(caption, style) %}
-	var type = (typeof style === 'undefined') ? 'default' : style
-	<input class="btn btn-" + type,type="submit",value=caption></input>
+	{% set type = style if style else "default" %}
+	<input class="btn btn-{{type}}" type="submit" value="{{caption}}">
 {% endmacro %}
 
 {% macro submitprimary(caption) %}
