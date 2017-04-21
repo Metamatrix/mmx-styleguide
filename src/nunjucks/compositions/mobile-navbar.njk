@@ -1,10 +1,11 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/icons.njk' as icons %}
 
 <div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
   <div id="mobile-navbar-container" class="container-fluid collapse in">
     <div class="pull-left navbar-text">
       <button data-toggle="menu" data-target="#mobile-nav" class="btn-clean icon-link">
-				{{ macros.icon("bars") }}
+				{{ icons.icon("menu") }}
 				<span>Meny</span>
 			</button>
     </div>
