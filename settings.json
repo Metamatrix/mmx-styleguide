@@ -46,6 +46,7 @@
       "gray": "#444"
     },
     "files": {
+      "Check": "check", 
       "Chevron Right": "chevron-right", 
       "Times": "times", 
       "Search": "search", 
@@ -58,6 +59,7 @@
       "Instagram": "instagram",
       "User": "user",
       "Plus": "plus",
+      "Minus": "minus",
       "Arrow Right": "arrow-right",
       "Bubble": "bubble",
       "Movie": "movie-play-file-2",

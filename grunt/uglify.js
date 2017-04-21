@@ -53,6 +53,7 @@ module.exports = function(grunt, options) {
         'dist/scripts/styleguide.min.js': [
           'src/scripts/styleguide/clipboard.min.js',
           'src/scripts/styleguide/moment.js',
+          'src/scripts/styleguide/jquery.rss.js',
           'src/scripts/styleguide/js.cookie.js',
           'src/scripts/styleguide/styleguide.js'
         ]

@@ -1,26 +1,26 @@
-﻿{% import '../includes/macros.njk' as macros %}
+﻿{% import '../includes/macros/icons.njk' as icons %}
 
 <h2 class="h4 nav-heading"><span class="sr-only">Navigering för </span><a href="">Dricksvatten</a></h2>
 <ul class="nav nav-tree">
   <li> <a href="">Råvattenhantering</a>
-    <button class="nav-expander btn-clean">{{ macros.iconcircle("plus", class="text-primary") }}</button>
+    <button class="nav-expander btn-clean">{{ icons.iconcircle("plus", class="text-primary") }}</button>
   </li>
   <li class="active"><a href="">Vattenverk &amp; reningstekniker</a>
-    <button class="nav-expander btn-clean">{{ macros.iconcircle("minus") }}</button>
+    <button class="nav-expander btn-clean">{{ icons.iconcircle("minus") }}</button>
     <ul class="nav">
       <li><a href="">Mikrobiologiska barriärer</a></li>
       <li class="active"><a href="">UV-ljus</a>
-        <button class="nav-expander btn-clean">{{ macros.iconcircle("plus") }}</button>
+        <button class="nav-expander btn-clean">{{ icons.iconcircle("plus") }}</button>
       </li>
       <li><a href="">Kemikalier</a></li>
     </ul>
   </li>
   <li><a href="">Vattendistribution</a></li>
   <li><a href="">Säkerhet, kris &amp; beredskap</a>
-    <button class="nav-expander btn-clean">{{ macros.iconcircle("plus") }}</button>
+    <button class="nav-expander btn-clean">{{ icons.iconcircle("plus") }}</button>
   </li>
   <li><a href="">Undersökning och analys</a>
-    <button class="nav-expander btn-clean">{{ macros.iconcircle("plus") }}</button>
+    <button class="nav-expander btn-clean">{{ icons.iconcircle("plus") }}</button>
   </li>
 </ul>
 	
