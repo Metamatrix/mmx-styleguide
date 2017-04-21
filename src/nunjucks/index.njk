@@ -69,8 +69,7 @@
 		{{	docsection("Media object", "../components/media-object.njk") }}
 
 		{{	docsection("Vcard", "../components/vcard.njk") }}
-		{# TODO: move this to compositions #}
-		{{	docsection("News list", "../compositions/newslist.njk") }}
+
 	</section>
 
 	<section class="mmx-docs-chapter">
@@ -81,12 +80,16 @@
 		{{	docsectionnocontainer("Site footer", "../compositions/global-footer.njk") }}
 
 		{{	docsectionnocontainer("Site search", "../compositions/global-search.njk") }}
+
+		{{	docsection("Mobile navigation", "../compositions/mobile-navigation.njk") }}
+
+		{{	docsection("News list", "../compositions/newslist.njk") }}
 	</section>
 
 	<section class="mmx-docs-chapter">
 
 		{{	docsheading("Templates") }}
-		
+
 		<div class="container mmx-docs-container">
 			<ul class="list-unstyled mmx-docs-link-list">
 				{% for templateFile, templateName in settings.templates %}
