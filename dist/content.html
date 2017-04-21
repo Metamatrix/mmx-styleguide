@@ -1,117 +1,418 @@
-extends layouts/content
-
-block sidebar
-	nav(role="navigation")
-		ul.nav.nav-pills.nav-stacked
-			li.active
-				a(href="", aria-current="page")
-					+lipsum-words(2)
-			+repeat(5)
-				li
-					a(href="")
-						+lipsum-words(2)
-
-block maincontent
-	article.article
-		h1.article-heading
-			+lipsum-words(3)
-
-		p.article-preamble
-			+lipsum-words(40)
-
-		div.article-body
-			p
-				+lipsum-sentences(2,4)
-				a(href="")
-					+lipsum-words(3)
-				| .
-				+lipsum-sentences(3,6)
-
-			h2 
-				+lipsum-words(5, 30)
-
-			p
-				+lipsum-sentences(8,8)
-
-			h3
-				+lipsum-words(5)
-
-			p
-				+lipsum-sentences(8,10)
-
-			h4
-				+lipsum-words(5, 5)
-
-			p
-				+lipsum-sentences(6,14)
-
-			h5
-				+lipsum-words(5, 20)
-
-			p
-				+lipsum-sentences(6,18)
-
-			h6
-				+lipsum-words(5, 10)
-
-			p
-				+lipsum-sentences(6,28)
+﻿<!DOCTYPE html>
+<html lang="sv">
+  <head>
 		
-			+img-ph("4:3")(class="img-left")
-
-			p
-				+lipsum-words(50)
-			
-			+img-ph("4:3")(class="img-right")
-
-			p
-				+lipsum-words(50)
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex nofollow">
+<title>Metamatrix</title>
+<script src="scripts/modernizr.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+<link rel="stylesheet" href="styles/main.css">
+		
+		
+</head>
+<body>
 	
-			+img-ph("16:9")(class="img-center")
+	<a class="sr-only sr-only-focusable" href="#main-content">Hoppa till huvudinnehållet</a>
+	﻿<header id="global-header", role="banner", class="global-header">
+	﻿
+
+<div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
+  <div id="mobile-navbar-container" class="container-fluid collapse in">
+    <div class="pull-left navbar-text">
+      <button data-toggle="menu" data-target="#mobile-nav" class="btn-clean icon-link">
 				
-			blockquote
-				+lipsum-words(35)
+	var cssClass = icon + " " + icon- + name;
 
-			ul
-				+repeat(5)
-					li
-						+lipsum-words(30, 10)
+	
 
-			ol
-				+repeat(5)
-					li
-						+lipsum-words(30, 50)
+<svg aria-hidden="true", class="cssClass">
+  <use xlink:href="images/icons/icons.svg#icon-undefined"></use>
+</svg>
 
-			.table-responsive
-				table.table
-					thead
-						tr
-							th
-								+lipsum-words(1, 10)
-							th
-								+lipsum-words(2, 20)
-							th
-								+lipsum-words(3, 30)
-							th
-								+lipsum-words(2, 50)
-					tbody
-						+repeat(5)
-							tr
-								td
-									+lipsum-words(1, 10)
-								td
-									+lipsum-words(2, 20)
-								td
-									+lipsum-words(3, 30)
-								td
-									+lipsum-words(2, 50)
-					tfooter
-						tr
-							th
-								+lipsum-words(1, 10)
-							th
-								+lipsum-words(2, 20)
-							th
-								+lipsum-words(3, 30)
-							th
-								+lipsum-words(2, 50)
+
+				<span>Meny</span>
+			</button>
+    </div>
+  </div>
+</div>
+
+	<div class="container">
+    <div class="row">
+      <div class="row-md-eq">
+        <div class="col-md-4 col-middle">
+					<a href="" title="Till startsidan" class="site-logo">
+						<img src="/images/logo.svg", alt=settings.title></img>
+					</a>
+				</div>
+        <div class="col-md-8 hidden-sm hidden-xs col-middle text-right">
+					﻿<div id="function-menu" class="function-menu">
+  <ul class="link-list-inline">
+    <li><a href="">Kontakt</a></li>
+    <li><a href="">Press</a></li>
+    <li><a href="">In English</a></li>
+  </ul>
+</div>
+					
+
+
+<form role="search", class="global-search">
+  <div class="input-group">
+    <label for="global-search-input" class="sr-only">Sök</label>
+    <input id="global-search-input" type="search" placeholder="Sök..." class="form-control"/>
+		<span class="input-group-btn">
+      <button type="submit" class="btn btn-search">
+				<span class="icon-sm">
+          
+
+	
+	
+
+	<svg aria-hidden="true" class="icon icon-search">
+	  <use xlink:href="images/icons/icons.svg#icon-search"></use>
+	</svg>
+
+
+				</span>
+				<span class="sr-only">Sök</span>
+			</button>
+		</span>
+  </div>
+</form>
+
+				</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+		﻿
+
+
+
+<nav class="global-nav navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="">
+	A arcu
+</a>
+      </li>
+      <li class="active">
+        <a href="">
+	Malesuada in
+</a>
+      </li>
+      <li>
+        <a href="">
+	Urna tempus
+</a>
+      </li>
+      <li>
+        <a href="">
+	Malesuada sed
+</a>
+      </li>
+		</ul>
+  </div>
+</nav>
+
+	</div>
+</header>
+
+	
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			
+	<nav role="navigation">
+	  <ul class="nav nav-pills nav-stacked">
+			<li class="active">
+				<a href="" aria-current="page">
+	Arcu imperdiet
+</a>
+			</li>
+			<li>
+				<a href="">
+	In enim
+</a>
+			</li>
+			<li>
+				<a href="">
+	In enim
+</a>
+			</li>
+			<li>
+				<a href="">
+	In enim
+</a>
+			</li>
+			<li>
+				<a href="">
+	In enim
+</a>
+			</li>
+			<li>
+				<a href="">
+	In enim
+</a>
+			</li>
+		</ul>
+	</nav>
+
+		</div>
+		<main id="main-content" class="col-sm-8" role="main">
+			
+	<article class="article">
+		<h1 class="article-heading">
+	Malesuada in enim
+</h1>
+
+		<p class="article-preamble">
+	Malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id velit ullamcorper pulvinar vestibulum fermentum tortor id mi pellentesque ipsum nulla non arcu lacinia
+</p>
+
+		<div class="article-body">
+			<p>
+				
+	Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus.
+
+				<a href="">
+	In enim a
+.</a>
+				
+	Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum.
+
+			</p>
+
+			<h2>
+	Velit ullamcorper pulvinar vestibulum fermentum
+</h2>
+
+			<p>
+	Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
+</p>
+
+			<h3>
+	Nam quis nulla integer malesuada
+</h3>
+
+			<p>
+	Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+</p>
+
+			<h4>
+	In enim a arcu imperdiet
+</h4>
+
+			<p>
+	Nullam rhoncus aliquam metus. Etiam egestas wisi a erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor.
+</p>
+
+			<h5>
+	Ut iaculis quis sem phasellus
+</h5>
+
+			<p>
+	Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante.
+</p>
+
+			<h6>
+	Malesuada sed vel lectus donec
+</h6>
+
+			<p>
+	Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc. Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit. Duis pulvinar. Morbi gravida libero nec velit.
+</p>
+
+			
+
+    
+    
+    
+    
+    
+
+    
+        
+    
+        
+            
+            
+            
+            
+        
+    
+        
+    
+        
+    
+
+    <div class="img-wrapper img-wrapper-4x3">
+        <img class="img-left img-responsive" data-src="holder.js/400x300?bg=CCC&fg=&text=4:3" alt="">
+    </div>
+
+
+
+			<p>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id velit ullamcorper pulvinar vestibulum fermentum tortor id mi pellentesque ipsum nulla non arcu lacinia neque faucibus fringilla nulla non lectus
+</p>
+
+			
+
+    
+    
+    
+    
+    
+
+    
+        
+            
+            
+            
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <div class="img-wrapper img-wrapper-16x9">
+        <img class="img-center img-responsive" data-src="holder.js/770x433?bg=CCC&fg=&text=16:9" alt="">
+    </div>
+
+
+
+			<blockquote>
+				
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus rhoncus aenean id metus id velit ullamcorper pulvinar vestibulum fermentum tortor id mi pellentesque ipsum nulla non arcu lacinia neque faucibus fringilla nulla non lectus
+
+			</blockquote>
+
+			<ul>
+			  <li>
+	Nam quis nulla integer malesuada
+</li>
+			  <li>
+	Nam quis nulla integer malesuada
+</li>
+			  <li>
+	Nam quis nulla integer malesuada
+</li>
+			  <li>
+	Nam quis nulla integer malesuada
+</li>
+			  <li>
+	Nam quis nulla integer malesuada
+</li>
+			</ul>
+
+			<ol>
+			  <li>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
+</li>
+			  <li>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
+</li>
+			  <li>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
+</li>
+			  <li>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
+</li>
+			  <li>
+	Nam quis nulla integer malesuada in enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut iaculis quis sem phasellus
+</li>
+			</ol>
+
+			<div class="table-responsive">
+			  <table class="table">
+		      <thead>
+		        <tr>
+		          <th>
+	Malesuada
+</th>
+		          <th>
+	Ut iaculis
+</th>
+		          <th>
+	Velit ullamcorper pulvinar
+</th>
+		          <th>
+	Sed nisl
+</th>
+		        </tr>
+		      </thead>
+
+					<tbody>
+					  <tr>
+							<td>
+	Malesuada
+</td>
+							<td>
+	Ut iaculis
+</td>
+							<td>
+	Velit ullamcorper pulvinar
+</td>
+							<td>
+	Sed nisl
+</td>
+					  </tr>
+					</tbody>
+
+					<tfooter>
+					  <tr>
+							<th>
+	Malesuada
+</th>
+		          <th>
+	Ut iaculis
+</th>
+		          <th>
+	Velit ullamcorper pulvinar
+</th>
+		          <th>
+	Sed nisl
+</th>
+					  </tr>
+					</tfooter>
+				</table>
+		</div>
+
+	</article>
+
+		</main>
+	</div>
+</div>
+
+	﻿
+
+
+<footer id="global-footer" class="global-footer">
+  <div class="container"><a href="" class="site-logo"><img src="images/logo-inverted.svg" alt=""/></a>
+    <p> 
+	Enim a arcu imperdiet malesuada sed vel lectus donec odio urna tempus molestie porttitor ut
+ </p>
+    <nav>
+      <ul class="list-inline">
+        <li> <a href="">Kontakta oss</a></li>
+        <li> <a href="">Facebook</a></li>
+        <li> <a href="">Twitter</a></li>
+        <li> <a href="">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+	﻿<script src="scripts/script.min.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
+	
+</body>
+</html>
+
