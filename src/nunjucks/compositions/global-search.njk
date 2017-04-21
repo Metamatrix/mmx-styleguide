@@ -1,4 +1,5 @@
 {% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/icons.njk' as icons %}
 
 <form role="search", class="global-search">
   <div class="input-group">
@@ -7,7 +8,7 @@
 		<span class="input-group-btn">
       <button type="submit" class="btn btn-search">
 				<span class="icon-sm">
-					{{ macros.icon("search") }}
+          {{ icons.icon("search") }}
 				</span>
 				<span class="sr-only">Sök</span>
 			</button>

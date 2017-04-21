@@ -1,8 +1,9 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
 
 <footer id="global-footer" class="global-footer">
   <div class="container"><a href="" class="site-logo"><img src="images/logo-inverted.svg" alt=""/></a>
-    <p> {{ macros.lipsumwords(15,6) }} </p>
+    <p> {{ lipsum.lipsumwords(15,6) }} </p>
     <nav>
       <ul class="list-inline">
         <li> <a href="">Kontakta oss</a></li>

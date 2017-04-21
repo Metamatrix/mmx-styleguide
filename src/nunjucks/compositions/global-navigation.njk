@@ -1,19 +1,21 @@
 ﻿{% import '../includes/macros.njk' as macros %}
+{% import '../includes/macros/lipsum.njk' as lipsum %}
+{% import '../includes/macros/icons.njk' as icons %}
 
 <nav class="global-nav navbar navbar-default">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
 			{{ macros.nav_item("") }}
-				{{ macros.lipsumwords(2,7) }}
+        {{ lipsum.lipsumwords(2, 7) }}
 
 			{{ macros.nav_item("", "active") }}
-				{{ macros.lipsumwords(2,40) }}
+        {{ lipsum.lipsumwords(2, 4) }}
 
 			{{ macros.nav_item("") }}
-				{{ macros.lipsumwords(2,3) }}
+        {{ lipsum.lipsumwords(2, 16) }}
 
 			{{ macros.nav_item("") }}
-				{{ macros.lipsumwords(2,15) }}
+        {{ lipsum.lipsumwords(2, 10) }}
 		</ul>
   </div>
 </nav>
