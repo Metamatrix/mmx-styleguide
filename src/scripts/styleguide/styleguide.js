@@ -35,6 +35,10 @@ $(".mmx-docs-chapter").each(function(){
 
 });
 
+// Scrollspy
+
+$('body').scrollspy({ target: '#mmx-document-nav' })
+
 //smooth scroll
 
 $('#mmx-document-nav a').click(function(){
@@ -42,11 +46,6 @@ $('#mmx-document-nav a').click(function(){
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     return false;
-});
-
-$('#mmx-document-nav > ul > li > a').click(function() {
-    $('#mmx-document-nav li.active').removeClass('active');
-    $(this).parent().toggleClass('active');
 });
 
 //copy url to clipboard
