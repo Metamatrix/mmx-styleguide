@@ -82,20 +82,21 @@
 
 		{{	docsectionnocontainer("Site search", "../compositions/global-search.njk") }}
 	</section>
-{#
-	<section class="mmx-docs-chapter">
-		var templates = {{data.templates}}
-		{{	docsheading("Templates") }}
-		{{	docsection("Pages") }}
-		<ul class="list-unstyled mmx-docs-link-list">
-		<ul>
-			{% for template in templates %}
-				<li>
-					<a href=template + ".html">{{template}}</a>
-				</li>
-			{% endfor %}
-		</ul>
 
-	</section>#}
+	<section class="mmx-docs-chapter">
+
+		{{	docsheading("Test") }}
+		
+		<div class="container mmx-docs-container">
+			<ul class="list-unstyled mmx-docs-link-list">
+				{% for templateFile, templateName in settings.templates %}
+					<li>
+						<a href="{{templateFile}}.html">{{templateName}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</section>
 
 {% endblock %}
