@@ -1,0 +1,48 @@
+// Error and validation for asp.net mvc / jQuery validation
+//
+input.input-validation-error,
+select.input-validation-error,
+textarea.input-validation-error,
+.input-validation-error {
+	// Styling for error state
+	border-color: $brand-danger;
+	color: $brand-danger;
+}
+
+input.input-validation-valid,
+select.input-validation-valid,
+textarea.input-validation-valid,
+.input-validation-valid {
+	// Styling for error state
+	border-color: $brand-success;
+	color: $brand-success;
+}
+
+.field-validation-valid {
+	// Error message valid state
+	// Hide to avoid extra spacing under controls
+	display: none;
+}
+
+.field-validation-error {
+	// Error message error state
+	color: $brand-danger;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+.validation-summary-errors {
+	// Error summary error state
+	padding: $padding-base-vertical $padding-base-horizontal;
+	background: $brand-danger;
+	color: $white;
+
+	span {
+		display: block;
+		margin-bottom: .5em;
+		font-weight: bold;
+		font-size: $font-size-large;
+	}
+}

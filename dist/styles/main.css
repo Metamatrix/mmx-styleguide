@@ -7320,3 +7320,36 @@ a.link-block .link-block-item:hover {
 .article-list-item + .article-list-item {
   padding-top: 30px;
   border-top: solid 1px #eeeeee; }
+
+input.input-validation-error,
+select.input-validation-error,
+textarea.input-validation-error,
+.input-validation-error {
+  border-color: #d9534f;
+  color: #d9534f; }
+
+input.input-validation-valid,
+select.input-validation-valid,
+textarea.input-validation-valid,
+.input-validation-valid {
+  border-color: #5cb85c;
+  color: #5cb85c; }
+
+.field-validation-valid {
+  display: none; }
+
+.field-validation-error {
+  color: #d9534f; }
+
+.validation-summary-valid {
+  display: none; }
+
+.validation-summary-errors {
+  padding: 6px 12px;
+  background: #d9534f;
+  color: #fff; }
+  .validation-summary-errors span {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: bold;
+    font-size: 18px; }

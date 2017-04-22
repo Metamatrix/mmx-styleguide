@@ -1651,14 +1651,29 @@
 			</h3>
 			
 
+
 <form>
+	<div class="form-group">
+    <label for="exampleInputText1">Text</label>
+    <input id="exampleInputText1" type="text" class="form-control"/>
+  </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input id="exampleInputEmail1" type="email" class="form-control"/>
+    <input id="exampleInputEmail1" type="email" class="form-control" data-val="true" data-val-email="You must specifiy an e-mail address" />
+    <span class="field-validation-valid" data-valmsg-for="exampleInputEmail1" data-valmsg-replace="true">You must specifiy an e-mail address</span>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputText2">Text with error state</label>
+    <input id="exampleInputText2" type="text" class="form-control input-validation-error" required aria-required="True" />
+    <span class="field-validation-error">This field is required</span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputText3">Text with valid state</label>
+    <input id="exampleInputText3" type="text" class="form-control input-validation-valid" required aria-required="true" />
   </div>
 	<div class="form-group">
 	  <label for="exampleDisabled">Disabled</label>
@@ -1770,13 +1785,30 @@
 		</label>
 	</div>
 
-	<h2>Form sizes</h2>
+	<h3>Form sizes</h3>
 
 	<input type="text" placeholder=".input-lg" class="form-control input-lg"/>
 	<input type="text" placeholder="Default input" class="form-control"/>
 	<input type="text" placeholder=".input-sm" class="form-control input-sm"/>
 
 	<button type="submit" class="btn btn-default">Submit</button>
+
+	<h3>Validation summary</h3>
+
+	<div class="validation-summary-errors" data-valmsg-summary="true">
+		<span>Oh no, something went wrong!</span>
+		<ul>
+			<li>
+	Phasellus rhoncus.
+</li>
+			<li>
+	Nulla non lectus sed nisl molestie malesuada.
+</li>
+			<li>
+	Mauris pretium quam et urna.
+</li>
+		</ul>
+	</div>
 
 </form>
 
