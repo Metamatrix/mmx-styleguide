@@ -50,29 +50,35 @@
 	  <p class="help-block">Example block-level help text here.</p>
 	</div>
 
+	<h3>Styled radio/checkbox</h3>
+
 	<div class="form-group">
 		<div class="checkbox styled-checkbox styled-input-primary">
 		  <label>
 		    <input type="checkbox"/>
-		    <span class="input-control">Lorem ipsum</span>
+		    <span class="input-control"></span>
+		    Lorem ipsum
 		  </label>
 		</div>
 		<div class="checkbox styled-checkbox styled-input-primary">
 		  <label>
 		    <input type="checkbox"/>
-		    <span class="input-control">Lorem ipsum</span>
+		    <span class="input-control"></span>
+		    Lorem ipsum
 		  </label>
 		</div>
 		<div class="radio styled-radio styled-input-primary">
 		  <label>
 		    <input type="radio" name="radio"/>
-				<span class="input-control">Lorem ipsum</span>
+				<span class="input-control"></span>
+				Lorem ipsum
 		  </label>
 		</div>
 		<div class="radio styled-radio styled-input-primary">
 		  <label>
 		    <input type="radio" name="radio"/>
-				<span class="input-control">Lorem ipsum</span>
+				<span class="input-control"></span>
+				Lorem ipsum
 		  </label>
 		</div>
 	</div>
@@ -80,30 +86,37 @@
 	<div class="form-group">
 		<label class="checkbox-inline styled-checkbox-inline styled-input-primary">
 		  <input type="checkbox" name="checkbox"/>
-			<span class="input-control">Lorem ipusm dolor</span>
+			<span class="input-control"></span>
+			Lorem ipusm dolor
 		</label>
 		<label class="checkbox-inline styled-checkbox-inline styled-input-primary">
 		  <input type="checkbox" name="checkbox"/>
-			<span class="input-control">Lorem ipusm dolor</span>
+			<span class="input-control"></span>
+			Lorem ipusm dolor
 		</label>
 	</div>
 
 	<div class="form-group">
 		<label class="radio-inline styled-radio-inline styled-input-primary">
 		  <input type="radio" name="radio"/>
-			<span class="input-control">Lorem ipusm dolor</span>
+			<span class="input-control"></span>
+			Lorem ipusm dolor
 		</label>
 		<label class="radio-inline styled-radio-inline styled-input-primary">
 		  <input type="radio" name="radio"/>
-			<span class="input-control">Lorem ipusm dolor</span>
+			<span class="input-control"></span>
+			Lorem ipusm dolor
 		</label>
 	</div>
+
+	<h3>Styled radio/checkbox with centered text</h3>
 
 	<div class="form-group">
 	  <div class="checkbox styled-checkbox styled-input-primary">
 	    <label>
 	      <input type="checkbox"/>
-				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+				<span class="input-control input-control-center"></span>
+				{{lipsum.lipsumsentences(5,5)}}
 	    </label>
 	  </div>
 	</div>
@@ -112,7 +125,8 @@
 	  <div class="radio styled-radio styled-input-primary">
 	    <label>
 	      <input type="radio" name="radio" checked="checked"/>
-				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+				<span class="input-control input-control-center"></span>
+				{{lipsum.lipsumsentences(5,8)}}
 	    </label>
 	  </div>
 	</div>
@@ -121,11 +135,14 @@
 	  <div class="checkbox styled-checkbox styled-input-primary">
 	    <label>
 	      <input type="checkbox" checked="checked"/>
-				<span class="input-control input-control-center">Lorem ipsum dolor sit amet</span>
+				<span class="input-control input-control-center"></span>
+				{{lipsum.lipsumsentences(5,16)}}
+				<a href="">Read more about the terms</a>
 	    </label>
-			<a href="" class="label-addon">Read more about the terms</a>
 	  </div>
 	</div>
+
+	<h3>Styled file select</h3>
 
 	<div class="form-group">
 	  <input id="file1" type="file" data-multiple-caption="{count} filer valda" class="styled-inputfile form-control"/>
@@ -139,8 +156,6 @@
 	<input type="text" placeholder=".input-lg" class="form-control input-lg"/>
 	<input type="text" placeholder="Default input" class="form-control"/>
 	<input type="text" placeholder=".input-sm" class="form-control input-sm"/>
-
-	<button type="submit" class="btn btn-default">Submit</button>
 
 	<h3>Validation summary</h3>
 
