@@ -47,7 +47,8 @@
     },
     "files": {
       "Check": "check", 
-      "Chevron Right": "chevron-right", 
+      "Chevron Right": "chevron-right",
+      "Home": "home",
       "Times": "times", 
       "Search": "search", 
       "File": "file", 
