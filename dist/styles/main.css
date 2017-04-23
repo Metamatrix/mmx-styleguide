@@ -7353,3 +7353,18 @@ textarea.input-validation-valid,
     margin-bottom: .5em;
     font-weight: bold;
     font-size: 18px; }
+
+.global-footer {
+  padding: 20px 0;
+  background: #555555; }
+  .global-footer,
+  .global-footer a {
+    color: #fff; }
+
+.site-logo {
+  display: block; }
+
+.site-logo-footer {
+  max-width: 230px;
+  height: auto;
+  margin-bottom: 10px; }

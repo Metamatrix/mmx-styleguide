@@ -1,0 +1,11 @@
+.global-footer {
+
+	padding: $margin-large 0;
+
+	background: $gray;
+	
+	&,
+	a {
+		color: $white;
+	}
+}
