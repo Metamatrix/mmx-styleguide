@@ -1,0 +1,17 @@
+{% import '../includes/macros/icons.njk' as icons %}
+
+<div class="share-page">
+	<h2 class="h4">Dela sidan</h2>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.metamtrix.se" class="btn btn-primary">
+		 {{icons.icon("facebook")}}
+		 <span class="sr-only">Dela sidan på Facebook</span>
+	</a>
+	<a href="http://twitter.com/share?text=Page%20Title&amp;url=http%3A%2F%2Fwww.metamtrix.se" class="btn btn-primary">
+		{{icons.icon("twitter")}} 
+		<span class="sr-only">Dela sidan på Twitter</span>
+	</a>
+	<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.metamtrix.se" class="btn btn-primary">
+		{{icons.icon("linkedin")}}
+		<span class="sr-only">Dela sidan på Linkedin</span>
+	</a>
+</div>
