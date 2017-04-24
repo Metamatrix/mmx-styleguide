@@ -1,5 +1,6 @@
 {
   "title": "Metamatrix",
+  "repoName": "mmx-styleguide",
   "scriptsPath": "scripts/",
   "stylesPath": "styles/",
   "imgPath": "images/",

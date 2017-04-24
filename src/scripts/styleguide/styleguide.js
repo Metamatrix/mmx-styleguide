@@ -42,9 +42,12 @@ $('body').scrollspy({ target: '#mmx-document-nav' })
 //smooth scroll
 
 $('#mmx-document-nav a').click(function(){
+    var target = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+        scrollTop: $( target ).offset().top
+    }, 500, function() {
+        location.hash = target.replace('#', '');
+    });
     return false;
 });
 
@@ -91,64 +94,3 @@ $("#mmx-docs-toggle-button").click(function(){
         $("#mmx-document-nav").toggleClass("mmx-document-nav-slide-left");
     }
 );
-
-
-//github RSS feed
-
-//get appname
-
-var mmxappname = $(".mmx-componentlibrary").data("appname");
-
-var rssfoundmatches = false;
-
-$("#rss-feeds").rss(
-    "https://github.com/Metamatrix/mmx-styleguide/commits/master.atom?token=AF6z2jWhqZt8O44ww1eMs0Gw8yrF_Dp3ks61QacrwA%3D%3D",
-  {
-    // how many entries do you want?
-    // default: 4
-    // valid values: any integer
-    limit: 100,
-
-    filterLimit: 1,
-    filter: function(entry, tokens) {
-
-
-        if(tokens.title.indexOf(mmxappname) > -1) {
-            rssfoundmatches = true;
-        }
-
-        return tokens.title.indexOf(mmxappname) > -1
-    },
-
-    // outer template for the html transformation
-    // default: "<ul>{entries}</ul>"
-    // valid values: any string
-    layoutTemplate: "<div class='mmx-docs-feed-container'><h4 class='mmx-docs-heading'>Latest update</h4><ul class='list-unstyled'>{entries}</li></div>",
-
-    // inner template for each entry
-    // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
-    // valid values: any string
-    entryTemplate:  '<li><h5><span class="fa fa-check-circle"></span>{title}</h5><span class="mmx-docs-feed-details"><time>{date}</time> by {author}</span></li>',
-
-
-    // the effect, which is used to let the entries appear
-    // default: 'show'
-    // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-    effect: 'slideFastSynced',
-
-    onData: function(){
-
-
-    }
-  },
-
-  // callback function
-  // called after feeds are successfully loaded and after animations are done
-  function callback() {
-
-        if (!rssfoundmatches) {
-            $(".mmx-docs-feed-container").hide();
-        }
-
-  }
-)
