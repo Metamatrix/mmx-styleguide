@@ -1,0 +1,33 @@
+{% extends "./layouts/root.njk" %}
+
+{# 
+	The 500 page should be a static page with as few dependencies as possible 
+	to ensure it can be loaded at all times. 
+#}
+
+{% block rootcontent %}
+	<div class="container">
+
+		<header id="global-header" class="global-header m-xs-y-xlarge">
+			<img src="/images/logo.svg" class="site-logo" alt="">
+		</header>
+
+		<article class="article">
+
+			<h1 class="article-heading">An error has occurred</h1>
+
+			<div class="article-body">
+				<p>An error occurred while opening this page.</p>
+
+				<p>
+					<a href="">Go back</a> or to <a href="">the start page</a> or use the search box in the upper area of the page to find the information you were looking for.
+				</p>
+
+				<p>
+					You can report this error by sending us an <a href="">e-mail</a>.
+				</p>
+			</div>
+
+		</article>
+	</div>
+{% endblock %}
