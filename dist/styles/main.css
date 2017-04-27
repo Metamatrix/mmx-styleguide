@@ -6135,8 +6135,8 @@ a.bg-secondary:focus {
   width: 30px;
   height: 30px;
   background: #fff;
-  border: solid 3px #9ed355;
-  color: #333333; }
+  border: solid 3px #777777;
+  transition: background .25s; }
   .styled-checkbox .input-control:hover:before,
   .styled-radio .input-control:hover:before,
   .styled-checkbox-inline .input-control:hover:before,
@@ -6146,15 +6146,8 @@ a.bg-secondary:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    font-family: "FontAwesome";
-    font-size: 1.1em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "";
-    text-align: center;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>');
     line-height: 30px;
-    color:   "fff";
     opacity: .5; }
 
 .styled-checkbox .input-control-center,
@@ -6176,7 +6169,7 @@ a.bg-secondary:focus {
 .styled-radio-inline input[type=checkbox]:checked ~ .input-control,
 .styled-radio-inline input[type=radio]:checked ~ .input-control {
   background: #777777;
-  border: solid 3px #9ed355; }
+  border: solid 3px #777777; }
   .styled-checkbox input[type=checkbox]:checked ~ .input-control:before,
   .styled-checkbox input[type=radio]:checked ~ .input-control:before,
   .styled-radio input[type=checkbox]:checked ~ .input-control:before,
@@ -6190,15 +6183,7 @@ a.bg-secondary:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    font-family: "FontAwesome";
-    font-size: 1.1em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "";
-    text-align: center;
-    line-height: 30px;
-    color:   "fff"; }
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-checkbox input[type=checkbox]:focus ~ .input-control,
 .styled-checkbox input[type=radio]:focus ~ .input-control,
@@ -6258,25 +6243,41 @@ a.bg-secondary:focus {
 
 .styled-input-primary .input-control {
   background: #fff;
-  border: solid 3px #9ed355;
-  color: #fff;
-  transition: background .25s; }
+  border: solid 3px #9ed355; }
+  .styled-input-primary .input-control:hover:before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-primary input[type=checkbox]:checked ~ .input-control,
 .styled-input-primary input[type=radio]:checked ~ .input-control {
   background: #9ed355;
   border: solid 3px #9ed355; }
+  .styled-input-primary input[type=checkbox]:checked ~ .input-control:before,
+  .styled-input-primary input[type=radio]:checked ~ .input-control:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-secondary .input-control {
   background: #fff;
-  border: solid 3px #000;
-  color: #333333;
-  transition: background .25s; }
+  border: solid 3px #000; }
+  .styled-input-secondary .input-control:hover:before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-secondary input[type=checkbox]:checked ~ .input-control,
 .styled-input-secondary input[type=radio]:checked ~ .input-control {
   background: #000;
   border: solid 3px #000; }
+  .styled-input-secondary input[type=checkbox]:checked ~ .input-control:before,
+  .styled-input-secondary input[type=radio]:checked ~ .input-control:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .field-validation-valid {
   display: none; }
