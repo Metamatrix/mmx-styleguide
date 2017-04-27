@@ -48,6 +48,17 @@ In this project you can run BackstopJS to output a visual regression test report
 
 Screenshot references, tests and the html report can be found in reports/backstop_data.
 
+## Generating Components and Compositions
+
+Use the commands `grunt component:my-component` or `grunt composition:my-composition` to quickly generate files for a new component or compositions and aslo include these in the styleguide:
+
+`grunt component:my-component` would generate:
+
+* src/nunjucks/components/my-component.njk
+* src/scss/application/_my-component.scss
+
+You can also create a JavaScript enhancer file with the command `grunt component:my-component:enhancer`
+
 ## Defenition of Done
 
 Use these checklists to make sure you have completed a component or a template fully.
