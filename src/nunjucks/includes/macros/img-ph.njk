@@ -11,7 +11,7 @@
             {% set width = imgSize.width %}
             {% set height = imgSize.height %}
             {% set className = className + " " + imgSize.class %}
-            {% set text = imgSize.displayName %}
+            {% set text = text if text else imgSize.displayName %}
         {% endif %}
     {% endfor %}
 
