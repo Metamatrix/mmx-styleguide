@@ -1,0 +1,13 @@
+.skip-to-content {
+	&:focus,
+	&:active {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: $zindex-navbar-fixed;
+		padding: $padding-base-vertical $padding-base-horizontal;
+		background: $brand-primary;
+		color: $white;		
+	}
+}
