@@ -695,6 +695,22 @@ $btn-list-margin-bottom: .5em !default;
 //== Icon link
 $icon-link-margin: .25rem !default;
 
+
+//== Card
+
+$card-spacer-x:					20px !default;
+$card-spacer-y:					20px !default;
+$card-block-padding:			20px !default;
+$card-border-width:				1px !default;
+$card-border-radius:			$border-radius-base !default;
+$card-border-color:				transparent !default;
+$card-border-radius-inner:		$border-radius-small !default;
+
+$card-default-background:		transparent !default;
+$card-cap-color:				$text-color !default;
+$card-cap-bg:					$gray-light !default;
+
+
 //== Vcard
 $vcard-heading-font-size: $font-size-large !default;
 $vcard-heading-font-family: $headings-font-family !default;
