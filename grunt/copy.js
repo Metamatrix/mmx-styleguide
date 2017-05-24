@@ -41,25 +41,25 @@ module.exports = function(grunt, options){
       },
       {
         expand: true,
-        cwd: 'node_modules/bootstrap-sass/assets/stylesheets',
+        cwd: 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap',
         src: '**/*.scss',
         dest: '<%= exportDest %>/static/styles/bootstrap'
       },
       {
         expand: true,
-        cwd: 'node_modules/bootstrap-sass/assets/javascripts',
+        cwd: 'node_modules/bootstrap-sass/assets/javascripts/bootstrap',
         src: '**/*.js',
         dest: '<%= exportDest %>/static/scripts/bootstrap'
       },
       {
         expand: true,
-        cwd: 'node_modules/mmx-bootstrap-extensions/src/styles',
+        cwd: 'node_modules/mmx-bootstrap-extensions/src/styles/bootstrap-extensions',
         src: '**/*.scss',
         dest: '<%= exportDest %>/static/styles/bootstrap-extensions'
       },
       {
         expand: true,
-        cwd: 'node_modules/mmx-bootstrap-extensions/src/scripts',
+        cwd: 'node_modules/mmx-bootstrap-extensions/src/scripts/bootstrap-extensions',
         src: '**/*.js',
         dest: '<%= exportDest %>/static/scripts/bootstrap-extensions'
       }],
