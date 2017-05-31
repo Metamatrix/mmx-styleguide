@@ -18,24 +18,24 @@ module.exports = function(grunt, options){
       {
         expand: true,
         cwd: 'src/sass',
-        src: '**/*.scss',
+        src: ['**/*.scss', '!**/styleguide/**'],
         dest: '<%= exportDest %>/static/styles'
       },
       {
         expand: true,
         cwd: 'src/scripts',
-        src: '**/*.js',
+        src: ['**/*.js', '!**/styleguide/**'],
         dest: '<%= exportDest %>/static/scripts'
       },
       {
         expand: true,
-        cwd: 'src/images',
-        src: '**/*',
+        cwd: 'dist/images',
+        src: ['**/*', '!**/styleguide/**'],
         dest: '<%= exportDest %>/static/images'
       },
       {
         expand: true,
-        cwd: 'src/fonts',
+        cwd: 'dist/fonts',
         src: '**/*',
         dest: '<%= exportDest %>/static/fonts'
       },
