@@ -16,7 +16,7 @@
     {% endfor %}
 
     <div class="img-wrapper img-wrapper-{{name | replace(":", "x")}}">
-        <img class="{{className}}" data-src="holder.js/{{width}}x{{height}}?bg={{bgColor}}&fg={{frontColor}}&text={{text}}" alt="{{alt}}">
+        <img class="{{className}}" src="/images/placeholder/{{name | replace(":", "x")}}.svg" alt="{{alt}}">
     </div>
 
 {% endmacro %}

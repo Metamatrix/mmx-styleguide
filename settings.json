@@ -5,6 +5,7 @@
   "stylesPath": "styles/",
   "imgPath": "images/",
   "iconsPath": "images/icons/",
+  "fontsPath": "/fonts/",
   "projectPath": "",
   "projectAssetsPath": "static/",
   "colors": [
@@ -77,8 +78,8 @@
     }
   },
   "images": {
-    "phBgColor": "CCC",
-    "phFgColor": "333",
+    "bgColor": "#CCC",
+    "fgColor": "#333",
     "sizes": [
       {
         "name": "16:9",

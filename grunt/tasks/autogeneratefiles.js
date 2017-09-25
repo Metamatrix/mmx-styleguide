@@ -38,6 +38,7 @@ module.exports = function(grunt) {
     content += '$scripts-path: \'' + globalSettings.scriptsPath + '\';\n';
     content += '$styles-path: \'' + globalSettings.stylesPath + '\';\n';
     content += '$img-path: \'' + globalSettings.imgPath + '\';\n';
+    content += '$fonts-path: \'' + globalSettings.fontsPath + '\';\n';
 
     grunt.file.write('src/sass/_application-paths.scss', content);
 

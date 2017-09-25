@@ -7355,6 +7355,16 @@ textarea.input-validation-valid,
     font-weight: bold;
     font-size: 18px; }
 
+.skip-to-content:focus, .skip-to-content:active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 6px 12px;
+  background: #9ed355;
+  color: #fff; }
+
 .global-footer {
   padding: 20px 0;
   background: #555555; }

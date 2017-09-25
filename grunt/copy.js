@@ -68,8 +68,9 @@ module.exports = function(grunt, options){
           // Replace paths with paths for project
           if(srcpath.endsWith('_application-paths.scss')) {
             var theContent = content.split('\n').map(function(line) {
-              var match = line.match(/\$.+:\s*'(.+)';/);
+              var match = line.match(/\$.+:\s*'\/?(.+)';/);
               if(match) {
+                console.log(match[1]);
                 return match[0].replace(match[1], options.globalSettings.projectAssetsPath + match[1]);
               }
               else {
