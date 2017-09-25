@@ -15,9 +15,7 @@
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "~0.6.0",
     "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-htmlhint": "0.9.12-fix",
@@ -31,8 +29,7 @@
     "load-grunt-configs": "^1.0.0",
     "matchdep": "*",
     "mmx-bootstrap-extensions": "^1.0.0",
-    "node-sass": "^2.1.1",
-    "pug": "^2.0.0-beta6"
+    "node-sass": "^2.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,7 +38,7 @@
     "type": "git",
     "url": "git@github.com:metamatrix/mmx-styleguide.git"
   },
-  "license": "none",
+  "license": "UNLICENSED",
   "compileTemplates": false,
   "dependencies": {
     "fastclick": "^1.0.6",
