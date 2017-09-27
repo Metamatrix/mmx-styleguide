@@ -15,18 +15,21 @@ function getSafeName(name) {
 
 module.exports = function(grunt) {
 
-	var globalSettings = grunt.file.readJSON('./settings.json');
+	grunt.task.registerTask('svgPlaceholder', 'Auto generates image palceholder files from settings.json', function() {
 
-	globalSettings.images.sizes.forEach(function(img) {
-  
-		const safeName = getSafeName(img.name),
-			imgContent = generateImg(img.width, img.height, globalSettings.images.fgColor, globalSettings.images.bgColor, img.displayName),
-			imgPath = `src/${globalSettings.imgPath}placeholder/${safeName}.svg`;
+		var globalSettings = grunt.file.readJSON('./settings.json');
 
-		grunt.file.write(imgPath, imgContent);
+		globalSettings.images.sizes.forEach(function(img) {
+	  
+			const safeName = getSafeName(img.name),
+				imgContent = generateImg(img.width, img.height, globalSettings.images.fgColor, globalSettings.images.bgColor, img.displayName),
+				imgPath = `src/${globalSettings.imgPath}placeholder/${safeName}.svg`;
 
-		grunt.log.writeln('Generated ' + imgPath);
+			grunt.file.write(imgPath, imgContent);
 
-  });
+			grunt.log.writeln('Generated ' + imgPath);
+
+	  });
+	});
 
 };

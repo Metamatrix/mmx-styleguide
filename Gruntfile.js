@@ -104,6 +104,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('dev', [
     'autoGenerateFiles',
+    'svgPlaceholder',
     'css-dev',
     'html-dev',
     'javascript-dev',
@@ -117,6 +118,7 @@ module.exports = function(grunt) {
  */
   grunt.registerTask('dist', [
     'autoGenerateFiles',
+    'svgPlaceholder',
     'css-dist',
     'html-dist',
     'javascript-dist',
