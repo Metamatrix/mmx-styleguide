@@ -6,6 +6,9 @@ module.exports = function(grunt, options) {
   //Accessibility test - output to terminal
   return {
     options: {
+      autoescape: true,
+      trimBlocks: true,
+      lstripBlocks: true,
       data: options.globalSettings,
       configureEnvironment: function(env, nunjucks) {
         env.addGlobal('settings', options.globalSettings);
