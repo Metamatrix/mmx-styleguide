@@ -43,7 +43,12 @@
 
 			<h2>{{ lipsum.lipsumwords(5, 30) }}</h2>
 
-			<p>{{ lipsum.lipsumsentences(8, 8) }}</p>
+			<p>{{ lipsum.lipsumsentences(2, 15) }}</p>
+			<p><strong>{{ lipsum.lipsumsentences(1, 20) }}</strong></p>
+			<p>{{ lipsum.lipsumsentences(1, 25) }}</p>
+			<p><i>{{ lipsum.lipsumsentences(1, 30) }}</i></p>
+			<p>{{ lipsum.lipsumsentences(2, 40) }}</p>
+
 
 			<h3>{{ lipsum.lipsumwords(5) }}</h3>
 
@@ -57,15 +62,17 @@
 
 			<p>{{ lipsum.lipsumsentences(6, 18) }}</p>
 
+			{{ img.imgph('4:3', class='img-right', wrapper=false ) }}
+
 			<h6>{{ lipsum.lipsumwords(5, 10) }}</h6>
 
-			<p>{{ lipsum.lipsumsentences(6, 28) }}</p>
+			<p>{{ lipsum.lipsumsentences(20, 28) }}</p>
 
-			{{ img.imgph('4:3', class='img-left') }}
+			{{ img.imgph('4:3', class='img-left', wrapper=false ) }}
 
-			<p>{{ lipsum.lipsumwords(50) }}</p>
+			<p>{{ lipsum.lipsumsentences(20, 50) }}</p>
 
-			{{ img.imgph('16:9', class='img-center') }}
+			{{ img.imgph('16:9', class='img-center', wrapper=false ) }}
 
 			<blockquote>
 				{{ lipsum.lipsumwords(50) }}

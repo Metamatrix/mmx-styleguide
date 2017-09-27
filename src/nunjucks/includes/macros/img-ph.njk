@@ -1,4 +1,4 @@
-{% macro imgph(name, text, bgColor, frontColor, alt, class) %}
+{% macro imgph(name, text, bgColor, frontColor, alt, class, wrapper = true) %}
 
     {% set bgColor = bgColor if bgColor else settings.images.phBgColor %}
     {% set fgColor = frontColor if frontColor else settings.images.phFgColor %}
@@ -15,8 +15,12 @@
         {% endif %}
     {% endfor %}
 
+    {% if wrapper %}
     <div class="img-wrapper img-wrapper-{{name | replace(":", "x")}}">
+    {% endif %}
         <img class="{{className}}" src="/images/placeholder/{{name | replace(":", "x")}}.svg" alt="{{alt}}">
+    {% if wrapper %}
     </div>
+    {% endif %}
 
 {% endmacro %}
