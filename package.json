@@ -28,7 +28,6 @@
     "jshint-html-reporter": "^0.2.4",
     "load-grunt-configs": "^1.0.0",
     "matchdep": "*",
-    "mmx-bootstrap-extensions": "^1.0.0",
     "node-sass": "^2.1.1"
   },
   "scripts": {

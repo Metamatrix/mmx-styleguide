@@ -499,6 +499,8 @@ $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%
 $label-default-bg:            $gray-light;
 //** Primary label background color
 $label-primary-bg:            $brand-primary;
+//** Secondary label background color
+$label-secondary-bg:            $brand-secondary !default;
 //** Success label background color
 $label-success-bg:            $brand-success;
 //** Info label background color
@@ -510,6 +512,8 @@ $label-danger-bg:             $brand-danger;
 
 //** Default label text color
 $label-color:                 #000;
+//** Secondary label text color
+$label-secondary-color:			$text-color !default;
 //** Default text color of a linked label
 $label-link-hover-color:      #fff;
 
@@ -620,6 +624,11 @@ $dl-horizontal-offset:        $component-offset-horizontal;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter;
+
+$focused-element-outline: solid 1px $brand-primary !default;
+
+$selected-text-color: $white !default;
+$selected-text-bg: $brand-primary !default;
 
 //== Forms
 //

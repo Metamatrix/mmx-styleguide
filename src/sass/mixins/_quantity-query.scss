@@ -1,0 +1,6 @@
+@mixin quantity-query-exact($count) {
+	&:nth-last-child(#{$count}):first-child,
+	&:nth-last-child(#{$count}):first-child ~ & {
+		@content;
+	}
+}
