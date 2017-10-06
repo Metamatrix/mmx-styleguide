@@ -10,7 +10,23 @@ module.exports = function(grunt) {
     
     var pathName = type + 's',
       styleFilePath = 'src/sass/application/_' + name + '.scss',
-      viewFilePath = 'src/nunjucks/' + pathName + '/' + name + '.njk';
+      viewFilePath = 'src/nunjucks/' + pathName + '/' + name + '.njk',
+      formatedName = name.split(/[-_\.\s]/)
+        .map(function(value, index) { 
+          if(!value || value.length === 0)
+            return '';
+
+          if(value.length === 1)
+            return value.toUpperCase();
+
+          if(index === 0)
+            return value;
+
+          return makeTitle(value);
+        })
+        .join('');
+
+    console.log(formatedName);
 
     // Stop if the files exists
     if(grunt.file.exists(styleFilePath) || grunt.file.exists(viewFilePath)) {
@@ -40,7 +56,7 @@ module.exports = function(grunt) {
     content = '{# ' + makeTitle(name) + ' #}\n\n';
     content += '<div class="' + name + '"';
     if(enhancer) {
-      content += 'data-enhancer="' + name + '"';
+      content += ' data-enhancer="' + formatedName + '"';
     }
     content += '>\n</div>';
 
@@ -57,7 +73,7 @@ module.exports = function(grunt) {
         textToInsert = '{{ docsection("' + makeTitle(name) + '", "../' + pathName + '/' + name +  '.njk") }}';
 
       if(text.indexOf(textToInsert) === -1) {
-        var replacementText = text + '\n' + textToInsert + '\n';
+        var replacementText = text + '\n\t\t' + textToInsert + '\n';
         grunt.file.write('src/nunjucks/index.njk', styleguideIndex.replace(text, replacementText));
       }
       
@@ -66,8 +82,7 @@ module.exports = function(grunt) {
     // create enhancer
 
     if(enhancer) {
-      var enhacerTemplate = '(function ($) {\n\n\t"use strict";\n\n\t$.enhancer("googleMap", function () {\n\n\t// Add logic here\n\n\t});\n\n})(jQuery);';
-      grunt.file.write('src/scripts/enhancers/' + name + '.js', enhacerTemplate);
+      grunt.task.run('enhancer:' + name);
     }
 
     grunt.log.writeln(makeTitle(type) + ' ' + name + ' generated!');
