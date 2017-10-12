@@ -1,0 +1,17 @@
+@mixin aspect-size($src-width, $src-height, $target-width, $target-height) {
+	$scale: min($target-width / $src-width, $target-height / $src-height);
+	width: $src-width * $scale;
+	height: $src-height * $scale; 
+}
+
+@mixin aspect-size-width($src-width, $src-height, $target-width) {
+	$scale: $target-width / $src-width;
+	width: $target-width;
+	height: $src-height * $scale; 
+}
+
+@mixin aspect-size-height($src-width, $src-height, $target-height) {
+	$scale: $target-height / $src-height;
+	width: $src-width * scale;
+	height: $target-height; 
+}
