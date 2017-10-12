@@ -146,6 +146,7 @@
     "start": "Start Page",
     "content": "Content Page",
     "error404": "404 Page",
-    "error500": "500 Page"
+    "error500": "500 Page",
+    "login": "Login Page"
   }
 }

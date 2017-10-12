@@ -1,0 +1,33 @@
+{# Login-form #}
+
+<h1>Logga in</h1>
+
+<div class="col-md-6 col-md-push-3">
+  <form action="/logga-in">
+    <fieldset>
+      <div class="form-group material-input">
+        <label class="control-label" for="exampleInputEmail1">E-post / Medlemsnummer</label>
+        <input class="form-control input-filled valid" id="exampleInputEmail1" type="text" aria-required="true" aria-describedby="">
+        <span class="field-validation-valid"></span>
+      </div>
+      <div class="form-group material-input">
+        <label class="control-label" for="exampleInputPassword1">Lösenord</label>
+        <input class="form-control valid input-filled" id="exampleInputPassword1" type="password" aria-required="true" aria-describedby="">
+        <span class="field-validation-valid"></span>
+      </div>
+
+      <div class="checkbox styled-checkbox styled-input-primary">
+        <label class="control-label" for="exampleInputRememberMe1">
+          <input class="form-control" id="exampleInputRememberMe1" type="checkbox">
+          <span class="input-control"></span>
+          Kom ihåg mig
+        </label>
+      </div>
+
+      <div class="member-login-wrapper">
+        <button class="btn btn-primary btn-lg member-login">Logga in</button>
+        <a href="" class="forgot-password">Har du glömt lösenordet?</a>
+      </div>
+    </fieldset>
+  </form>
+</div>  
