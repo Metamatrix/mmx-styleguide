@@ -147,6 +147,7 @@
     "content": "Content Page",
     "error404": "404 Page",
     "error500": "500 Page",
-    "login": "Login Page"
+    "login": "Login Page",
+    "reset-password": "Reset Password Page"
   }
 }
