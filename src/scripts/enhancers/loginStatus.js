@@ -1,4 +1,4 @@
-﻿(function (app, $, win) {
+﻿(function ($, win) {
     "use strict";
 
     var serviceUrl = "",
@@ -89,4 +89,4 @@
 
     });
 
-})(Application, jQuery, window);
+})(jQuery, window);

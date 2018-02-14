@@ -4,7 +4,7 @@
 {% import './includes/macros/img-ph.njk' as img %}
 
 {% block sidebar %}
-	<nav role="navigation">
+	<nav>
 	  <ul class="nav nav-pills nav-stacked">
 			<li class="active">
 				<a href="" aria-current="page">{{ lipsum.lipsumwords(2,8) }}</a>
@@ -114,18 +114,17 @@
 					  </tr>
 					</tbody>
 
-					<tfooter>
+					<tfoot>
 					  <tr>
 							<th>{{ lipsum.lipsumwords(1, 10) }}</th>
 		          <th>{{ lipsum.lipsumwords(2, 20) }}</th>
 		          <th>{{ lipsum.lipsumwords(3, 30) }}</th>
 		          <th>{{ lipsum.lipsumwords(2, 50) }}</th>
 					  </tr>
-					</tfooter>
+					</tfoot>
 				</table>
-
-				{% include "./compositions/share-page.njk" %}
+			</div>
+			{% include "./compositions/share-page.njk" %}
 		</div>
-
 	</article>
 {% endblock %}

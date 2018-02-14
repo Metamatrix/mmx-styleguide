@@ -5770,6 +5770,108 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Internet explorer applies focus to elements that cannot be focues, like divs, etc */
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: solid 1px #9ed355; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #9ed355;
+  /* WebKit/Blink Browsers */ }
+
+::selection {
+  color: #fff;
+  background-color: #9ed355;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #9ed355;
+  /* Gecko Browsers */ }
+
+.text-secondary {
+  color: #000; }
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: black; }
+
+.text-color {
+  color: #333333; }
+
+a.text-color:hover,
+a.text-color:focus {
+  color: #1a1a1a; }
+
+.text-black {
+  color: #000; }
+
+a.text-black:hover,
+a.text-black:focus {
+  color: black; }
+
+.text-white {
+  color: #fff; }
+
+a.text-white:hover,
+a.text-white:focus {
+  color: #e6e6e6; }
+
+/*.bg-primary {
+  color: #fff;
+}*/
+.bg-secondary {
+  background-color: #000; }
+
+a.bg-secondary:hover,
+a.bg-secondary:focus {
+  background-color: black; }
+
+.font-xsmall {
+  font-size: 10px; }
+
+.font-small {
+  font-size: 12px; }
+
+.font-base {
+  font-size: 14px; }
+
+.font-large {
+  font-size: 18px; }
+
+.font-sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.font-serif {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+@media only screen and (min-width: 768px) {
+  .text-sm-left {
+    text-align: left !important; }
+  .text-sm-right {
+    text-align: right !important; }
+  .text-sm-center {
+    text-align: center !important; } }
+
+@media only screen and (min-width: 992px) {
+  .text-md-left {
+    text-align: left !important; }
+  .text-md-right {
+    text-align: right !important; }
+  .text-md-center {
+    text-align: center !important; } }
+
+@media only screen and (min-width: 1200px) {
+  .text-lg-left {
+    text-align: left !important; }
+  .text-lg-right {
+    text-align: right !important; }
+  .text-lg-center {
+    text-align: center !important; } }
+
 .article-heading {
   margin-top: 0; }
 
@@ -6064,19 +6166,19 @@ button.close {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background-color: #fff;
   border: solid 3px #777777;
-  transition: background .25s; }
-  .styled-checkbox .input-control:hover:before,
-  .styled-radio .input-control:hover:before,
-  .styled-checkbox-inline .input-control:hover:before,
-  .styled-radio-inline .input-control:hover:before {
+  transition: background-color .25s; }
+  .styled-checkbox .input-control:hover::before,
+  .styled-radio .input-control:hover::before,
+  .styled-checkbox-inline .input-control:hover::before,
+  .styled-radio-inline .input-control:hover::before {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>');
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>');
     line-height: 30px;
     opacity: .5; }
 
@@ -6100,20 +6202,20 @@ button.close {
 .styled-radio-inline input[type=radio]:checked ~ .input-control {
   background: #777777;
   border: solid 3px #777777; }
-  .styled-checkbox input[type=checkbox]:checked ~ .input-control:before,
-  .styled-checkbox input[type=radio]:checked ~ .input-control:before,
-  .styled-radio input[type=checkbox]:checked ~ .input-control:before,
-  .styled-radio input[type=radio]:checked ~ .input-control:before,
-  .styled-checkbox-inline input[type=checkbox]:checked ~ .input-control:before,
-  .styled-checkbox-inline input[type=radio]:checked ~ .input-control:before,
-  .styled-radio-inline input[type=checkbox]:checked ~ .input-control:before,
-  .styled-radio-inline input[type=radio]:checked ~ .input-control:before {
+  .styled-checkbox input[type=checkbox]:checked ~ .input-control::before,
+  .styled-checkbox input[type=radio]:checked ~ .input-control::before,
+  .styled-radio input[type=checkbox]:checked ~ .input-control::before,
+  .styled-radio input[type=radio]:checked ~ .input-control::before,
+  .styled-checkbox-inline input[type=checkbox]:checked ~ .input-control::before,
+  .styled-checkbox-inline input[type=radio]:checked ~ .input-control::before,
+  .styled-radio-inline input[type=checkbox]:checked ~ .input-control::before,
+  .styled-radio-inline input[type=radio]:checked ~ .input-control::before {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-checkbox input[type=checkbox]:focus ~ .input-control,
 .styled-checkbox input[type=radio]:focus ~ .input-control,
@@ -6174,40 +6276,40 @@ button.close {
 .styled-input-primary .input-control {
   background: #fff;
   border: solid 3px #9ed355; }
-  .styled-input-primary .input-control:hover:before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
+  .styled-input-primary .input-control:hover::before {
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-primary input[type=checkbox]:checked ~ .input-control,
 .styled-input-primary input[type=radio]:checked ~ .input-control {
   background: #9ed355;
   border: solid 3px #9ed355; }
-  .styled-input-primary input[type=checkbox]:checked ~ .input-control:before,
-  .styled-input-primary input[type=radio]:checked ~ .input-control:before {
+  .styled-input-primary input[type=checkbox]:checked ~ .input-control::before,
+  .styled-input-primary input[type=radio]:checked ~ .input-control::before {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-secondary .input-control {
   background: #fff;
   border: solid 3px #000; }
-  .styled-input-secondary .input-control:hover:before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
+  .styled-input-secondary .input-control:hover::before {
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 .styled-input-secondary input[type=checkbox]:checked ~ .input-control,
 .styled-input-secondary input[type=radio]:checked ~ .input-control {
   background: #000;
   border: solid 3px #000; }
-  .styled-input-secondary input[type=checkbox]:checked ~ .input-control:before,
-  .styled-input-secondary input[type=radio]:checked ~ .input-control:before {
+  .styled-input-secondary input[type=checkbox]:checked ~ .input-control::before,
+  .styled-input-secondary input[type=radio]:checked ~ .input-control::before {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
+    content: svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m477 162c0 7-2 14-8 19l-206 207-39 39c-6 5-12 8-20 8-7 0-14-3-19-8l-142-142c-6-6-8-12-8-20 0-7 2-14 8-19l38-39c6-5 12-8 20-8 7 0 14 3 19 8l84 84 188-188c5-5 12-8 19-8 8 0 14 3 20 8l38 39c6 6 8 12 8 20z" fill="#fff"/></svg>'); }
 
 input.input-validation-error,
 select.input-validation-error,
@@ -6704,108 +6806,6 @@ a.link-block .link-block-item:hover {
   right: -480px; }
   .no-csstransforms .off-canvas-right.off-canvas-menu.open {
     right: 0; }
-
-/* Internet explorer applies focus to elements that cannot be focues, like divs, etc */
-a:focus,
-input:focus,
-textarea:focus,
-button:focus {
-  outline: solid 1px #9ed355; }
-
-::-moz-selection {
-  color: #fff;
-  background-color: #9ed355;
-  /* WebKit/Blink Browsers */ }
-
-::selection {
-  color: #fff;
-  background-color: #9ed355;
-  /* WebKit/Blink Browsers */ }
-
-::-moz-selection {
-  color: #fff;
-  background-color: #9ed355;
-  /* Gecko Browsers */ }
-
-.text-secondary {
-  color: #000; }
-
-a.text-secondary:hover,
-a.text-secondary:focus {
-  color: black; }
-
-.text-color {
-  color: #333333; }
-
-a.text-color:hover,
-a.text-color:focus {
-  color: #1a1a1a; }
-
-.text-black {
-  color: #000; }
-
-a.text-black:hover,
-a.text-black:focus {
-  color: black; }
-
-.text-white {
-  color: #fff; }
-
-a.text-white:hover,
-a.text-white:focus {
-  color: #e6e6e6; }
-
-/*.bg-primary {
-  color: #fff;
-}*/
-.bg-secondary {
-  background-color: #000; }
-
-a.bg-secondary:hover,
-a.bg-secondary:focus {
-  background-color: black; }
-
-.font-xsmall {
-  font-size: 10px; }
-
-.font-small {
-  font-size: 12px; }
-
-.font-base {
-  font-size: 14px; }
-
-.font-large {
-  font-size: 18px; }
-
-.font-sans-serif {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.font-serif {
-  font-family: Georgia, "Times New Roman", Times, serif; }
-
-@media only screen and (min-width: 768px) {
-  .text-sm-left {
-    text-align: left !important; }
-  .text-sm-right {
-    text-align: right !important; }
-  .text-sm-center {
-    text-align: center !important; } }
-
-@media only screen and (min-width: 992px) {
-  .text-md-left {
-    text-align: left !important; }
-  .text-md-right {
-    text-align: right !important; }
-  .text-md-center {
-    text-align: center !important; } }
-
-@media only screen and (min-width: 1200px) {
-  .text-lg-left {
-    text-align: left !important; }
-  .text-lg-right {
-    text-align: right !important; }
-  .text-lg-center {
-    text-align: center !important; } }
 
 .vcard {
   display: table;
@@ -7338,6 +7338,10 @@ a.bg-secondary:focus {
   display: table;
   margin-left: auto;
   margin-right: auto; }
+
+.login-form,
+.bank-id-login {
+  margin-bottom: 30px; }
 
 .forgot-password {
   float: right; }

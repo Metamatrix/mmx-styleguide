@@ -9,7 +9,7 @@
 			border: $border;
 
 			&:hover {
-				&:before {
+				&::before {
 					content: $icon;
 				}
 			}
@@ -22,7 +22,7 @@
 					background: $checked-bg-color;
 					border: $checked-border;
 
-					&:before {
+					&::before {
 						position: absolute;
 						top: 0;
 						left: 0;
@@ -74,13 +74,12 @@
 		display: inline-block;
 		width: $styled-checkbox-size;
 		height: $styled-checkbox-size;
-		background: $styled-checkbox-default-bg;
+		background-color: $styled-checkbox-default-bg;
 		border: $styled-checkbox-default-border;
-		-webkit-transition: background .25s;
-		transition: background .25s;
+		transition: background-color .25s;
 
 		&:hover {
-			&:before {
+			&::before {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -108,7 +107,7 @@
 				background: $styled-checkbox-checked-default-bg;
 				border: $styled-checkbox-checked-default-border;
 
-				&:before {
+				&::before {
 					position: absolute;
 					top: 0;
 					left: 0;

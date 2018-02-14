@@ -1,5 +1,7 @@
 // Application import file
 
+@import "application/type";
+
 // Components
 @import "application/article";
 @import "application/article-list";
@@ -17,7 +19,6 @@
 @import "application/lists";
 @import "application/nav-tree";
 @import "application/off-canvas-menu";
-@import "application/type";
 @import "application/vcard";
 
 // Compositions

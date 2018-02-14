@@ -1,4 +1,4 @@
-﻿(function(app, $) {
+﻿(function($) {
 	$.enhancer("loginForm", function() {
 
 		var loginType = $(this).find("select"),
@@ -25,4 +25,4 @@
 			ssnWrapper.removeClass("in");
 		}
 	});
-})(Application, jQuery);
+})(jQuery);

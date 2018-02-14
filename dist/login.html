@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles/main.css"></head>
 <body>
 	<a class="sr-only sr-only-focusable skip-to-content" href="#main-content">Hoppa till huvudinnehållet</a>
-<header id="global-header" role="banner" class="global-header">
+<header id="global-header" class="global-header">
 
 <div class="navbar navbar-default mobile-navbar hidden-md hidden-lg m-xs-b-0">
   <div id="mobile-navbar-container" class="container-fluid collapse in">
@@ -98,7 +98,7 @@
 	</div>
 </header>
 
-	<main id="main-content", role="main">
+	<main id="main-content">
 		<h1 class="sr-only">Logga in</h1>
 			<div class="container">
 				<div class="row">
@@ -106,17 +106,47 @@
 
 <h1>Logga in</h1>
 
-<div class="col-md-6 col-md-push-3">
-  <form action="/logga-in">
+<div class="col-md-6 col-md-offset-3">
+  <form action="/logga-in" method="post" class="bank-id-login">
+    <fieldset>
+      <div class="form-group material-select">
+        <label for="LoginFormModel_LoginType">
+          Inloggningstyp
+        </label>
+        <span class="material-select-icon">
+          <svg aria-hidden="true" class="icon icon-chevron-down">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icons.svg#icon-chevron-down"></use>
+          </svg>
+        </span>
+        <select aria-required="true" class="form-control" data-val="true" data-val-required="Du måste välja inloggningstyp." id="LoginFormModel_LoginType" name="LoginFormModel.LoginType">
+          <option value="">Välj inloggning</option>
+          <option selected="selected" value="1">Mobilt BankID</option>
+        </select>
+        <span class="field-validation-valid" data-valmsg-for="LoginFormModel.LoginType" data-valmsg-replace="true"></span>
+      </div>
+      <div class="form-group material-input" data-enhancer="materialInput">
+        <label for="LoginFormModel_PersonalNumber" class="control-label">
+          Personnummer (ÅÅÅÅMMDDXXXX)
+        </label>
+        <input class="form-control" data-val="true" data-val-organisationnumber="Du måste ange ett korrekt personnummer (ÅÅÅÅMMDDXXXX)" data-val-requiredif="Du måste ange personnummer." data-val-requiredif-othername="LoginType" data-val-requiredif-othervalue="1" id="LoginFormModel_PersonalNumber" name="LoginFormModel.PersonalNumber" value="" type="text">
+        <span class="field-validation-valid" data-valmsg-for="LoginFormModel.PersonalNumber" data-valmsg-replace="true"></span>
+      </div>
+      <button class="btn btn-primary btn-block member-login">Logga in</button>
+    </fieldset>
+  </form>
+</div>
+
+<div class="col-md-6 col-md-offset-3">
+  <form action="/logga-in" class="login-form">
     <fieldset>
       <div class="form-group material-input">
         <label class="control-label" for="exampleInputEmail1">E-post / Medlemsnummer</label>
-        <input class="form-control input-filled valid" id="exampleInputEmail1" type="text" aria-required="true" aria-describedby="">
+        <input class="form-control input-filled valid" id="exampleInputEmail1" type="text" aria-required="true">
         <span class="field-validation-valid"></span>
       </div>
       <div class="form-group material-input">
         <label class="control-label" for="exampleInputPassword1">Lösenord</label>
-        <input class="form-control valid input-filled" id="exampleInputPassword1" type="password" aria-required="true" aria-describedby="">
+        <input class="form-control valid input-filled" id="exampleInputPassword1" type="password" aria-required="true">
         <span class="field-validation-valid"></span>
       </div>
 
