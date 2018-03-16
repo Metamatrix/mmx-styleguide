@@ -86,7 +86,6 @@ h4.mmx-docs-heading {
   font-size: 18px;
   z-index: 99;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.3);
-  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease; }
   #mmx-document-nav a {
     color: #3d3d3d;
@@ -166,11 +165,9 @@ h4.mmx-docs-heading {
       fill: #9ed355; }
 
 #mmx-document-nav.mmx-document-nav-slide-left {
-  -webkit-transform: translate3d(-200px, 0, 0);
   -ms-transform: translate3d(-200px, 0, 0);
   transform: translate3d(-200px, 0, 0); }
   #mmx-document-nav.mmx-document-nav-slide-left:hover {
-    -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 

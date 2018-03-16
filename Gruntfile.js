@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
   var options = {
     config: {
-      src: "grunt/*.js",
+      src: "grunt/*.js"
     },
     shell: {
 
@@ -29,13 +29,12 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('css-dev', [
     'sass:dev',
-    'autoprefixer:dev',
+    'autoprefixer:dev'
   ]);
 
   grunt.registerTask('css-dist', [
     'sass:dist',
-    'autoprefixer:dist',
-    'pixrem'
+    'autoprefixer:dist'
   ]);
 
   /**
@@ -145,7 +144,7 @@ module.exports = function(grunt) {
     if (arguments.length === 0) {
         grunt.task.run('connect', 'dev', 'copy:target', 'watch');
     }
-    else if (task2 == undefined){
+    else if (task2 === undefined){
         grunt.config.set('dirs.output', task1);
         grunt.task.run('connect', task1, 'copy:target', 'watch');
     }

@@ -1,3 +1,4 @@
+/* global console */
 (function ($, win, doc) {
 	"use strict";
 
@@ -6,18 +7,18 @@
 		enhancerRequires = {};
 
 	// Init and enhancer
-	function initEnhancer(enhancer) {
+	function InitEnhancer(enhancer) {
 
 		// Init any required (inherited) enhancers
 		if (enhancerRequires[enhancer]) {
-			initEnhancer.call(this, enhancerRequires[enhancer]);
+			InitEnhancer.call(this, enhancerRequires[enhancer]);
 		}
 
 		// Init enhancer by function or object
 		if (typeof enhancers[enhancer] === "function") {
 			enhancers[enhancer].call(this);
 		}
-		else if (typeof enhancers[enhancer] === "object" && typeof enhancers[enhancer]["init"] === "function") {
+		else if (typeof enhancers[enhancer] === "object" && typeof enhancers[enhancer].init === "function") {
 			// Make a copy of the enhancer template object for each enhancer to use unique settings, etc
 			var enhancerInstance = $.extend(true, {}, enhancers[enhancer]);
 			enhancerInstance.init(this);
@@ -57,8 +58,12 @@
 
 		// kick off js enhancements
 		enhancers.each(function () {
-			var enhancer = $(this).attr("data-enhancer");
-			initEnhancer.call(this, enhancer);
+			var enhancer = $(this).attr("data-enhancer"),
+				split = enhancer.split(" "),
+				$this = this;
+			split.forEach(function(elm) {
+				InitEnhancer.call($this, elm);
+			});
 		});
 	}
 
@@ -92,7 +97,7 @@
 
 		var enhancer = target.attr("data-enhancer");
 
-		initEnhancer.call(target, enhancer);
+		InitEnhancer.call(target, enhancer);
 	};
 
 	$.initEnhancers = function (container) {
